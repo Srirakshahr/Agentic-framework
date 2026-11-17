@@ -1,0 +1,352 @@
+{
+  "test_type": "python",
+  "suites": [
+    {
+      "name": "job0_test",
+      "cmd": "bash \"$HERMES_JOB0_DIR/run_job0.sh\"",
+      "timeout_sec": 7200,
+      "critical": true,
+      "run_first": true,
+      "tags": [
+        "core",
+        "job0",
+        "gate"
+      ],
+      "capabilities": {
+        "needs_cpdctl": true,
+        "needs_selenium": false,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_jobzero",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && bash jobzero.sh'",
+      "timeout_sec": 7200,
+      "critical": true,
+      "tags": [
+        "core"
+      ],
+      "run_first": true,
+      "description": "DataStage JobZero utility script to create, update, and run flows via cpdctl",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_ds_git_integration_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_GIT_INTEGRATION_TEST\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_GIT_INTEGRATION_TEST/requirements.txt\" && python3 ds_git_integration_test.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Selenium-based UI test that validates Git integration in IBM Cloud Pak for Data (CPD): logs in, creates a project, enables Git integration, and configures it.",
+      "pip_packages": [
+        "selenium",
+        "webdriver-manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_sql_pushdown_automation",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet requests urllib3 && python3 sql_pushdown_automation.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm"
+      ],
+      "run_local": false,
+      "cpd_project": "canvas_test",
+      "description": "SQL Pushdown automation testing flow execution, parameter patching, and plaintext password logging",
+      "pip_packages": [
+        "requests",
+        "urllib3"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_ds_read_write_tests",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS/requirements.txt\" && python3 run_automation.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "WatsonX UI automation suite for DataStage read/write operations using Selenium browser automation with pytest",
+      "pip_packages": [
+        "selenium",
+        "webdriver-manager",
+        "pytest"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_vault_testing_vault_testing",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/vault_testing/vault_testing\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 login.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "IBM Cloud Pak for Data vault testing and secret creation suite via UI login automation",
+      "pip_packages": [
+        "selenium",
+        "webdriver-manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_scenario_2_scripts",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Scenario_2/scripts\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Scenario_2/requirements.txt\" && python3 main.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "description": "CPD project setup automation using cpdctl for Datastage scenario 2",
+      "pip_packages": [
+        "requests",
+        "urllib3"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_perf_scenario3",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet plotly requests && python3 perf_scenario3.py --zip T2_Sizing_Project_2.zip --cpd-url $CPD_URL --username $CPD_USERNAME --password $CPD_PASSWORD'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "description": "DataStage scale config performance test: creates project, imports zip, patches datastage CR for small/medium/large scales, runs jobs, collects metrics, and generates HTML report with bar charts",
+      "pip_packages": [
+        "plotly",
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_perf_scenario5",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet requests urllib3 && python3 perf_scenario5.py'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "description": "CP4D DataStage ETL vs TETL Performance Automation \u2014 Scenario 5 (SQL Pushdown): creates project, imports zip, patches PostgreSQL credentials, runs flows, and plots HTML comparison chart",
+      "pip_packages": [
+        "requests",
+        "urllib3"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_cpd_perf",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet requests urllib3 && python3 cpd_perf.py'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "description": "CP4D DataStage ETL vs TETL performance automation using cpdctl and REST API calls",
+      "pip_packages": [
+        "requests",
+        "urllib3"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_1_1",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.1\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case1.py'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "cpd_project": "Performance Scenario 1",
+      "description": "DataStage performance test automation that verifies architecture, installs cpdctl, authenticates to CP4D, manages projects, and imports/compiles/executes DataStage flows via CLI",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_1_2",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.2\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case2.py'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "DataStage UI Performance Testing Script measuring elapsed time for UI operations (zoom, arrange, save, load, compile, property editor, rename project) via Selenium browser automation",
+      "pip_packages": [
+        "selenium",
+        "webdriver-manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_6_scripts",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_6/scripts\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_6/requirements.txt\" && python3 cpd_metrics_tracker.py'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "Automates login to RedHat OpenShift console and tracks CPU/Memory metrics for DataStage performance scenario 6 using Selenium browser automation",
+      "pip_packages": [
+        "selenium",
+        "pandas"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_performance_sceanrio1",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/performance-sceanrio1\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case1.py'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": false,
+      "cpd_project": "Performance Scenario 1",
+      "description": "DataStage performance scenario 1 - automates architecture verification, cpdctl installation, CP4D authentication, project creation, flow import/compilation/execution, and job monitoring via cpdctl CLI",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_ds_canvas_manual_test_run_full_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_canvas_Manual_Test\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_canvas_Manual_Test/requirements.txt\" && bash run_full_test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Full automation test suite that runs web automation (admin login, project creation, collaborator addition, DataStage flow creation, configure/compile/run) followed by user access verification for usera and userb",
+      "pip_packages": [
+        "pytest",
+        "selenium",
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_jenkins_datastage-fastpath-cpd-zos",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Datastage/Utility/jenkins_jobs.json",
+      "jenkins_job_name": "datastage-fastpath-cpd-zos",
+      "timeout_sec": 54000,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "jenkins",
+        "fastpath"
+      ],
+      "description": "DataStage Fastpath full run on CP4D (zLinux/s390x) via Jenkins DataStage-Fastpath-CPD-ZOS",
+      "ai_source": "manual"
+    }
+  ]
+}

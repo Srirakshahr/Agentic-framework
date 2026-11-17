@@ -1,0 +1,27 @@
+{
+  "calls": 4,
+  "success": 4,
+  "errors": 0,
+  "timeouts": 0,
+  "total_time_sec": 25.17,
+  "setup_time_sec": 30.08,
+  "jobs_analyzed": [
+    {
+      "job": "ml-deployments-autoai-cp4d4",
+      "time_sec": 6.04
+    },
+    {
+      "job": "ml-deployments-autoai-ts-cp4d4",
+      "time_sec": 4.31
+    },
+    {
+      "job": "ml-trainings-autoai-cp4d4",
+      "time_sec": 4.79
+    },
+    {
+      "job": "ml-trainings-autoai-ts-cp4d4",
+      "time_sec": 10.03
+    }
+  ],
+  "error_details": []
+}

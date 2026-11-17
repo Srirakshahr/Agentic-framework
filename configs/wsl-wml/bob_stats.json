@@ -1,0 +1,15 @@
+{
+  "calls": 1,
+  "success": 1,
+  "errors": 0,
+  "timeouts": 0,
+  "total_time_sec": 4.99,
+  "setup_time_sec": 1.93,
+  "jobs_analyzed": [
+    {
+      "job": "pythonclient_test",
+      "time_sec": 4.99
+    }
+  ],
+  "error_details": []
+}

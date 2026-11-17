@@ -1,0 +1,2644 @@
+{
+  "version": 3,
+  "entries": [
+    {
+      "skill": "[high] [ERROR] Usage: Node-Pinning.sh <components_csv> [entitlement options]: The script was executed without the mandatory 'components_csv' argument.",
+      "source_run": "run-20260806-121414",
+      "category": "config",
+      "added_at": "2026-08-06T06:57:00.883467+00:00"
+    },
+    {
+      "skill": "[high] \"container name \\\"olm-utils-play-v4\\\" is already in use\": Podman container creation failed because the --replace flag was missing or previous cleanup didn't remove the existing container.",
+      "source_run": "run-20260806-121414",
+      "category": "infra",
+      "added_at": "2026-08-06T06:57:01.484613+00:00"
+    },
+    {
+      "skill": "[critical] \"curl: (6) Could not resolve host\": DNS resolution failure for the internal endpoint example.com during authentication.",
+      "source_run": "run-20260806-121414",
+      "category": "infra",
+      "added_at": "2026-08-06T06:57:05.088138+00:00"
+    },
+    {
+      "skill": "[high] \"[ERROR] Usage: Node-Pinning.sh <components_csv>\": The script was executed without the mandatory 'components_csv' parameter required by the shell script.",
+      "source_run": "run-20260806-121414",
+      "category": "config",
+      "added_at": "2026-08-06T07:09:30.169994+00:00"
+    },
+    {
+      "skill": "[critical] \"error: You must be logged in to the server (Unauthorized)\": The 'oc' command failed due to an expired or missing authentication token in the current session.",
+      "source_run": "run-20260806-130054",
+      "category": "auth",
+      "added_at": "2026-08-06T07:40:32.977732+00:00"
+    },
+    {
+      "skill": "[high] fatal: Authentication failed for 'https://git.example.com/...git/': The git clone command did not provide sufficient credentials or a token to access the private repository.",
+      "source_run": "run-20260806-130054",
+      "category": "auth",
+      "added_at": "2026-08-06T07:41:07.465639+00:00"
+    },
+    {
+      "skill": "[medium] \"container name \\\"olm-utils-play-v4\\\" is already in use\": A previous execution failed to clean up the podman container, leaving it in a state where its name remains reserved.",
+      "source_run": "run-20260806-134846",
+      "category": "infra",
+      "added_at": "2026-08-06T08:30:09.285789+00:00"
+    },
+    {
+      "skill": "[high] \"parsing reference \\\"/cpd-cli-workspace/...\\\" invalid reference format\": The podman create command misinterprets a path as an image reference due to spacing or lack of quoting in the command construction.",
+      "source_run": "run-20260806-134846",
+      "category": "infra",
+      "added_at": "2026-08-06T08:30:42.641959+00:00"
+    },
+    {
+      "skill": "[high] bash: line 1: cd: /root/DS_Hermes_Framework/... : No such file or directory: The test suite uses an absolute path that is only valid in the local dev environment (or a specific container) and is missing from the execution runner.",
+      "source_run": "run-20260806-141519",
+      "category": "infra",
+      "added_at": "2026-08-06T08:55:40.610606+00:00"
+    },
+    {
+      "skill": "[high] \"bash: line 1: cd: /root/... : No such file or directory\": The script is trying to access a path starting with `/root/`, which typically indicates an absolute path that is not accessible or exists on the current runner environment.",
+      "source_run": "run-20260806-141519",
+      "category": "infra",
+      "added_at": "2026-08-06T08:56:16.813526+00:00"
+    },
+    {
+      "skill": "[high] cd: /root/DS_Hermes_Framework/... : No such file or directory: The script attempted to access a hardcoded path (likely intended for a containerized environment) that is missing in the current execution context.",
+      "source_run": "run-20260806-141519",
+      "category": "infra",
+      "added_at": "2026-08-06T08:56:18.547450+00:00"
+    },
+    {
+      "skill": "[high] bash: line 1: cd: /root/... : No such file or directory: The script is attempting to access an absolute path (/root/...) that does not exist in the current environment.",
+      "source_run": "run-20260806-141519",
+      "category": "infra",
+      "added_at": "2026-08-06T08:56:22.477038+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when other services are still active\": Dependency violation where a core component was targeted for shutdown while dependent or concurrent services were still in an active state.",
+      "source_run": "run-20260806-142633",
+      "category": "infra",
+      "added_at": "2026-08-06T09:21:40.660441+00:00"
+    },
+    {
+      "skill": "[high] \"error: You must be logged in to the server (Unauthorized)\": Login session was not persisted or recognized immediately following a successful login command.",
+      "source_run": "run-20260806-142633",
+      "category": "auth",
+      "added_at": "2026-08-06T09:23:39.049350+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when other services are still active\": Dependency violation: The retry strategy (token_refresh) is unrelated to the infrastructure state issue.",
+      "source_run": "run-20260806-142633",
+      "category": "infra",
+      "added_at": "2026-08-06T09:36:40.101384+00:00"
+    },
+    {
+      "skill": "[high] login success followed by \"Unauthorized\" in next command: Authentication token valid only during specific hop or not correctly saved to KUBECONFIG",
+      "source_run": "run-20260806-142633",
+      "category": "auth",
+      "added_at": "2026-08-06T09:41:54.296399+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when there are other services still active.\": Improper shutdown sequence or late-running background tasks preventing clean shutdown of core platform components.",
+      "source_run": "run-20260806-152330",
+      "category": "infra",
+      "added_at": "2026-08-06T10:18:41.295745+00:00"
+    },
+    {
+      "skill": "[medium] \"[ERROR] No addOnId mapping for component: [INFO] Auto-detecting...\": The script logic failed to filter out informational log prefixes (e.g., [INFO]) before performing lookups, treating them as part of the component ID key.",
+      "source_run": "run-20260806-152330",
+      "category": "config",
+      "added_at": "2026-08-06T10:20:21.690030+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when other services are still active\": The 'config_validation' strategy was insufficient to address a state-based dependency conflict; the core issue is an incorrect teardown sequence where dependent services remained active.",
+      "source_run": "run-20260806-152330",
+      "category": "infra",
+      "added_at": "2026-08-06T10:33:14.566771+00:00"
+    },
+    {
+      "skill": "[high] \"No addOnId mapping for component: [INFO] Auto-detecting...\": Greedy parsing of command output includes log level prefixes and descriptive text instead of just the component identifier.",
+      "source_run": "run-20260806-152330",
+      "category": "config",
+      "added_at": "2026-08-06T10:38:14.293635+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when there are other services active.\": Service dependencies were not properly resolved or stopped before the zenservice/cpd_platform shutdown.",
+      "source_run": "run-20260806-161013",
+      "category": "infra",
+      "added_at": "2026-08-06T11:02:49.022489+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when there are other services still active\": The retry_after_wait strategy is insufficient because the dependency conflict (active sub-services) persists even after a wait period.",
+      "source_run": "run-20260806-161013",
+      "category": "infra",
+      "added_at": "2026-08-06T11:15:50.442611+00:00"
+    },
+    {
+      "skill": "[high] \"unhashable type: '_AnsibleLazyTemplateList' in filter 'get_uninstall_order'\": A list of objects was passed into a filtering function that expected hashable types (like strings or integers), likely due to Ansible evaluating a template as an object.",
+      "source_run": "run-20260806-165230",
+      "category": "infrastructure",
+      "added_at": "2026-08-06T11:40:25.355145+00:00"
+    },
+    {
+      "skill": "[high] --components=<comma separated component names> argument is required: The shell variable for components was empty or not correctly passed to the cpd-cli command, causing a validation failure.*",
+      "source_run": "run-20260806-171537",
+      "category": "config",
+      "added_at": "2026-08-06T12:00:48.719633+00:00"
+    },
+    {
+      "skill": "[high] \"parsing reference \\\"/cpd...\\\": invalid reference format\": The mount path contains spaces (\"Utility /cpd-cli\"), causing podman to interpret the segment after the space as a container image.",
+      "source_run": "run-20260807-150225",
+      "category": "infra",
+      "added_at": "2026-08-07T09:40:47.062350+00:00"
+    },
+    {
+      "skill": "[high] \"Component 'cpd_platform' cannot be shutdown when other services are still active.\": The shutdown sequence attempted to stop the core platform component while dependent sub-services were still running.",
+      "source_run": "run-20260807-155412",
+      "category": "infra",
+      "added_at": "2026-08-07T10:48:50.736932+00:00"
+    },
+    {
+      "skill": "[high] DataStage status remains \"InProgress\" and hits 3600s timeout during shutdown/restart cycle.: DataStage backend processing did not finish in time or is stuck in a transitional state, causing the test runner to hit its maximum wait threshold.",
+      "source_run": "run-20260807-162200",
+      "category": "infra",
+      "added_at": "2026-08-07T12:07:03.557381+00:00"
+    },
+    {
+      "skill": "[auto] sre_tests_utility_out_of_box_monitor: 401 Unauthorized, POST https://cpd-ds.apps.mycluster.example.com/",
+      "source_run": "run-20260807-162200",
+      "category": "auth",
+      "added_at": "2026-08-08T19:20:48.353066+00:00"
+    },
+    {
+      "skill": "[auto] sre_tests_utility_shutdown_restart: ssh: connect to host api.mycluster.example.com port 22: Undefined",
+      "source_run": "run-20260807-162200",
+      "category": "infra",
+      "added_at": "2026-08-08T19:20:48.361250+00:00"
+    },
+    {
+      "skill": "[high] \"parsing reference \\\"*\\\": invalid reference format\": The host path in the volume mount contains a space (\"...Utility /cpd-cli-workspace...\"), causing podman to treat it as two separate arguments.",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T05:51:08.239695+00:00"
+    },
+    {
+      "skill": "[high] datastage status \"Failed\" inside a loop leading to 3600s timeout: The orchestrator timed out because the underlying DataStage component failed and never reached the 'completed' state.",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T06:54:14.185510+00:00"
+    },
+    {
+      "skill": "[high] cd: /root/... : No such file or directory: The execution environment is missing the required directory structure for test artifacts.",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T06:55:46.378914+00:00"
+    },
+    {
+      "skill": "[high] cd: /root/.../Utility : No such file or directory: The configuration contains a path that is not accessible on the target environment (possibly trailing spaces or incorrect absolute paths).",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T07:00:29.854594+00:00"
+    },
+    {
+      "skill": "[high] bash: line 1: cd: ... No such file or directory: The error is a filesystem path resolution failure, which cannot be resolved by increasing timeouts.",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T07:05:17.220052+00:00"
+    },
+    {
+      "skill": "[high] bash: line 1: cd: ... No such file or directory: The 'retry_blind' strategy re-executes the command without modifying any configuration, so a path error will never be resolved by blind retries.",
+      "source_run": "run-20260810-111204",
+      "category": "infra",
+      "added_at": "2026-08-10T07:10:28.875154+00:00"
+    },
+    {
+      "skill": "[high] /root/cp4d-install-automation/source_env.sh: No such file or directory: The automation script attempts to source a configuration file in the /root directory which does not exist or is inaccessible.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:21:24.372359+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The resource 'datastage' in namespace 'ds' was missing during the shutdown sequence, likely due to an incomplete installation or deployment of the upstream component.",
+      "source_run": "run-20260814-174201",
+      "category": "backend",
+      "added_at": "2026-08-14T12:26:28.628798+00:00"
+    },
+    {
+      "skill": "[high] \"bash: node_pinning.sh: No such file or directory\": The shell script path is not correct or the script is missing from the execution environment.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:30:26.005526+00:00"
+    },
+    {
+      "skill": "[high] \"Error: getting username and password: reading password: inappropriate ioctl for device\": The script is attempting to prompt for a password in an interactive way while running in a non-interactive shell.",
+      "source_run": "run-20260814-174201",
+      "category": "auth",
+      "added_at": "2026-08-14T12:32:03.623971+00:00"
+    },
+    {
+      "skill": "[high] HTTP 400 when using proxy localhost:3128: Proxy server (Squid/local) rejected the request or is misconfigured.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:34:41.147267+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The target resource did not exist in the specified namespace, making a simple retry ineffective as it's an infrastructure state issue rather than a transient connection error.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:40:35.297153+00:00"
+    },
+    {
+      "skill": "[medium] bash: node_pinning.sh: No such file or directory (exit 127): The error is a path/existence issue; 'retry_blind' assumes a transient failure but the script itself does not exist where expected.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:45:22.213088+00:00"
+    },
+    {
+      "skill": "[high] \"Error: getting username and password: reading password: inappropriate ioctl for device\": The process expected an interactive TTY to prompt for a password but was executing in a non-interactive shell.",
+      "source_run": "run-20260814-174201",
+      "category": "auth",
+      "added_at": "2026-08-14T12:50:09.552906+00:00"
+    },
+    {
+      "skill": "[high] HTTP 400 on proxy localhost:3128 during proxy setup test: The local proxy is reachable but rejecting the request, likely due to incorrect local configuration or malformed headers.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T12:56:13.392385+00:00"
+    },
+    {
+      "skill": "[high] /root/cp4d-install-automation/source_env.sh: No such file or directory: The script relies on a file in /root which is missing or inaccessible; retry_blind cannot fix path errors.",
+      "source_run": "run-20260814-174201",
+      "category": "infra",
+      "added_at": "2026-08-14T13:01:03.290649+00:00"
+    },
+    {
+      "skill": "[high] /root/cp4d-install-automation/source_env.sh: No such file or directory: The script hpa_automation.sh tries to source a configuration/environment file that does not exist in the target environment.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:24:43.211090+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The target resource 'datastage' in namespace 'ds' was missing during the shutdown command execution.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:30:22.351601+00:00"
+    },
+    {
+      "skill": "[high] bash: node_pinning.sh: No such file or directory: The script 'node_pinning.sh' is missing from the expected execution path or not correctly referenced in the test runner.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:35:47.735669+00:00"
+    },
+    {
+      "skill": "[high] Error: getting username and password: reading password: inappropriate ioctl for device: The script attempted to prompt for a password in an automated, non-interactive environment.",
+      "source_run": "run-20260815-124527",
+      "category": "auth",
+      "added_at": "2026-08-15T07:37:21.815701+00:00"
+    },
+    {
+      "skill": "[high] \"HTTP 400 on localhost:3128 proxy request\": The Squid proxy at port 3128 returned a 400 Bad Request, possibly due to malformed headers or an incorrect configuration in the initial handshake.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:40:46.987606+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The resource 'datastage' is missing or incorrectly named in namespace 'ds'. A blind retry cannot resolve a 404 Not Found error.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:46:58.674573+00:00"
+    },
+    {
+      "skill": "[high] bash: node_pinning.sh: No such file or directory: The script's absolute path was not provided or the working directory for the test runner is incorrect.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T07:51:38.410268+00:00"
+    },
+    {
+      "skill": "[high] Error: getting username and password: reading password: inappropriate ioctl for device: The script does not handle non-interactive environments correctly by prompting for credentials.",
+      "source_run": "run-20260815-124527",
+      "category": "auth",
+      "added_at": "2026-08-15T07:56:01.793042+00:00"
+    },
+    {
+      "skill": "[high] Proxy setup failed despite retry (HTTP 400 on proxy, inconsistent DNS/routing): The `config_validation` strategy failed because the underlying network infrastructure or proxy configuration is invalid.",
+      "source_run": "run-20260815-124527",
+      "category": "infra",
+      "added_at": "2026-08-15T08:02:08.255803+00:00"
+    },
+    {
+      "skill": "[high] suite=sre_tests_utility_hpa_test_hpa_automation; exit_code=1, duration=0s: 'retry_blind' strategy (used 2x in history) consistently fails for this test because it does not address missing environment files.",
+      "source_run": "run-20260815-124527",
+      "category": "config",
+      "added_at": "2026-08-15T08:06:47.798088+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The 'datastage' resource does not exist in the 'ds' namespace during the shutdown phase of the test suite.",
+      "source_run": "run-20260817-101435",
+      "category": "infra",
+      "added_at": "2026-08-17T06:01:17.163719+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The 'oc patch' command failed because the target resource 'datastage' was missing in the 'ds' namespace before a shutdown operation could be performed.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T07:43:01.503417+00:00"
+    },
+    {
+      "skill": "[high] \"oc get ... not found in namespace ds\": Resources were either not deployed or took longer than 3600s to become available in the 'ds' namespace.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T08:55:11.796489+00:00"
+    },
+    {
+      "skill": "[high] \"Error: getting username and password: reading password: inappropriate ioctl for device\": The script attempted an interactive password prompt in a non-interactive environment (missing TTY).",
+      "source_run": "run-20260817-115310",
+      "category": "auth",
+      "added_at": "2026-08-17T08:56:57.495661+00:00"
+    },
+    {
+      "skill": "[high] Proxy localhost:3128 returns HTTP 400 on valid IP (e.g., 10.0.0.20): The Squid proxy service at localhost:3128 is misconfigured or not handling the request headers correctly for external destinations.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T09:00:21.527881+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): datastage.example.com \"datastage\" not found: The 'oc patch' command failed because the target resource was missing in the namespace.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T09:06:57.090477+00:00"
+    },
+    {
+      "skill": "[high] [WARN] ... not found (multiple resources missing during hpa check): Resources are physically absent from the target namespace, likely due to upstream deployment failures.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T10:12:57.264992+00:00"
+    },
+    {
+      "skill": "[high] \"Error: getting username and password: reading password: inappropriate ioctl for device\": The script is performing an interactive login (e.g., docker login) in a non-interactive environment, causing the 'ioctl' error when it can't open a TTY.",
+      "source_run": "run-20260817-115310",
+      "category": "auth",
+      "added_at": "2026-08-17T10:18:01.955546+00:00"
+    },
+    {
+      "skill": "[high] Proxy returns HTTP 400 despite config_validation retry: The 'config_validation' strategy only validates configuration files, not the validity of the request protocol or credentials sent to the Squid server.",
+      "source_run": "run-20260817-115310",
+      "category": "infra",
+      "added_at": "2026-08-17T10:24:57.968340+00:00"
+    },
+    {
+      "skill": "[auto] sre_tests_utility_out_of_box_monitor: 401 Unauthorized, POST https://cpd-ds.apps.mycluster.example.com/z",
+      "source_run": "run-20260817-115310",
+      "category": "auth",
+      "added_at": "2026-08-17T10:34:58.050037+00:00"
+    },
+    {
+      "skill": "[high] [TIMED OUT after 3600s]: The test suite exceeded the maximum execution time (1 hour) while waiting for datastage components to reach a 'Completed' status.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T13:12:08.317298+00:00"
+    },
+    {
+      "skill": "[medium] \"oc get * not found\" (Timeout after 3600s): The SRE tests failed because critical resources (WOService, wmlbase, datarefinery, ws) were missing or not yet ready in the 'ds' namespace.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T14:22:55.200726+00:00"
+    },
+    {
+      "skill": "[high] \"Error: getting username and password: reading password: inappropriate ioctl for device\": The scripts are attempting to perform an interactive password prompt in a non-interactive shell environment.",
+      "source_run": "run-20260817-171758",
+      "category": "auth",
+      "added_at": "2026-08-17T14:24:44.787627+00:00"
+    },
+    {
+      "skill": "[high] Proxy localhost:3128 returns HTTP 400 for direct hostnames via curl: The proxy server is rejecting requests or failing to route them correctly, possibly due to misconfiguration in the intercept rules.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T14:27:54.793720+00:00"
+    },
+    {
+      "skill": "[high] [TIMED OUT after 3600s]: The timeout window of 3600s is insufficient for the entire sequence of operations, or the polling loop's final check still times out despite the retry strategy.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T15:34:47.458075+00:00"
+    },
+    {
+      "skill": "[high] [TIMED OUT after 3600s]: The retry strategy 'retry_with_timeout_increase' was insufficient because the execution time still exceeded the upper bound of 3600 seconds.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T16:39:39.709605+00:00"
+    },
+    {
+      "skill": "[high] Error: getting username and password: reading password: inappropriate ioctl for device: The system is attempting to open an interactive terminal prompt (TTY) to collect credentials, which fails in automated/CI environments.",
+      "source_run": "run-20260817-171758",
+      "category": "auth",
+      "added_at": "2026-08-17T16:44:22.120087+00:00"
+    },
+    {
+      "skill": "[high] Proxy connection via localhost:3128 returns 400 status for specific target IPs/hostnames.: The proxy configuration (localhost:3128) is rejecting the request or returning a bad response that isn't corrected by standard config validation.",
+      "source_run": "run-20260817-171758",
+      "category": "infra",
+      "added_at": "2026-08-17T16:58:27.664497+00:00"
+    },
+    {
+      "skill": "[high] suite=sre_tests_utility_hpa_test_hpa_automation, exit_code=1, duration=0s: Immediate failure (duration 0s) suggests a missing environment variable, incorrect path configuration, or a prerequisite service not being available.",
+      "source_run": "run-20260818-101929",
+      "category": "infra",
+      "added_at": "2026-08-18T04:58:32.588499+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): ... namespaces \"zen\" not found: The target namespace 'zen' does not exist in the environment.",
+      "source_run": "run-20260818-101929",
+      "category": "infra",
+      "added_at": "2026-08-18T05:35:30.206726+00:00"
+    },
+    {
+      "skill": "[high] Proxy localhost:3128 returned HTTP 400 during curl attempt: The proxy server at localhost:3118 is rejecting the request or is misconfigured, resulting in a Bad Request error.",
+      "source_run": "run-20260818-101929",
+      "category": "infra",
+      "added_at": "2026-08-18T05:39:16.035763+00:00"
+    },
+    {
+      "skill": "[high] Error from server (NotFound): error when creating \"STDIN\": namespaces \"zen\" not found: The retry strategy waited for a period, but the required infrastructure component (namespace 'zen') was never created or available.",
+      "source_run": "run-20260818-101929",
+      "category": "infra",
+      "added_at": "2026-08-18T05:44:22.714208+00:00"
+    },
+    {
+      "skill": "[high] HTTP 400 on proxy (localhost:3128) and 502/400 on NO-PROXY during retries: Persistent infrastructure misconfiguration or incomplete configuration validation logic in the retry strategy.",
+      "source_run": "run-20260818-101929",
+      "category": "config",
+      "added_at": "2026-08-18T05:50:31.151256+00:00"
+    },
+    {
+      "skill": "[high] \"Connection to.*closed by remote host. client_loop: send disconnect: Broken pipe\": The 'oc' command failed due to a network timeout or broken pipe while waiting for resources in the cluster.",
+      "source_run": "run-20260818-125404",
+      "category": "infra",
+      "added_at": "2026-08-18T10:40:11.766475+00:00"
+    },
+    {
+      "skill": "[high] \"You must specify the --cpd_instance_ns option\": The flag --cpd_instance_ns was passed empty in the command execution.",
+      "source_run": "run-20260818-125404",
+      "category": "config",
+      "added_at": "2026-08-18T10:41:56.273920+00:00"
+    },
+    {
+      "skill": "[high] bash: script.sh: No such file or directory: The execution environment cannot find 'script.sh' because of an incorrect path or missing file in the repository/environment.",
+      "source_run": "run-20260818-125404",
+      "category": "infra",
+      "added_at": "2026-08-18T10:45:52.720242+00:00"
+    },
+    {
+      "skill": "[high] oc get [resource] -n ds returns not found for multiple core components: Deployment of underlying services is incomplete or failed in the 'ds' namespace, causing the retry with timeout increase to be ineffective.",
+      "source_run": "run-20260818-125404",
+      "category": "infra",
+      "added_at": "2026-08-18T11:51:03.374093+00:00"
+    },
+    {
+      "skill": "[high] bash: script.sh: No such file or directory: The execution environment cannot locate 'script.sh' due to a relative path mismatch or missing file.",
+      "source_run": "run-20260818-125404",
+      "category": "infra",
+      "added_at": "2026-08-18T12:03:00.291298+00:00"
+    },
+    {
+      "skill": "[high] \"oc get [sub|csv] -n cpd-ops | grep datastage\": Script entered 7200s retry loop because expected resources were not found in the namespace; lack of 'resource exists' check before attempt.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:35:41.922714+00:00"
+    },
+    {
+      "skill": "[high] ssh: connect to host ... port 22: Operation timed out: Network connectivity issue or destination host is unreachable/down.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:39:07.338521+00:00"
+    },
+    {
+      "skill": "[auto] sre_tests_utility_shutdown_restart: ssh: connect to host api.mycluster.example.com port 22: Operation",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:39:07.340933+00:00"
+    },
+    {
+      "skill": "[critical] ssh: connect to host .* port 22: Operation timed out: Network connectivity issue preventing SSH connection to the destination host (firewall or unreachable host).",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:42:09.815250+00:00"
+    },
+    {
+      "skill": "[high] \"ssh: connect to host .* port 22: Operation timed out\": Network unreachable or target server down/firewalled on port 22.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:45:34.238318+00:00"
+    },
+    {
+      "skill": "[high] ssh: connect to host .* port 22: Operation timed out: Network reachability issue or firewall blocking SSH traffic to the remote server.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T14:48:33.846347+00:00"
+    },
+    {
+      "skill": "[high] ssh: connect to host ... port 22: Operation timed out: Network connectivity issue or firewall blocking the SSH connection to the target server.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T16:52:04.811455+00:00"
+    },
+    {
+      "skill": "[high] ssh: Could not resolve hostname .* nodename nor servname provided, or not known: DNS resolution failure for internal/private domain names.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-18T20:33:53.912169+00:00"
+    },
+    {
+      "skill": "[high] ssh: Could not resolve hostname .* nodename nor servname provided, or not known: DNS resolution failure for an internal/private endpoint.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-19T01:33:02.410496+00:00"
+    },
+    {
+      "skill": "[high] ssh: Could not resolve hostname ... no_resolution: DNS resolution failed; timeout increases do not fix unreachable hostnames.",
+      "source_run": "run-20260818-174536",
+      "category": "infra",
+      "added_at": "2026-08-19T05:06:45.602147+00:00"
+    },
+    {
+      "skill": "[high] ssh: Could not resolve hostname .* : nodename nor servname provided, or not known: DNS resolution failure for the specified host in an SSH command.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T11:43:23.574258+00:00"
+    },
+    {
+      "skill": "[high] \"ssh: Could not resolve hostname .* no_resolve\": DNS resolution failed for the target host, potentially due to network reachability or incorrect endpoint configuration.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T12:23:43.851188+00:00"
+    },
+    {
+      "skill": "[critical] [WARN] .* not found followed by [TIMED OUT after 3600s]: Critical custom resources (WOService, wmlbase, datarefinery, ws) were missing from the 'ds' namespace.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T13:26:20.037622+00:00"
+    },
+    {
+      "skill": "[high] error: the server doesn't have a resource type \"datastage_ent_plus\": The Kubernetes cluster lacks the Custom Resource Definitions (CRDs) for 'datastage_ent_plus', or the local context is not pointing to a cluster where these are installed.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T13:35:02.268413+00:00"
+    },
+    {
+      "skill": "[high] [TIMED OUT after 3600s] during component wait loop: The extended timeout was still insufficient for the resources to become available, or the resource availability is blocked by an underlying system issue.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T16:59:54.140654+00:00"
+    },
+    {
+      "skill": "[high] \"error: the server doesn't have a resource type \\\"datastage_ent_plus\\\"\": The error is caused by missing CRDs or an incorrect Kubernetes context, which is independent of authentication tokens.",
+      "source_run": "run-20260827-164335",
+      "category": "infra",
+      "added_at": "2026-08-27T17:12:24.613721+00:00"
+    },
+    {
+      "skill": "[critical] curl: (6) Could not resolve host: .*: DNS resolution failed for the cluster endpoint, likely due to incorrect networking configuration or unreachable internal domain.",
+      "source_run": "run-20260904-155736",
+      "category": "infra",
+      "added_at": "2026-09-04T10:54:43.220324+00:00"
+    },
+    {
+      "skill": "[critical] \"curl: (6) Could not resolve host\": DNS resolution failed for the specified internal/cloud API endpoint.",
+      "source_run": "run-20260904-162703",
+      "category": "infra",
+      "added_at": "2026-09-04T12:45:05.286820+00:00"
+    },
+    {
+      "skill": "[high] [TIMED OUT after 3600s] during pod settlement: The global timeout of 3600 seconds was reached while waiting for pods to settle or complete operations.",
+      "source_run": "run-20260904-162703",
+      "category": "infra",
+      "added_at": "2026-09-04T13:47:34.022093+00:00"
+    },
+    {
+      "skill": "[high] \"oc get datastage ... not found\" followed by \"[TIMED OUT]\": The resource 'datastage/datastage' was not created or became available in the 'zen' namespace within the 3600s timeout.",
+      "source_run": "run-20260904-162703",
+      "category": "infra",
+      "added_at": "2026-09-04T14:57:41.319079+00:00"
+    }
+  ],
+  "failure_patterns": {
+    "[ERROR] Usage: Node-Pinning.sh <components_csv> [entitlement options]": {
+      "root_cause": "The script was executed without the mandatory 'components_csv' argument.",
+      "fix": "Ensure the command includes the required CSV file path as the first argument for the Node-Pinning.sh script.",
+      "suite": "",
+      "last_seen": "2026-08-06T06:57:00.882766+00:00"
+    },
+    "\"container name \\\"olm-utils-play-v4\\\" is already in use\"": {
+      "root_cause": "A previous execution failed to clean up the podman container, leaving it in a state where its name remains reserved.",
+      "fix": "Update the podman create command to include the --replace flag or ensure `podman rm -f` is called before creation.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:30:09.285048+00:00"
+    },
+    "\"curl: (6) Could not resolve host\"": {
+      "root_cause": "DNS resolution failed for the specified internal/cloud API endpoint.",
+      "fix": "Verify DNS configuration, VPN connectivity, or whitelist the target domain in the network's allowed list.",
+      "suite": "",
+      "last_seen": "2026-09-04T12:45:05.284440+00:00"
+    },
+    "\"[ERROR] Usage: Node-Pinning.sh <components_csv>\"": {
+      "root_cause": "The script was executed without the mandatory 'components_csv' parameter required by the shell script.",
+      "fix": "Ensure the command includes the required CSV file path as the first argument when calling Node-Pinning.sh.",
+      "suite": "",
+      "last_seen": "2026-08-06T07:09:30.169675+00:00"
+    },
+    "\"error: You must be logged in to the server (Unauthorized)\"": {
+      "root_cause": "Login session was not persisted or recognized immediately following a successful login command.",
+      "fix": "Ensure the authentication token is cached and active before executing cluster-wide commands.",
+      "suite": "",
+      "last_seen": "2026-08-06T09:51:54.323765+00:00"
+    },
+    "fatal: Authentication failed for 'https://git.example.com/...git/'": {
+      "root_cause": "The git clone command did not provide sufficient credentials or a token to access the private repository.",
+      "fix": "Ensure the environment has configured git credentials (e.g., via SSH keys or a Personal Access Token) or use an authenticated URL in the configuration.",
+      "suite": "",
+      "last_seen": "2026-08-06T07:41:07.465057+00:00"
+    },
+    "\"parsing reference \\\"/cpd-cli-workspace/...\\\" invalid reference format\"": {
+      "root_cause": "The podman create command misinterprets a path as an image reference due to spacing or lack of quoting in the command construction.",
+      "fix": "Escape or quote variable paths containing spaces or special characters before passing them to the container engine.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:30:42.641454+00:00"
+    },
+    "bash: line 1: cd: /root/DS_Hermes_Framework/... : No such file or directory": {
+      "root_cause": "The test suite uses an absolute path that is only valid in the local dev environment (or a specific container) and is missing from the execution runner.",
+      "fix": "Replace hardcoded absolute paths with relative paths or use environment variables to resolve base workspace paths.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:55:40.609721+00:00"
+    },
+    "\"bash: line 1: cd: /root/... : No such file or directory\"": {
+      "root_cause": "The script is trying to access a path starting with `/root/`, which typically indicates an absolute path that is not accessible or exists on the current runner environment.",
+      "fix": "Update the paths in the test suite configuration to use relative paths or correctly configured project-relative absolute paths instead of hardcoded root paths.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:56:16.813070+00:00"
+    },
+    "cd: /root/DS_Hermes_Framework/... : No such file or directory": {
+      "root_cause": "The script attempted to access a hardcoded path (likely intended for a containerized environment) that is missing in the current execution context.",
+      "fix": "Update configuration or path mapping to use dynamic relative paths or verify mount points before performing 'cd' operations.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:56:18.547166+00:00"
+    },
+    "bash: line 1: cd: /root/... : No such file or directory": {
+      "root_cause": "The script is attempting to access an absolute path (/root/...) that does not exist in the current environment.",
+      "fix": "Update the configuration or paths for this test suite to use relative paths or valid environment-specific directories.",
+      "suite": "",
+      "last_seen": "2026-08-06T08:56:22.476742+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when other services are still active\"": {
+      "root_cause": "The 'config_validation' strategy was insufficient to address a state-based dependency conflict; the core issue is an incorrect teardown sequence where dependent services remained active.",
+      "fix": "Implement a manual sequence of stopping all sub-services before calling the platform shutdown, rather than relying on config validation.",
+      "suite": "",
+      "last_seen": "2026-08-06T10:33:14.566367+00:00"
+    },
+    "login success followed by \"Unauthorized\" in next command": {
+      "root_cause": "Authentication token valid only during specific hop or not correctly saved to KUBECONFIG",
+      "fix": "Add a wait period after login or verify kubeconfig presence before proceeding",
+      "suite": "",
+      "last_seen": "2026-08-06T09:41:54.294538+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services still active.\"": {
+      "root_cause": "Improper shutdown sequence or late-running background tasks preventing clean shutdown of core platform components.",
+      "fix": "Ensure all dependent services are stopped before attempting to shut down cpd_platform, and add a verification step/sleep for process termination.",
+      "suite": "",
+      "last_seen": "2026-08-06T10:40:01.179729+00:00"
+    },
+    "\"[ERROR] No addOnId mapping for component: [INFO] Auto-detecting...\"": {
+      "root_cause": "The script logic failed to filter out informational log prefixes (e.g., [INFO]) before performing lookups, treating them as part of the component ID key.",
+      "fix": "Update parsing regex in verify_pinning_report to strip common prefixes like '[INFO]' or ignore lines containing multi-log status markers before passing values to get_addon_id.",
+      "suite": "",
+      "last_seen": "2026-08-06T10:40:01.178722+00:00"
+    },
+    "\"No addOnId mapping for component: [INFO] Auto-detecting...\"": {
+      "root_cause": "Greedy parsing of command output includes log level prefixes and descriptive text instead of just the component identifier.",
+      "fix": "Sanitize captured strings or use a stricter regex to extract only formal identifiers before passing them to `get_addon_id`.",
+      "suite": "",
+      "last_seen": "2026-08-06T10:38:14.293096+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services active.\"": {
+      "root_cause": "Service dependencies were not properly resolved or stopped before the zenservice/cpd_platform shutdown.",
+      "fix": "Ensure all dependent services are in a 'stopped' state before initiating the cpd_platform shutdown command.",
+      "suite": "",
+      "last_seen": "2026-08-06T11:02:49.021574+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services still active\"": {
+      "root_cause": "The retry_after_wait strategy is insufficient because the dependency conflict (active sub-services) persists even after a wait period.",
+      "fix": "Replace 'retry_after_wait' with an explicit, deterministic sequence that shuts down all sub-services before attempting platform shutdown.",
+      "suite": "",
+      "last_seen": "2026-08-06T11:15:50.441723+00:00"
+    },
+    "\"unhashable type: '_AnsibleLazyTemplateList' in filter 'get_uninstall_order'\"": {
+      "root_cause": "A list of objects was passed into a filtering function that expected hashable types (like strings or integers), likely due to Ansible evaluating a template as an object.",
+      "fix": "Ensure the inputs to get_uninstall_order are explicitly cast/processed before use, or update the filter logic to handle LazyTemplateList types.",
+      "suite": "",
+      "last_seen": "2026-08-06T11:40:25.354137+00:00"
+    },
+    "--components=<comma separated component names> argument is required": {
+      "root_cause": "The shell variable for components was empty or not correctly passed to the cpd-cli command, causing a validation failure.*",
+      "fix": "Ensure 'COMPONENTS_SHUTDOWN_RESTART' array/variable contains at least one valid component before calling the shutdown command.",
+      "suite": "",
+      "last_seen": "2026-08-06T12:00:48.718086+00:00"
+    },
+    "\"parsing reference \\\"/cpd...\\\": invalid reference format\"": {
+      "root_cause": "The mount path contains spaces (\"Utility /cpd-cli\"), causing podman to interpret the segment after the space as a container image.",
+      "fix": "Wrap paths containing spaces in quotes or escape them in the configuration for volume mounts.",
+      "suite": "",
+      "last_seen": "2026-08-07T09:40:47.061478+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when other services are still active.\"": {
+      "root_cause": "The shutdown sequence attempted to stop the core platform component while dependent sub-services were still running.",
+      "fix": "Adjust the Ansible task order or logic in /opt/ansible/ansible-play/roles/utils/tasks/shutdown.yml to ensure all dependent services are stopped before 'cpd_platform'.",
+      "suite": "",
+      "last_seen": "2026-08-07T10:48:50.736001+00:00"
+    },
+    "DataStage status remains \"InProgress\" and hits 3600s timeout during shutdown/restart cycle.": {
+      "root_cause": "DataStage backend processing did not finish in time or is stuck in a transitional state, causing the test runner to hit its maximum wait threshold.",
+      "fix": "Increase the heartbeat check duration or investigate the specific Datastage resource hanging on task completion.",
+      "suite": "",
+      "last_seen": "2026-08-08T19:20:48.151900+00:00"
+    },
+    "401 Unauthorized, POST https://cpd-ds.apps.mycluster.example.com/zen-data/v1/addO": {
+      "root_cause": "Detected in suite sre_tests_utility_out_of_box_monitor",
+      "fix": "",
+      "suite": "sre_tests_utility_out_of_box_monitor",
+      "last_seen": "2026-08-08T19:20:48.350636+00:00"
+    },
+    "ssh: connect to host api.mycluster.example.com port 22: Undefined error: 0": {
+      "root_cause": "Detected in suite sre_tests_utility_shutdown_restart",
+      "fix": "",
+      "suite": "sre_tests_utility_shutdown_restart",
+      "last_seen": "2026-08-08T19:20:48.359725+00:00"
+    },
+    "\"parsing reference \\\"*\\\": invalid reference format\"": {
+      "root_cause": "The host path in the volume mount contains a space (\"...Utility /cpd-cli-workspace...\"), causing podman to treat it as two separate arguments.",
+      "fix": "Wrap any paths containing spaces or special characters in quotes or remove the whitespace from directory names/paths.",
+      "suite": "",
+      "last_seen": "2026-08-10T07:20:28.841429+00:00"
+    },
+    "datastage status \"Failed\" inside a loop leading to 3600s timeout": {
+      "root_cause": "The orchestrator timed out because the underlying DataStage component failed and never reached the 'completed' state.",
+      "fix": "Implement proactive failure handling; if `oc get datastage` returns 'Failed', fail the test immediately rather than looping until a global timeout is reached.",
+      "suite": "",
+      "last_seen": "2026-08-10T07:20:28.842671+00:00"
+    },
+    "cd: /root/... : No such file or directory": {
+      "root_cause": "The execution environment is missing the required directory structure for test artifacts.",
+      "fix": "Verify and mount the correct path or update the configuration to use a relative/known path.",
+      "suite": "",
+      "last_seen": "2026-08-10T07:20:28.843523+00:00"
+    },
+    "cd: /root/.../Utility : No such file or directory": {
+      "root_cause": "The configuration contains a path that is not accessible on the target environment (possibly trailing spaces or incorrect absolute paths).",
+      "fix": "Verify and normalize all shell-executed paths in config files, ensuring they are stripped of whitespace and correspond to existing directories.",
+      "suite": "",
+      "last_seen": "2026-08-10T07:00:29.853339+00:00"
+    },
+    "bash: line 1: cd: ... No such file or directory": {
+      "root_cause": "The 'retry_blind' strategy re-executes the command without modifying any configuration, so a path error will never be resolved by blind retries.",
+      "fix": "Update the base environment configuration to use correct absolute paths and verify paths exist before execution.",
+      "suite": "",
+      "last_seen": "2026-08-10T07:10:28.874461+00:00"
+    },
+    "/root/cp4d-install-automation/source_env.sh: No such file or directory": {
+      "root_cause": "The script hpa_automation.sh tries to source a configuration/environment file that does not exist in the target environment.",
+      "fix": "Verify if the directory and file exist before sourcing, or ensure the installation scripts are correctly mapped to the environment's path.",
+      "suite": "",
+      "last_seen": "2026-08-15T07:24:43.209489+00:00"
+    },
+    "Error from server (NotFound): datastage.example.com \"datastage\" not found": {
+      "root_cause": "The 'oc patch' command failed because the target resource 'datastage' was missing in the 'ds' namespace before a shutdown operation could be performed.",
+      "fix": "Verify the existence of the 'datastage' resource in the 'ds' namespace or update the script to check for resource presence before patching.",
+      "suite": "",
+      "last_seen": "2026-08-17T10:34:58.003456+00:00"
+    },
+    "\"bash: node_pinning.sh: No such file or directory\"": {
+      "root_cause": "The shell script path is not correct or the script is missing from the execution environment.",
+      "fix": "Verify and update the absolute path of 'node_pinning.sh' in the test runner configuration.",
+      "suite": "",
+      "last_seen": "2026-08-14T13:11:03.318817+00:00"
+    },
+    "\"Error: getting username and password: reading password: inappropriate ioctl for device\"": {
+      "root_cause": "The scripts are attempting to perform an interactive password prompt in a non-interactive shell environment.",
+      "fix": "Set the KUBECONFIG or provide credentials via env vars/files instead of prompts, or use a non-interactive flag if supported by the CLI tool.",
+      "suite": "",
+      "last_seen": "2026-08-18T03:36:44.874000+00:00"
+    },
+    "HTTP 400 when using proxy localhost:3128": {
+      "root_cause": "Proxy server (Squid/local) rejected the request or is misconfigured.",
+      "fix": "Verify local proxy configuration on port 3128 and ensure it accepts requests from the test runner.",
+      "suite": "",
+      "last_seen": "2026-08-14T13:11:03.317543+00:00"
+    },
+    "bash: node_pinning.sh: No such file or directory (exit 127)": {
+      "root_cause": "The error is a path/existence issue; 'retry_blind' assumes a transient failure but the script itself does not exist where expected.",
+      "fix": "Implement specific logic to check for file existence and verify PATH before retrying, or check if the runner path should be updated in configuration.",
+      "suite": "",
+      "last_seen": "2026-08-14T12:45:22.212441+00:00"
+    },
+    "HTTP 400 on proxy localhost:3128 during proxy setup test": {
+      "root_cause": "The local proxy is reachable but rejecting the request, likely due to incorrect local configuration or malformed headers.",
+      "fix": "Investigate specifically why the local squid/proxy returns a 400; check port accessibility and request formatting in the test script.",
+      "suite": "",
+      "last_seen": "2026-08-14T12:56:13.391586+00:00"
+    },
+    "source_env.sh: No such file or directory": {
+      "root_cause": "source_env.sh not found - script needs absolute path to /root/cp4d-install-automation/source_env.sh",
+      "fix": "Update script to use absolute path: source /root/cp4d-install-automation/source_env.sh 2>/dev/null",
+      "suite": "",
+      "last_seen": "2026-08-15T00:00:00+00:00"
+    },
+    "No such file or directory .sh case mismatch": {
+      "root_cause": "Shell script filename case mismatch - actual filename uses different capitalization",
+      "fix": "Check actual filename with ls and correct the case in the command",
+      "suite": "",
+      "last_seen": "2026-08-15T00:00:00+00:00"
+    },
+    "datastage.example.com \"datastage\" not found": {
+      "root_cause": "DataStage custom resource not installed on this cluster",
+      "fix": "Skip DataStage-specific tests on clusters without DataStage installed",
+      "suite": "",
+      "last_seen": "2026-08-15T00:00:00+00:00"
+    },
+    "cpd_platform cannot be shutdown": {
+      "root_cause": "cpd_platform cannot be shut down while zen/cpfs/ibm_usage_metering are active",
+      "fix": "Remove cpd_platform from COMPONENTS_SHUTDOWN_RESTART in source_env.sh, or shut down dependent services first",
+      "suite": "",
+      "last_seen": "2026-08-15T00:00:00+00:00"
+    },
+    "i#!/bin/bash: No such file or directory": {
+      "root_cause": "Typo in shebang line - extra character before #!",
+      "fix": "Fix line 1 of the script to #!/bin/bash",
+      "suite": "",
+      "last_seen": "2026-08-15T00:00:00+00:00"
+    },
+    "bash: node_pinning.sh: No such file or directory": {
+      "root_cause": "The script's absolute path was not provided or the working directory for the test runner is incorrect.",
+      "fix": "Use an absolute path to node_pinning.sh in the configuration and verify its presence on disk before execution.",
+      "suite": "",
+      "last_seen": "2026-08-15T07:51:38.409446+00:00"
+    },
+    "Error: getting username and password: reading password: inappropriate ioctl for device": {
+      "root_cause": "The system is attempting to open an interactive terminal prompt (TTY) to collect credentials, which fails in automated/CI environments.",
+      "fix": "Replace shell-based prompts with environment variables or configuration files to bypass stdin requirements.",
+      "suite": "",
+      "last_seen": "2026-08-17T16:44:22.119276+00:00"
+    },
+    "\"HTTP 400 on localhost:3128 proxy request\"": {
+      "root_cause": "The Squid proxy at port 3128 returned a 400 Bad Request, possibly due to malformed headers or an incorrect configuration in the initial handshake.",
+      "fix": "Verify squid configuration and ensure requests are being formatted correctly for the local proxy listener.",
+      "suite": "",
+      "last_seen": "2026-08-15T07:40:46.986853+00:00"
+    },
+    "Proxy setup failed despite retry (HTTP 400 on proxy, inconsistent DNS/routing)": {
+      "root_cause": "The `config_validation` strategy failed because the underlying network infrastructure or proxy configuration is invalid.",
+      "fix": "Verify the squid proxy configuration at localhost:3128 and check for environment variable leaky settings affecting DNS resolution.",
+      "suite": "",
+      "last_seen": "2026-08-15T08:02:08.254613+00:00"
+    },
+    "suite=sre_tests_utility_hpa_test_hpa_automation; exit_code=1, duration=0s": {
+      "root_cause": "'retry_blind' strategy (used 2x in history) consistently fails for this test because it does not address missing environment files.",
+      "fix": "Use a targeted remediation step to verify file paths or script configurations before execution rather than blindly retrying.",
+      "suite": "",
+      "last_seen": "2026-08-15T08:06:47.797239+00:00"
+    },
+    "\"oc get ... not found in namespace ds\"": {
+      "root_cause": "Resources were either not deployed or took longer than 3600s to become available in the 'ds' namespace.",
+      "fix": "Increase timeout duration for resource availability or verify deployment status of WOService and other core components before running tests.",
+      "suite": "",
+      "last_seen": "2026-08-17T10:34:57.997704+00:00"
+    },
+    "Proxy localhost:3128 returns HTTP 400 on valid IP (e.g., 10.0.0.20)": {
+      "root_cause": "The Squid proxy service at localhost:3128 is misconfigured or not handling the request headers correctly for external destinations.",
+      "fix": "Verify squid.conf configuration and ensure the local proxy instance is correctly bound to port 3128 with appropriate ACLs.",
+      "suite": "",
+      "last_seen": "2026-08-17T10:34:58.001565+00:00"
+    },
+    "[WARN] ... not found (multiple resources missing during hpa check)": {
+      "root_cause": "Resources are physically absent from the target namespace, likely due to upstream deployment failures.",
+      "fix": "Verify pre-requisite resource existence in 'ds' namespace before proceeding with HPA/automation tests.",
+      "suite": "",
+      "last_seen": "2026-08-17T10:12:57.264135+00:00"
+    },
+    "Proxy returns HTTP 400 despite config_validation retry": {
+      "root_cause": "The 'config_validation' strategy only validates configuration files, not the validity of the request protocol or credentials sent to the Squid server.",
+      "fix": "Implement a more robust validation that checks connection handshake and credential acceptance before accepting the proxy setup as valid.",
+      "suite": "",
+      "last_seen": "2026-08-17T10:24:57.967383+00:00"
+    },
+    "401 Unauthorized, POST https://cpd-ds.apps.mycluster.example.com/zen-data/v1/addOn": {
+      "root_cause": "Detected in suite sre_tests_utility_out_of_box_monitor",
+      "fix": "",
+      "suite": "sre_tests_utility_out_of_box_monitor",
+      "last_seen": "2026-08-17T10:34:58.049511+00:00"
+    },
+    "[TIMED OUT after 3600s]": {
+      "root_cause": "The test suite exceeded the maximum execution time (1 hour) while waiting for datastage components to reach a 'Completed' status.",
+      "fix": "Increase the timeout threshold or optimize the polling logic/inter-check sleep times in the restart script.",
+      "suite": "",
+      "last_seen": "2026-08-18T03:36:44.877509+00:00"
+    },
+    "\"oc get * not found\" (Timeout after 3600s)": {
+      "root_cause": "The SRE tests failed because critical resources (WOService, wmlbase, datarefinery, ws) were missing or not yet ready in the 'ds' namespace.",
+      "fix": "Verify that all dependent k8s resources are deployed and healthy before starting the automation suite; increase timeout if deployments are slow.",
+      "suite": "",
+      "last_seen": "2026-08-18T03:36:44.872372+00:00"
+    },
+    "Proxy localhost:3128 returns HTTP 400 for direct hostnames via curl": {
+      "root_cause": "The proxy server is rejecting requests or failing to route them correctly, possibly due to misconfiguration in the intercept rules.",
+      "fix": "Verify and synchronize the Squid/proxy configuration rules for valid domains like example.com.",
+      "suite": "",
+      "last_seen": "2026-08-18T03:36:44.875446+00:00"
+    },
+    "Proxy connection via localhost:3128 returns 400 status for specific target IPs/hostnames.": {
+      "root_cause": "The proxy configuration (localhost:3128) is rejecting the request or returning a bad response that isn't corrected by standard config validation.",
+      "fix": "Investigate upstream proxy server logs and configurations to determine why HTTP 400 is returned; verify if the target endpoint requires specific headers or handles certain hostnames differently.",
+      "suite": "",
+      "last_seen": "2026-08-17T16:58:27.663487+00:00"
+    },
+    "suite=sre_tests_utility_hpa_test_hpa_automation, exit_code=1, duration=0s": {
+      "root_cause": "Immediate failure (duration 0s) suggests a missing environment variable, incorrect path configuration, or a prerequisite service not being available.",
+      "fix": "Verify all environmental variables provided to the HPA automation script and ensure helper utilities are in the system PATH.",
+      "suite": "",
+      "last_seen": "2026-08-18T06:08:31.248375+00:00"
+    },
+    "Error from server (NotFound): ... namespaces \"zen\" not found": {
+      "root_cause": "The target namespace 'zen' does not exist in the environment.",
+      "fix": "Ensure the namespace 'zen' is created before running the test suite or verify config for correct namespace name.",
+      "suite": "",
+      "last_seen": "2026-08-18T06:08:31.250866+00:00"
+    },
+    "Proxy localhost:3128 returned HTTP 400 during curl attempt": {
+      "root_cause": "The proxy server at localhost:3118 is rejecting the request or is misconfigured, resulting in a Bad Request error.",
+      "fix": "Verify the configuration of the local Squid/proxy service at port 3128 and ensure it accepts incoming requests from the test runner.",
+      "suite": "",
+      "last_seen": "2026-08-18T06:08:31.252818+00:00"
+    },
+    "Error from server (NotFound): error when creating \"STDIN\": namespaces \"zen\" not found": {
+      "root_cause": "The retry strategy waited for a period, but the required infrastructure component (namespace 'zen') was never created or available.",
+      "fix": "Verify pre-requisites for namespace existence before executing proxy configuration commands.",
+      "suite": "",
+      "last_seen": "2026-08-18T05:44:22.711965+00:00"
+    },
+    "HTTP 400 on proxy (localhost:3128) and 502/400 on NO-PROXY during retries": {
+      "root_cause": "Persistent infrastructure misconfiguration or incomplete configuration validation logic in the retry strategy.",
+      "fix": "Investigate Squid logs for reason of 400s and verify environment variables specifically for proxy port consistency.",
+      "suite": "",
+      "last_seen": "2026-08-18T05:50:31.150242+00:00"
+    },
+    "\"Connection to.*closed by remote host. client_loop: send disconnect: Broken pipe\"": {
+      "root_cause": "The 'oc' command failed due to a network timeout or broken pipe while waiting for resources in the cluster.",
+      "fix": "Implement keep-alive settings for the ssh/oc session or increase the timeout threshold for resource appearance checks.",
+      "suite": "",
+      "last_seen": "2026-08-18T12:13:00.320776+00:00"
+    },
+    "\"You must specify the --cpd_instance_ns option\"": {
+      "root_cause": "The flag --cpd_instance_ns was passed empty in the command execution.",
+      "fix": "Ensure the configuration tool populates the --cpd_instance_ns parameter before executing create-proxy-config.",
+      "suite": "",
+      "last_seen": "2026-08-18T12:13:00.322666+00:00"
+    },
+    "bash: script.sh: No such file or directory": {
+      "root_cause": "The execution environment cannot find 'script.sh' because of an incorrect path or missing file in the repository/environment.",
+      "fix": "Ensure 'script.sh' is present in the expected directory and that paths are absolute or correctly relative to the execution root.",
+      "suite": "",
+      "last_seen": "2026-08-18T12:13:00.324205+00:00"
+    },
+    "oc get [resource] -n ds returns not found for multiple core components": {
+      "root_cause": "Deployment of underlying services is incomplete or failed in the 'ds' namespace, causing the retry with timeout increase to be ineffective.",
+      "fix": "Verify infrastructure deployment status before running tests; check if critical resources like WOService are correctly provisioned in the target namespace.",
+      "suite": "",
+      "last_seen": "2026-08-18T11:51:03.373281+00:00"
+    },
+    "\"oc get [sub|csv] -n cpd-ops | grep datastage\"": {
+      "root_cause": "Script entered 7200s retry loop because expected resources were not found in the namespace; lack of 'resource exists' check before attempt.",
+      "fix": "Add a count check or existence verification before entering wait loops to allow immediate failure/skip if objects are already gone.",
+      "suite": "",
+      "last_seen": "2026-08-18T14:35:41.921488+00:00"
+    },
+    "ssh: connect to host ... port 22: Operation timed out": {
+      "root_cause": "Network connectivity issue or firewall blocking the SSH connection to the target server.",
+      "fix": "Check VPN status, verify the host IP is reachable, and ensure port 22 is open in the network security groups.",
+      "suite": "",
+      "last_seen": "2026-08-18T16:52:04.804785+00:00"
+    },
+    "ssh: connect to host api.mycluster.example.com port 22: Operation timed out": {
+      "root_cause": "Detected in suite sre_tests_utility_shutdown_restart",
+      "fix": "",
+      "suite": "sre_tests_utility_shutdown_restart",
+      "last_seen": "2026-08-18T14:39:07.340431+00:00"
+    },
+    "ssh: connect to host .* port 22: Operation timed out": {
+      "root_cause": "Network reachability issue or firewall blocking SSH traffic to the remote server.",
+      "fix": "Verify network connectivity, check if VPN is active, and ensure the destination port 22 is open in the security groups.",
+      "suite": "",
+      "last_seen": "2026-08-18T14:48:33.845635+00:00"
+    },
+    "\"ssh: connect to host .* port 22: Operation timed out\"": {
+      "root_cause": "Network unreachable or target server down/firewalled on port 22.",
+      "fix": "Verify infrastructure connectivity, VPN status, and check if the remote host whitelist is correct.",
+      "suite": "",
+      "last_seen": "2026-08-18T14:45:34.237547+00:00"
+    },
+    "ssh: Could not resolve hostname .* nodename nor servname provided, or not known": {
+      "root_cause": "DNS resolution failure for an internal/private endpoint.",
+      "fix": "Verify network connectivity and local /etc/hosts or DNS server configuration to ensure the correct hostnames are resolvable.",
+      "suite": "",
+      "last_seen": "2026-08-19T01:33:02.409086+00:00"
+    },
+    "ssh: Could not resolve hostname ... no_resolution": {
+      "root_cause": "DNS resolution failed; timeout increases do not fix unreachable hostnames.",
+      "fix": "Verify DNS configuration or internal network connectivity instead of retrying with timeouts.",
+      "suite": "",
+      "last_seen": "2026-08-19T05:06:45.600654+00:00"
+    },
+    "ssh: Could not resolve hostname .* : nodename nor servname provided, or not known": {
+      "root_cause": "DNS resolution failure for the specified host in an SSH command.",
+      "fix": "Verify network connectivity and ensure the target hostname is correct and reachable via DNS.",
+      "suite": "",
+      "last_seen": "2026-08-27T17:22:24.658197+00:00"
+    },
+    "\"ssh: Could not resolve hostname .* no_resolve\"": {
+      "root_cause": "DNS resolution failed for the target host, potentially due to network reachability or incorrect endpoint configuration.",
+      "fix": "Verify the domain's existence and ensure valid DNS in the environment; check if internal firewalls/VPNs are blocking requests.",
+      "suite": "",
+      "last_seen": "2026-08-27T17:22:24.656214+00:00"
+    },
+    "[WARN] .* not found followed by [TIMED OUT after 3600s]": {
+      "root_cause": "Critical custom resources (WOService, wmlbase, datarefinery, ws) were missing from the 'ds' namespace.",
+      "fix": "Verify resource deployment and ensure all required CRDs/Resources are present in the target namespace before execution.",
+      "suite": "",
+      "last_seen": "2026-08-27T17:22:24.652101+00:00"
+    },
+    "error: the server doesn't have a resource type \"datastage_ent_plus\"": {
+      "root_cause": "The Kubernetes cluster lacks the Custom Resource Definitions (CRDs) for 'datastage_ent_plus', or the local context is not pointing to a cluster where these are installed.",
+      "fix": "Verify and install required CRDs before running tests; ensure correct Kubeconfig context for Datastage resources.",
+      "suite": "",
+      "last_seen": "2026-08-27T17:22:24.654203+00:00"
+    },
+    "[TIMED OUT after 3600s] during component wait loop": {
+      "root_cause": "The extended timeout was still insufficient for the resources to become available, or the resource availability is blocked by an underlying system issue.",
+      "fix": "Increase timeout threshold further or investigate backend provisioning delay of datarefinery and WOService components.",
+      "suite": "",
+      "last_seen": "2026-08-27T16:59:54.139416+00:00"
+    },
+    "\"error: the server doesn't have a resource type \\\"datastage_ent_plus\\\"\"": {
+      "root_cause": "The error is caused by missing CRDs or an incorrect Kubernetes context, which is independent of authentication tokens.",
+      "fix": "Use a strategy that verifies/installs CRDs or switches to the correct Kubeconfig context before proceeding.",
+      "suite": "",
+      "last_seen": "2026-08-27T17:12:24.612934+00:00"
+    },
+    "curl: (6) Could not resolve host: .*": {
+      "root_cause": "DNS resolution failed for the cluster endpoint, likely due to incorrect networking configuration or unreachable internal domain.",
+      "fix": "Ensure the environment has appropriate VPN/network access and that internal .example.com domains are resolvable by the local DNSer.",
+      "suite": "",
+      "last_seen": "2026-09-04T10:54:43.218750+00:00"
+    },
+    "[TIMED OUT after 3600s] during pod settlement": {
+      "root_cause": "The global timeout of 3600 seconds was reached while waiting for pods to settle or complete operations.",
+      "fix": "Increase the shell sleep/wait limits or adjust the CI environment's overall timeout threshold for long-running deployment tasks.",
+      "suite": "",
+      "last_seen": "2026-09-04T13:47:34.021046+00:00"
+    },
+    "\"oc get datastage ... not found\" followed by \"[TIMED OUT]\"": {
+      "root_cause": "The resource 'datastage/datastage' was not created or became available in the 'zen' namespace within the 3600s timeout.",
+      "fix": "Verify that the Datastage resource is correctly deployed and provisioned before running automated tests; increase HPA test wait times if deployment takes longer than 1 hour.",
+      "suite": "",
+      "last_seen": "2026-09-04T14:57:41.317760+00:00"
+    }
+  },
+  "fix_recipes": {
+    "[ERROR] Usage: Node-Pinning.sh <components_csv> [entitlement options]": {
+      "steps": [
+        "Ensure the command includes the required CSV file path as the first argument for the Node-Pinning.sh script."
+      ],
+      "added_at": "2026-08-06T06:57:00.883605+00:00"
+    },
+    "\"container name \\\"olm-utils-play-v4\\\" is already in use\"": {
+      "steps": [
+        "Update the podman create command to include the --replace flag or ensure `podman rm -f` is called before creation."
+      ],
+      "added_at": "2026-08-06T08:30:09.286002+00:00"
+    },
+    "\"curl: (6) Could not resolve host\"": {
+      "steps": [
+        "Verify DNS configuration, VPN connectivity, or whitelist the target domain in the network's allowed list."
+      ],
+      "added_at": "2026-09-04T12:45:05.287314+00:00"
+    },
+    "\"[ERROR] Usage: Node-Pinning.sh <components_csv>\"": {
+      "steps": [
+        "Ensure the command includes the required CSV file path as the first argument when calling Node-Pinning.sh."
+      ],
+      "added_at": "2026-08-06T07:09:30.170157+00:00"
+    },
+    "\"error: You must be logged in to the server (Unauthorized)\"": {
+      "steps": [
+        "Ensure the authentication token is cached and active before executing cluster-wide commands."
+      ],
+      "added_at": "2026-08-06T09:51:54.324187+00:00"
+    },
+    "fatal: Authentication failed for 'https://git.example.com/...git/'": {
+      "steps": [
+        "Ensure the environment has configured git credentials (e.g., via SSH keys or a Personal Access Token) or use an authenticated URL in the configuration."
+      ],
+      "added_at": "2026-08-06T07:41:07.466157+00:00"
+    },
+    "\"parsing reference \\\"/cpd-cli-workspace/...\\\" invalid reference format\"": {
+      "steps": [
+        "Escape or quote variable paths containing spaces or special characters before passing them to the container engine."
+      ],
+      "added_at": "2026-08-06T08:30:42.642151+00:00"
+    },
+    "bash: line 1: cd: /root/DS_Hermes_Framework/... : No such file or directory": {
+      "steps": [
+        "Replace hardcoded absolute paths with relative paths or use environment variables to resolve base workspace paths."
+      ],
+      "added_at": "2026-08-06T08:55:40.610812+00:00"
+    },
+    "\"bash: line 1: cd: /root/... : No such file or directory\"": {
+      "steps": [
+        "Update the paths in the test suite configuration to use relative paths or correctly configured project-relative absolute paths instead of hardcoded root paths."
+      ],
+      "added_at": "2026-08-06T08:56:16.813717+00:00"
+    },
+    "cd: /root/DS_Hermes_Framework/... : No such file or directory": {
+      "steps": [
+        "Update configuration or path mapping to use dynamic relative paths or verify mount points before performing 'cd' operations."
+      ],
+      "added_at": "2026-08-06T08:56:18.547598+00:00"
+    },
+    "bash: line 1: cd: /root/... : No such file or directory": {
+      "steps": [
+        "Update the configuration or paths for this test suite to use relative paths or valid environment-specific directories."
+      ],
+      "added_at": "2026-08-06T08:56:22.477191+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when other services are still active\"": {
+      "steps": [
+        "Implement a manual sequence of stopping all sub-services before calling the platform shutdown, rather than relying on config validation."
+      ],
+      "added_at": "2026-08-06T10:33:14.566957+00:00"
+    },
+    "login success followed by \"Unauthorized\" in next command": {
+      "steps": [
+        "Add a wait period after login or verify kubeconfig presence before proceeding"
+      ],
+      "added_at": "2026-08-06T09:41:54.296648+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services still active.\"": {
+      "steps": [
+        "Ensure all dependent services are stopped before attempting to shut down cpd_platform, and add a verification step/sleep for process termination."
+      ],
+      "added_at": "2026-08-06T10:40:01.179894+00:00"
+    },
+    "\"[ERROR] No addOnId mapping for component: [INFO] Auto-detecting...\"": {
+      "steps": [
+        "Update parsing regex in verify_pinning_report to strip common prefixes like '[INFO]' or ignore lines containing multi-log status markers before passing values to get_addon_id."
+      ],
+      "added_at": "2026-08-06T10:40:01.178960+00:00"
+    },
+    "\"No addOnId mapping for component: [INFO] Auto-detecting...\"": {
+      "steps": [
+        "Sanitize captured strings or use a stricter regex to extract only formal identifiers before passing them to `get_addon_id`."
+      ],
+      "added_at": "2026-08-06T10:38:14.294117+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services active.\"": {
+      "steps": [
+        "Ensure all dependent services are in a 'stopped' state before initiating the cpd_platform shutdown command."
+      ],
+      "added_at": "2026-08-06T11:02:49.022746+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when there are other services still active\"": {
+      "steps": [
+        "Replace 'retry_after_wait' with an explicit, deterministic sequence that shuts down all sub-services before attempting platform shutdown."
+      ],
+      "added_at": "2026-08-06T11:15:50.442846+00:00"
+    },
+    "\"unhashable type: '_AnsibleLazyTemplateList' in filter 'get_uninstall_order'\"": {
+      "steps": [
+        "Ensure the inputs to get_uninstall_order are explicitly cast/processed before use, or update the filter logic to handle LazyTemplateList types."
+      ],
+      "added_at": "2026-08-06T11:40:25.355383+00:00"
+    },
+    "--components=<comma separated component names> argument is required": {
+      "steps": [
+        "Ensure 'COMPONENTS_SHUTDOWN_RESTART' array/variable contains at least one valid component before calling the shutdown command."
+      ],
+      "added_at": "2026-08-06T12:00:48.719876+00:00"
+    },
+    "\"parsing reference \\\"/cpd...\\\": invalid reference format\"": {
+      "steps": [
+        "Wrap paths containing spaces in quotes or escape them in the configuration for volume mounts."
+      ],
+      "added_at": "2026-08-07T09:40:47.062575+00:00"
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when other services are still active.\"": {
+      "steps": [
+        "Adjust the Ansible task order or logic in /opt/ansible/ansible-play/roles/utils/tasks/shutdown.yml to ensure all dependent services are stopped before 'cpd_platform'."
+      ],
+      "added_at": "2026-08-07T10:48:50.737184+00:00"
+    },
+    "DataStage status remains \"InProgress\" and hits 3600s timeout during shutdown/restart cycle.": {
+      "steps": [
+        "Increase the heartbeat check duration or investigate the specific Datastage resource hanging on task completion."
+      ],
+      "added_at": "2026-08-08T19:20:48.174429+00:00"
+    },
+    "\"parsing reference \\\"*\\\": invalid reference format\"": {
+      "steps": [
+        "Wrap any paths containing spaces or special characters in quotes or remove the whitespace from directory names/paths."
+      ],
+      "added_at": "2026-08-10T07:20:28.841782+00:00"
+    },
+    "datastage status \"Failed\" inside a loop leading to 3600s timeout": {
+      "steps": [
+        "Implement proactive failure handling; if `oc get datastage` returns 'Failed', fail the test immediately rather than looping until a global timeout is reached."
+      ],
+      "added_at": "2026-08-10T07:20:28.842913+00:00"
+    },
+    "cd: /root/... : No such file or directory": {
+      "steps": [
+        "Verify and mount the correct path or update the configuration to use a relative/known path."
+      ],
+      "added_at": "2026-08-10T07:20:28.843757+00:00"
+    },
+    "cd: /root/.../Utility : No such file or directory": {
+      "steps": [
+        "Verify and normalize all shell-executed paths in config files, ensuring they are stripped of whitespace and correspond to existing directories."
+      ],
+      "added_at": "2026-08-10T07:00:29.854873+00:00"
+    },
+    "bash: line 1: cd: ... No such file or directory": {
+      "steps": [
+        "Update the base environment configuration to use correct absolute paths and verify paths exist before execution."
+      ],
+      "added_at": "2026-08-10T07:10:28.875410+00:00"
+    },
+    "/root/cp4d-install-automation/source_env.sh: No such file or directory": {
+      "steps": [
+        "Verify if the directory and file exist before sourcing, or ensure the installation scripts are correctly mapped to the environment's path."
+      ],
+      "added_at": "2026-08-15T07:24:43.211405+00:00"
+    },
+    "Error from server (NotFound): datastage.example.com \"datastage\" not found": {
+      "steps": [
+        "Verify the existence of the 'datastage' resource in the 'ds' namespace or update the script to check for resource presence before patching."
+      ],
+      "added_at": "2026-08-17T10:34:58.003891+00:00"
+    },
+    "\"bash: node_pinning.sh: No such file or directory\"": {
+      "steps": [
+        "Verify and update the absolute path of 'node_pinning.sh' in the test runner configuration."
+      ],
+      "added_at": "2026-08-14T13:11:03.319121+00:00"
+    },
+    "\"Error: getting username and password: reading password: inappropriate ioctl for device\"": {
+      "steps": [
+        "Set the KUBECONFIG or provide credentials via env vars/files instead of prompts, or use a non-interactive flag if supported by the CLI tool."
+      ],
+      "added_at": "2026-08-18T03:36:44.874448+00:00"
+    },
+    "HTTP 400 when using proxy localhost:3128": {
+      "steps": [
+        "Verify local proxy configuration on port 3128 and ensure it accepts requests from the test runner."
+      ],
+      "added_at": "2026-08-14T13:11:03.317885+00:00"
+    },
+    "bash: node_pinning.sh: No such file or directory (exit 127)": {
+      "steps": [
+        "Implement specific logic to check for file existence and verify PATH before retrying, or check if the runner path should be updated in configuration."
+      ],
+      "added_at": "2026-08-14T12:45:22.213379+00:00"
+    },
+    "HTTP 400 on proxy localhost:3128 during proxy setup test": {
+      "steps": [
+        "Investigate specifically why the local squid/proxy returns a 400; check port accessibility and request formatting in the test script."
+      ],
+      "added_at": "2026-08-14T12:56:13.392866+00:00"
+    },
+    "source_env.sh: No such file or directory": {
+      "steps": [
+        "Update script to use absolute path: source /root/cp4d-install-automation/source_env.sh 2>/dev/null"
+      ],
+      "added_at": "2026-08-15T00:00:00+00:00"
+    },
+    "No such file or directory .sh case mismatch": {
+      "steps": [
+        "Run ls to find the actual filename",
+        "Correct the case in the command to match the real file"
+      ],
+      "added_at": "2026-08-15T00:00:00+00:00"
+    },
+    "datastage.example.com \"datastage\" not found": {
+      "steps": [
+        "Skip DataStage-specific tests on clusters without DataStage installed"
+      ],
+      "added_at": "2026-08-15T00:00:00+00:00"
+    },
+    "cpd_platform cannot be shutdown": {
+      "steps": [
+        "Remove cpd_platform from COMPONENTS_SHUTDOWN_RESTART in source_env.sh, or shut down dependent services first"
+      ],
+      "added_at": "2026-08-15T00:00:00+00:00"
+    },
+    "i#!/bin/bash: No such file or directory": {
+      "steps": [
+        "Fix line 1 of the script to #!/bin/bash"
+      ],
+      "added_at": "2026-08-15T00:00:00+00:00"
+    },
+    "bash: node_pinning.sh: No such file or directory": {
+      "steps": [
+        "Use an absolute path to node_pinning.sh in the configuration and verify its presence on disk before execution."
+      ],
+      "added_at": "2026-08-15T07:51:38.410601+00:00"
+    },
+    "Error: getting username and password: reading password: inappropriate ioctl for device": {
+      "steps": [
+        "Replace shell-based prompts with environment variables or configuration files to bypass stdin requirements."
+      ],
+      "added_at": "2026-08-17T16:44:22.120611+00:00"
+    },
+    "\"HTTP 400 on localhost:3128 proxy request\"": {
+      "steps": [
+        "Verify squid configuration and ensure requests are being formatted correctly for the local proxy listener."
+      ],
+      "added_at": "2026-08-15T07:40:46.988102+00:00"
+    },
+    "Proxy setup failed despite retry (HTTP 400 on proxy, inconsistent DNS/routing)": {
+      "steps": [
+        "Verify the squid proxy configuration at localhost:3128 and check for environment variable leaky settings affecting DNS resolution."
+      ],
+      "added_at": "2026-08-15T08:02:08.256145+00:00"
+    },
+    "suite=sre_tests_utility_hpa_test_hpa_automation; exit_code=1, duration=0s": {
+      "steps": [
+        "Use a targeted remediation step to verify file paths or script configurations before execution rather than blindly retrying."
+      ],
+      "added_at": "2026-08-15T08:06:47.798596+00:00"
+    },
+    "\"oc get ... not found in namespace ds\"": {
+      "steps": [
+        "Increase timeout duration for resource availability or verify deployment status of WOService and other core components before running tests."
+      ],
+      "added_at": "2026-08-17T10:34:57.998581+00:00"
+    },
+    "Proxy localhost:3128 returns HTTP 400 on valid IP (e.g., 10.0.0.20)": {
+      "steps": [
+        "Verify squid.conf configuration and ensure the local proxy instance is correctly bound to port 3128 with appropriate ACLs."
+      ],
+      "added_at": "2026-08-17T10:34:58.002003+00:00"
+    },
+    "[WARN] ... not found (multiple resources missing during hpa check)": {
+      "steps": [
+        "Verify pre-requisite resource existence in 'ds' namespace before proceeding with HPA/automation tests."
+      ],
+      "added_at": "2026-08-17T10:12:57.265376+00:00"
+    },
+    "Proxy returns HTTP 400 despite config_validation retry": {
+      "steps": [
+        "Implement a more robust validation that checks connection handshake and credential acceptance before accepting the proxy setup as valid."
+      ],
+      "added_at": "2026-08-17T10:24:57.968840+00:00"
+    },
+    "[TIMED OUT after 3600s]": {
+      "steps": [
+        "Increase the timeout threshold or optimize the polling logic/inter-check sleep times in the restart script."
+      ],
+      "added_at": "2026-08-18T03:36:44.877931+00:00"
+    },
+    "\"oc get * not found\" (Timeout after 3600s)": {
+      "steps": [
+        "Verify that all dependent k8s resources are deployed and healthy before starting the automation suite; increase timeout if deployments are slow."
+      ],
+      "added_at": "2026-08-18T03:36:44.872984+00:00"
+    },
+    "Proxy localhost:3128 returns HTTP 400 for direct hostnames via curl": {
+      "steps": [
+        "Verify and synchronize the Squid/proxy configuration rules for valid domains like example.com."
+      ],
+      "added_at": "2026-08-18T03:36:44.875920+00:00"
+    },
+    "Proxy connection via localhost:3128 returns 400 status for specific target IPs/hostnames.": {
+      "steps": [
+        "Investigate upstream proxy server logs and configurations to determine why HTTP 400 is returned; verify if the target endpoint requires specific headers or handles certain hostnames differently."
+      ],
+      "added_at": "2026-08-17T16:58:27.664901+00:00"
+    },
+    "suite=sre_tests_utility_hpa_test_hpa_automation, exit_code=1, duration=0s": {
+      "steps": [
+        "Verify all environmental variables provided to the HPA automation script and ensure helper utilities are in the system PATH."
+      ],
+      "added_at": "2026-08-18T06:08:31.249053+00:00"
+    },
+    "Error from server (NotFound): ... namespaces \"zen\" not found": {
+      "steps": [
+        "Ensure the namespace 'zen' is created before running the test suite or verify config for correct namespace name."
+      ],
+      "added_at": "2026-08-18T06:08:31.251328+00:00"
+    },
+    "Proxy localhost:3128 returned HTTP 400 during curl attempt": {
+      "steps": [
+        "Verify the configuration of the local Squid/proxy service at port 3128 and ensure it accepts incoming requests from the test runner."
+      ],
+      "added_at": "2026-08-18T06:08:31.253260+00:00"
+    },
+    "Error from server (NotFound): error when creating \"STDIN\": namespaces \"zen\" not found": {
+      "steps": [
+        "Verify pre-requisites for namespace existence before executing proxy configuration commands."
+      ],
+      "added_at": "2026-08-18T05:44:22.714631+00:00"
+    },
+    "HTTP 400 on proxy (localhost:3128) and 502/400 on NO-PROXY during retries": {
+      "steps": [
+        "Investigate Squid logs for reason of 400s and verify environment variables specifically for proxy port consistency."
+      ],
+      "added_at": "2026-08-18T05:50:31.151675+00:00"
+    },
+    "\"Connection to.*closed by remote host. client_loop: send disconnect: Broken pipe\"": {
+      "steps": [
+        "Implement keep-alive settings for the ssh/oc session or increase the timeout threshold for resource appearance checks."
+      ],
+      "added_at": "2026-08-18T12:13:00.321280+00:00"
+    },
+    "\"You must specify the --cpd_instance_ns option\"": {
+      "steps": [
+        "Ensure the configuration tool populates the --cpd_instance_ns parameter before executing create-proxy-config."
+      ],
+      "added_at": "2026-08-18T12:13:00.323094+00:00"
+    },
+    "bash: script.sh: No such file or directory": {
+      "steps": [
+        "Ensure 'script.sh' is present in the expected directory and that paths are absolute or correctly relative to the execution root."
+      ],
+      "added_at": "2026-08-18T12:13:00.324621+00:00"
+    },
+    "oc get [resource] -n ds returns not found for multiple core components": {
+      "steps": [
+        "Verify infrastructure deployment status before running tests; check if critical resources like WOService are correctly provisioned in the target namespace."
+      ],
+      "added_at": "2026-08-18T11:51:03.374537+00:00"
+    },
+    "\"oc get [sub|csv] -n cpd-ops | grep datastage\"": {
+      "steps": [
+        "Add a count check or existence verification before entering wait loops to allow immediate failure/skip if objects are already gone."
+      ],
+      "added_at": "2026-08-18T14:35:41.923163+00:00"
+    },
+    "ssh: connect to host ... port 22: Operation timed out": {
+      "steps": [
+        "Check VPN status, verify the host IP is reachable, and ensure port 22 is open in the network security groups."
+      ],
+      "added_at": "2026-08-18T16:52:04.814265+00:00"
+    },
+    "ssh: connect to host .* port 22: Operation timed out": {
+      "steps": [
+        "Verify network connectivity, check if VPN is active, and ensure the destination port 22 is open in the security groups."
+      ],
+      "added_at": "2026-08-18T14:48:33.846809+00:00"
+    },
+    "\"ssh: connect to host .* port 22: Operation timed out\"": {
+      "steps": [
+        "Verify infrastructure connectivity, VPN status, and check if the remote host whitelist is correct."
+      ],
+      "added_at": "2026-08-18T14:45:34.238764+00:00"
+    },
+    "ssh: Could not resolve hostname .* nodename nor servname provided, or not known": {
+      "steps": [
+        "Verify network connectivity and local /etc/hosts or DNS server configuration to ensure the correct hostnames are resolvable."
+      ],
+      "added_at": "2026-08-19T01:33:02.410959+00:00"
+    },
+    "ssh: Could not resolve hostname ... no_resolution": {
+      "steps": [
+        "Verify DNS configuration or internal network connectivity instead of retrying with timeouts."
+      ],
+      "added_at": "2026-08-19T05:06:45.602620+00:00"
+    },
+    "ssh: Could not resolve hostname .* : nodename nor servname provided, or not known": {
+      "steps": [
+        "Verify network connectivity and ensure the target hostname is correct and reachable via DNS."
+      ],
+      "added_at": "2026-08-27T17:22:24.658727+00:00"
+    },
+    "\"ssh: Could not resolve hostname .* no_resolve\"": {
+      "steps": [
+        "Verify the domain's existence and ensure valid DNS in the environment; check if internal firewalls/VPNs are blocking requests."
+      ],
+      "added_at": "2026-08-27T17:22:24.656792+00:00"
+    },
+    "[WARN] .* not found followed by [TIMED OUT after 3600s]": {
+      "steps": [
+        "Verify resource deployment and ensure all required CRDs/Resources are present in the target namespace before execution."
+      ],
+      "added_at": "2026-08-27T17:22:24.653097+00:00"
+    },
+    "error: the server doesn't have a resource type \"datastage_ent_plus\"": {
+      "steps": [
+        "Verify and install required CRDs before running tests; ensure correct Kubeconfig context for Datastage resources."
+      ],
+      "added_at": "2026-08-27T17:22:24.654770+00:00"
+    },
+    "[TIMED OUT after 3600s] during component wait loop": {
+      "steps": [
+        "Increase timeout threshold further or investigate backend provisioning delay of datarefinery and WOService components."
+      ],
+      "added_at": "2026-08-27T16:59:54.141736+00:00"
+    },
+    "\"error: the server doesn't have a resource type \\\"datastage_ent_plus\\\"\"": {
+      "steps": [
+        "Use a strategy that verifies/installs CRDs or switches to the correct Kubeconfig context before proceeding."
+      ],
+      "added_at": "2026-08-27T17:12:24.614195+00:00"
+    },
+    "curl: (6) Could not resolve host: .*": {
+      "steps": [
+        "Ensure the environment has appropriate VPN/network access and that internal .example.com domains are resolvable by the local DNSer."
+      ],
+      "added_at": "2026-09-04T10:54:43.220874+00:00"
+    },
+    "[TIMED OUT after 3600s] during pod settlement": {
+      "steps": [
+        "Increase the shell sleep/wait limits or adjust the CI environment's overall timeout threshold for long-running deployment tasks."
+      ],
+      "added_at": "2026-09-04T13:47:34.022599+00:00"
+    },
+    "\"oc get datastage ... not found\" followed by \"[TIMED OUT]\"": {
+      "steps": [
+        "Verify that the Datastage resource is correctly deployed and provisioned before running automated tests; increase HPA test wait times if deployment takes longer than 1 hour."
+      ],
+      "added_at": "2026-09-04T14:57:41.319664+00:00"
+    }
+  },
+  "remediation_ledger": {
+    "[ERROR] Usage: Node-Pinning.sh <components_csv> [entitlement options]": {
+      "first_seen": "2026-08-06T07:04:42.349909+00:00",
+      "last_seen": "2026-08-06T07:04:42.349909+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T07:07:48.743994+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 6.4,
+          "history": [
+            {
+              "run_id": "run-20260806-121414",
+              "suite": "sre_tests_utility__node_pinning",
+              "outcome": "failure",
+              "duration_sec": 6.38,
+              "timestamp": "2026-08-06T07:07:48.743994+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility__node_pinning"
+      ]
+    },
+    "sre_tests_utility__shutdown_restart": {
+      "first_seen": "2026-08-06T07:30:28.310324+00:00",
+      "last_seen": "2026-08-06T07:30:28.310324+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T07:30:28.310305+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 1078.1,
+          "history": [
+            {
+              "run_id": "run-20260806-121414",
+              "suite": "sre_tests_utility__shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 1078.12,
+              "timestamp": "2026-08-06T07:30:28.310305+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility__shutdown_restart"
+      ]
+    },
+    "\"Component 'cpd_platform' cannot be shutdown when other services are still active\"": {
+      "first_seen": "2026-08-06T09:23:39.078777+00:00",
+      "last_seen": "2026-08-06T11:08:09.555147+00:00",
+      "occurrences": 3,
+      "strategies": {
+        "token_refresh": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T09:34:47.869384+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 488.8,
+          "history": [
+            {
+              "run_id": "run-20260806-142633",
+              "suite": "sre_tests_utility__shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 488.78,
+              "timestamp": "2026-08-06T09:34:47.869384+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "config_validation": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T10:31:26.374746+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 484.6,
+          "history": [
+            {
+              "run_id": "run-20260806-152330",
+              "suite": "sre_tests_utility__shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 484.64,
+              "timestamp": "2026-08-06T10:31:26.374746+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_after_wait": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T11:13:58.750059+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 169.2,
+          "history": [
+            {
+              "run_id": "run-20260806-161013",
+              "suite": "sre_tests_utility__shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 169.18,
+              "timestamp": "2026-08-06T11:13:58.750059+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "token_refresh",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility__shutdown_restart"
+      ]
+    },
+    "sre_tests_utility__node_pinning": {
+      "first_seen": "2026-08-06T09:39:46.147228+00:00",
+      "last_seen": "2026-08-06T09:39:46.147228+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "token_refresh": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T09:39:46.147207+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 6.0,
+          "history": [
+            {
+              "run_id": "run-20260806-142633",
+              "suite": "sre_tests_utility__node_pinning",
+              "outcome": "failure",
+              "duration_sec": 6.03,
+              "timestamp": "2026-08-06T09:39:46.147207+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "config_validation": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-06T10:36:21.880105+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 7.3,
+          "history": [
+            {
+              "run_id": "run-20260806-152330",
+              "suite": "sre_tests_utility__node_pinning",
+              "outcome": "failure",
+              "duration_sec": 7.3,
+              "timestamp": "2026-08-06T10:36:21.880105+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "token_refresh",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility__node_pinning"
+      ]
+    },
+    "sre_tests_utility_shutdown_restart": {
+      "first_seen": "2026-08-08T15:09:55.945537+00:00",
+      "last_seen": "2026-08-08T15:09:55.945537+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-10T07:03:36.412855+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 3.3,
+          "history": [
+            {
+              "run_id": "run-20260807-162200",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 0.14,
+              "timestamp": "2026-08-08T15:09:55.945514+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260810-111204",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 6.51,
+              "timestamp": "2026-08-10T07:03:36.412855+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-27T13:58:34.116627+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 1043.2,
+          "history": [
+            {
+              "run_id": "run-20260827-164335",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "success",
+              "duration_sec": 1043.17,
+              "timestamp": "2026-08-27T13:58:34.116627+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_shutdown_restart"
+      ]
+    },
+    "sre_tests_utility_uninstall": {
+      "first_seen": "2026-08-08T16:07:14.558780+00:00",
+      "last_seen": "2026-08-08T16:07:14.558780+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-19T04:42:21.402912+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 0.2,
+          "history": [
+            {
+              "run_id": "run-20260807-162200",
+              "suite": "sre_tests_utility_uninstall",
+              "outcome": "failure",
+              "duration_sec": 0.11,
+              "timestamp": "2026-08-08T16:07:14.558741+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260818-174536",
+              "suite": "sre_tests_utility_uninstall",
+              "outcome": "failure",
+              "duration_sec": 0.35,
+              "timestamp": "2026-08-19T04:42:21.402912+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-10T07:08:23.622672+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 6.4,
+          "history": [
+            {
+              "run_id": "run-20260810-111204",
+              "suite": "sre_tests_utility_uninstall",
+              "outcome": "failure",
+              "duration_sec": 6.39,
+              "timestamp": "2026-08-10T07:08:23.622672+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_with_timeout_increase",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_uninstall"
+      ]
+    },
+    "sre_tests_utility_node_pinning": {
+      "first_seen": "2026-08-10T06:58:51.307850+00:00",
+      "last_seen": "2026-08-10T06:58:51.307850+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "config_validation": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-10T06:58:51.307825+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 4.9,
+          "history": [
+            {
+              "run_id": "run-20260810-111204",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "failure",
+              "duration_sec": 4.91,
+              "timestamp": "2026-08-10T06:58:51.307825+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_blind": {
+          "attempts": 2,
+          "successes": 1,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.5,
+          "last_used": "2026-08-27T14:08:02.533081+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 139.4,
+          "history": [
+            {
+              "run_id": "run-20260814-174201",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "failure",
+              "duration_sec": 4.47,
+              "timestamp": "2026-08-14T12:43:39.784193+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260827-164335",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 274.36,
+              "timestamp": "2026-08-27T14:08:02.533081+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_node_pinning"
+      ]
+    },
+    "Error from server (NotFound): datastage.example.com \"datastage\" not found": {
+      "first_seen": "2026-08-14T12:35:43.039515+00:00",
+      "last_seen": "2026-08-17T09:06:57.101444+00:00",
+      "occurrences": 4,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 3,
+          "successes": 0,
+          "failures": 3,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-17T09:04:43.639850+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 15.8,
+          "history": [
+            {
+              "run_id": "run-20260814-174201",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 5.73,
+              "timestamp": "2026-08-14T12:38:48.779309+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260815-124527",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 20.87,
+              "timestamp": "2026-08-15T07:45:05.896613+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260817-115310",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 20.7,
+              "timestamp": "2026-08-17T09:04:43.639850+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-17T10:10:11.799569+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 3614.7,
+          "history": [
+            {
+              "run_id": "run-20260817-115310",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 3614.68,
+              "timestamp": "2026-08-17T10:10:11.799569+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_shutdown_restart",
+        "sre_tests_utility_hpa_test_hpa_automation"
+      ]
+    },
+    "sre_tests_utility_http_proxy_proxy_enable": {
+      "first_seen": "2026-08-14T12:48:26.990064+00:00",
+      "last_seen": "2026-08-14T12:48:26.990064+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-14T12:48:26.990043+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 4.8,
+          "history": [
+            {
+              "run_id": "run-20260814-174201",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 4.76,
+              "timestamp": "2026-08-14T12:48:26.990043+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_after_wait": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-18T11:54:31.860685+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 29.3,
+          "history": [
+            {
+              "run_id": "run-20260818-101929",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 30.3,
+              "timestamp": "2026-08-18T05:42:46.470610+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260818-125404",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 28.34,
+              "timestamp": "2026-08-18T11:54:31.860685+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_after_wait",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_proxy_enable"
+      ]
+    },
+    "sre_tests_utility_http_proxy_proxy_setup_test": {
+      "first_seen": "2026-08-14T12:54:13.985585+00:00",
+      "last_seen": "2026-08-14T12:54:13.985585+00:00",
+      "occurrences": 1,
+      "strategies": {},
+      "best_strategy": "config_validation",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_proxy_setup_test"
+      ]
+    },
+    "/root/cp4d-install-automation/source_env.sh: No such file or directory": {
+      "first_seen": "2026-08-14T12:56:13.394292+00:00",
+      "last_seen": "2026-08-15T08:02:08.257586+00:00",
+      "occurrences": 2,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-15T08:05:08.388901+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260814-174201",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 0.04,
+              "timestamp": "2026-08-14T12:59:13.455395+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260815-124527",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 0.05,
+              "timestamp": "2026-08-15T08:05:08.388901+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_hpa_test_hpa_automation"
+      ]
+    },
+    "bash: node_pinning.sh: No such file or directory": {
+      "first_seen": "2026-08-15T07:46:58.676985+00:00",
+      "last_seen": "2026-08-15T07:46:58.676985+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-15T07:50:16.729982+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 18.0,
+          "history": [
+            {
+              "run_id": "run-20260815-124527",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "failure",
+              "duration_sec": 17.97,
+              "timestamp": "2026-08-15T07:50:16.729982+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_node_pinning"
+      ]
+    },
+    "Error: getting username and password: reading password: inappropriate ioctl for device": {
+      "first_seen": "2026-08-15T07:51:38.412376+00:00",
+      "last_seen": "2026-08-17T16:39:39.712094+00:00",
+      "occurrences": 3,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 3,
+          "successes": 0,
+          "failures": 3,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-17T16:42:59.395427+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 19.4,
+          "history": [
+            {
+              "run_id": "run-20260815-124527",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 19.59,
+              "timestamp": "2026-08-15T07:54:58.084058+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260817-115310",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 19.09,
+              "timestamp": "2026-08-17T10:16:16.369907+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260817-171758",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 19.67,
+              "timestamp": "2026-08-17T16:42:59.395427+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_proxy_enable"
+      ]
+    },
+    "i#!/bin/bash: No such file or directory": {
+      "first_seen": "2026-08-15T08:34:51.792189+00:00",
+      "last_seen": "2026-08-15T08:34:51.792189+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "fix_shebang_typo": {
+          "attempts": 3,
+          "successes": 3,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-15T08:34:51.793561+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 2.0,
+          "history": [
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_http_proxy_proxy_setup_test",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.792894+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_http_proxy_proxy_setup_test",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.793246+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_http_proxy_proxy_setup_test",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.793561+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "fix_shebang_typo",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_proxy_setup_test"
+      ]
+    },
+    "source_env.sh: No such file or directory": {
+      "first_seen": "2026-08-15T08:34:51.794057+00:00",
+      "last_seen": "2026-08-15T08:34:51.794057+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "add_source_fallback": {
+          "attempts": 3,
+          "successes": 3,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-15T08:34:51.795189+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 2.0,
+          "history": [
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.794548+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.794888+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.795189+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "add_source_fallback",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_hpa_test_hpa_automation"
+      ]
+    },
+    "No such file or directory .sh case mismatch": {
+      "first_seen": "2026-08-15T08:34:51.795486+00:00",
+      "last_seen": "2026-08-15T08:34:51.795486+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "filename_case_correction": {
+          "attempts": 3,
+          "successes": 3,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-15T08:34:51.796356+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 2.0,
+          "history": [
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.795778+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.796068+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260814",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.796356+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "filename_case_correction",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_node_pinning"
+      ]
+    },
+    "\"bash: node_pinning.sh: No such file or directory\"": {
+      "first_seen": "2026-08-15T08:34:51.796644+00:00",
+      "last_seen": "2026-08-15T08:34:51.796644+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "filename_case_correction": {
+          "attempts": 3,
+          "successes": 3,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-15T08:34:51.797516+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 2.0,
+          "history": [
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.796933+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.797226+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.797516+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "filename_case_correction",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_node_pinning"
+      ]
+    },
+    "bash: node_pinning.sh: No such file or directory (exit 127)": {
+      "first_seen": "2026-08-15T08:34:51.797809+00:00",
+      "last_seen": "2026-08-15T08:34:51.797809+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "filename_case_correction": {
+          "attempts": 3,
+          "successes": 3,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-15T08:34:51.798720+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 2.0,
+          "history": [
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.798110+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.798424+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "manual-fix-20260815",
+              "suite": "sre_tests_utility_node_pinning",
+              "outcome": "success",
+              "duration_sec": 2.0,
+              "timestamp": "2026-08-15T08:34:51.798720+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "filename_case_correction",
+      "confidence": "medium",
+      "suites_affected": [
+        "sre_tests_utility_node_pinning"
+      ]
+    },
+    "[TIMED OUT after 3600s]": {
+      "first_seen": "2026-08-17T14:28:55.120893+00:00",
+      "last_seen": "2026-08-27T14:09:04.434903+00:00",
+      "occurrences": 3,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 3,
+          "successes": 0,
+          "failures": 3,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-27T16:57:44.380493+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 5723.2,
+          "history": [
+            {
+              "run_id": "run-20260817-171758",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "failure",
+              "duration_sec": 3615.23,
+              "timestamp": "2026-08-17T15:32:10.362861+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260817-171758",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 3614.66,
+              "timestamp": "2026-08-17T16:38:02.149357+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260827-164335",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 9939.92,
+              "timestamp": "2026-08-27T16:57:44.380493+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_with_timeout_increase",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_shutdown_restart",
+        "sre_tests_utility_hpa_test_hpa_automation"
+      ]
+    },
+    "sre_tests_utility_hpa_test_hpa_automation": {
+      "first_seen": "2026-08-18T05:53:31.207907+00:00",
+      "last_seen": "2026-08-18T05:53:31.207907+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-18T05:53:31.207897+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260818-101929",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 0.04,
+              "timestamp": "2026-08-18T05:53:31.207897+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-18T11:49:08.282865+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 3615.5,
+          "history": [
+            {
+              "run_id": "run-20260818-125404",
+              "suite": "sre_tests_utility_hpa_test_hpa_automation",
+              "outcome": "failure",
+              "duration_sec": 3615.53,
+              "timestamp": "2026-08-18T11:49:08.282865+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_hpa_test_hpa_automation"
+      ]
+    },
+    "bash: script.sh: No such file or directory": {
+      "first_seen": "2026-08-18T11:58:04.610494+00:00",
+      "last_seen": "2026-08-18T11:58:04.610494+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-18T12:01:24.849633+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 20.2,
+          "history": [
+            {
+              "run_id": "run-20260818-125404",
+              "suite": "sre_tests_utility_http_proxy_source_env",
+              "outcome": "failure",
+              "duration_sec": 20.22,
+              "timestamp": "2026-08-18T12:01:24.849633+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_source_env"
+      ]
+    },
+    "ssh: connect to host api.mycluster.example.com port 22: Operation timed out": {
+      "first_seen": "2026-08-19T05:06:45.604796+00:00",
+      "last_seen": "2026-08-19T05:23:45.315638+00:00",
+      "occurrences": 2,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-08-19T05:22:20.430926+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 754.8,
+          "history": [
+            {
+              "run_id": "run-20260818-174536",
+              "suite": "sre_tests_utility_shutdown_restart",
+              "outcome": "success",
+              "duration_sec": 754.81,
+              "timestamp": "2026-08-19T05:22:20.430926+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_with_timeout_increase",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_shutdown_restart",
+        "sre_tests_utility_zenapi_service_instance_test"
+      ]
+    },
+    "error: the server doesn't have a resource type \"datastage_ent_plus\"": {
+      "first_seen": "2026-08-27T17:00:00.095718+00:00",
+      "last_seen": "2026-08-27T17:00:00.095718+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "token_refresh": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-08-27T17:10:19.383084+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 439.2,
+          "history": [
+            {
+              "run_id": "run-20260827-164335",
+              "suite": "sre_tests_utility_http_proxy_proxy_enable",
+              "outcome": "failure",
+              "duration_sec": 439.16,
+              "timestamp": "2026-08-27T17:10:19.383084+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "token_refresh",
+      "confidence": "low",
+      "suites_affected": [
+        "sre_tests_utility_http_proxy_proxy_enable"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "calls": 8,
+  "success": 8,
+  "errors": 0,
+  "timeouts": 0,
+  "total_time_sec": 49.98,
+  "setup_time_sec": 31.29,
+  "jobs_analyzed": [
+    {
+      "job": "openscale-dashboard-setup",
+      "time_sec": 8.76
+    },
+    {
+      "job": "openscale-dashboard-sanity",
+      "time_sec": 5.26
+    },
+    {
+      "job": "openscale-dashboard-sanity-1-before-upgrade",
+      "time_sec": 4.95
+    },
+    {
+      "job": "openscale-dashboard-sanity-2-verify-existing",
+      "time_sec": 7.2
+    },
+    {
+      "job": "openscale-dashboard-sanity-3-reconfig-existing",
+      "time_sec": 7.46
+    },
+    {
+      "job": "openscale-dashboard-sanity-4-add-after-upgrade",
+      "time_sec": 4.68
+    },
+    {
+      "job": "openscale-dashboard-sanity-parallel",
+      "time_sec": 6.22
+    },
+    {
+      "job": "openscale-ivt-orchestrator",
+      "time_sec": 5.45
+    }
+  ],
+  "error_details": []
+}

@@ -1,0 +1,864 @@
+{
+  "version": 3,
+  "entries": [
+    {
+      "skill": "[critical] unknown flag: --project: The script used a `--project` flag that is not supported by `cpdctl job`.",
+      "source_run": "run-20260716-171112",
+      "category": "config",
+      "added_at": "2026-07-16T11:49:30.963063+00:00"
+    },
+    {
+      "skill": "[critical] unknown flag: --project: The cll tool `cpdctl` does not support the `--project` flag for the specified command.",
+      "source_run": "run-20260716-172052",
+      "category": "config",
+      "added_at": "2026-07-16T11:56:39.400353+00:00"
+    },
+    {
+      "skill": "[critical] \"unknown flag: --project\": The command included a `--project` argument which is not supported by the specific `cpdctl job` subcommand.",
+      "source_run": "run-20260716-172948",
+      "category": "infra",
+      "added_at": "2026-07-16T12:05:45.976102+00:00"
+    },
+    {
+      "skill": "[critical] bash: line 1: cd: /root/DS_Hermes_Framework/...: No such file or directory: The execution environment is looking for a path in the root directory (likely a container or remote machine) that does not exist.",
+      "source_run": "run-20260716-174013",
+      "category": "infra",
+      "added_at": "2026-07-16T12:16:41.954373+00:00"
+    },
+    {
+      "skill": "[high] \"bash: line 1: cd: /root/...: No such file or directory\": The script is trying to access a directory that does not exist on the execution host, likely due to an incorrect hardcoded path in the remote environment.",
+      "source_run": "run-20260716-174013",
+      "category": "infra",
+      "added_at": "2026-07-16T12:21:22.586478+00:00"
+    },
+    {
+      "skill": "Connection Alerts: Identified that OpenSSH post-quantum key exchange warnings do not impact script completion status but indicate future infrastructure maintenance requirements.",
+      "source_run": "run-20260716-181009",
+      "category": "general",
+      "added_at": "2026-07-16T12:56:48.431252+00:00"
+    },
+    {
+      "skill": "Execution Consistency: The wsl_wml_utility suite demonstrated stable execution with a 5s duration, suggesting reliable environment configuration.",
+      "source_run": "run-20260716-181009",
+      "category": "general",
+      "added_at": "2026-07-16T12:56:48.432493+00:00"
+    },
+    {
+      "skill": "Reliability: Test design successfully isolated the primary utility's functionality from optional network security notifications.",
+      "source_run": "run-20260716-181009",
+      "category": "general",
+      "added_at": "2026-07-16T12:56:48.433097+00:00"
+    },
+    {
+      "skill": "[critical] \"bash: line 1: pip3: command not found\": The environment lacks a 'pip3' executable, likely due to an incomplete Python installation or missing path configuration in the execution environment.",
+      "source_run": "run-20260717-104946",
+      "category": "infra",
+      "added_at": "2026-07-17T05:31:00.044662+00:00"
+    },
+    {
+      "skill": "[high] Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt': The execution environment is missing the 'requirements.txt' file at the expected path.",
+      "source_run": "run-20260717-104946",
+      "category": "config",
+      "added_at": "2026-07-17T06:11:04.203769+00:00"
+    },
+    {
+      "skill": "[high] bash: line 1: pip3: command not found (exit code 127): The environment lacks the 'pip3' binary; retry_blind cannot resolve missing package/binary dependencies.",
+      "source_run": "run-20260717-104946",
+      "category": "infra",
+      "added_at": "2026-07-17T06:15:15.227947+00:00"
+    },
+    {
+      "skill": "[high] ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt': The script's configuration refers to a file that does not exist in the local workspace.",
+      "source_run": "run-20260717-104946",
+      "category": "config",
+      "added_at": "2026-07-17T06:19:47.125217+00:00"
+    },
+    {
+      "skill": "[high] \"ERROR: Could not open requirements file: [Errno 2] No such file or directory\": Execution directory doesn't contain the specified 'requirements.txt' file path during a pip install step.",
+      "source_run": "run-20260717-131100",
+      "category": "config",
+      "added_at": "2026-07-17T07:51:53.160199+00:00"
+    },
+    {
+      "skill": "[high] Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt': The script expected a requirements.txt file in the execution path, but it was missing or incorrectly paths to.",
+      "source_run": "run-20260720-114616",
+      "category": "config",
+      "added_at": "2026-07-20T06:37:22.989847+00:00"
+    },
+    {
+      "skill": "[high] Connection to https timed out.*example.com: Network connectivity issue or firewall blocking access to the internal IBM endpoint.",
+      "source_run": "run-20260720-124823",
+      "category": "infra",
+      "added_at": "2026-07-20T07:29:03.349145+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_git_integration_merge_conflict: ModuleNotFoundError: No module named 'Selenium2Library'",
+      "source_run": "run-20260720-124823",
+      "category": "config",
+      "added_at": "2026-07-20T07:29:03.350194+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_git_integration_merge_conflict: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109e82f90>, 'Connec",
+      "source_run": "run-20260720-124823",
+      "category": "infra",
+      "added_at": "2026-07-20T07:29:03.350944+00:00"
+    },
+    {
+      "skill": "[high] ERROR: Could not open requirements file: [Errno 2] No such file or directory: '.../requirements.txt': The absolute path provided for the requirements file is incorrect for the current environment.",
+      "source_run": "run-20260720-130341",
+      "category": "config",
+      "added_at": "2026-07-20T07:48:00.423012+00:00"
+    },
+    {
+      "skill": "[critical] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps...: Network connectivity issue or firewall blocking access to the example.com endpoint.",
+      "source_run": "run-20260720-132137",
+      "category": "infra",
+      "added_at": "2026-07-20T08:05:58.251308+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_catalog_integration: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109dcc2f0>, 'Connec",
+      "source_run": "run-20260720-132137",
+      "category": "infra",
+      "added_at": "2026-07-20T08:05:58.252581+00:00"
+    },
+    {
+      "skill": "[high] ModuleNotFoundError: No module named 'Selenium2Library': The Selenium2Library is not installed in the Python environment used by Robot Framework.",
+      "source_run": "run-20260720-132137",
+      "category": "infra",
+      "added_at": "2026-07-20T08:07:14.064083+00:00"
+    },
+    {
+      "skill": "[high] \"failed: File or directory to execute does not exist\": The script could not locate a required file or path, likely due to missing environment variables or incorrect paths for project directories (e.g., autoai_project_name).",
+      "source_run": "run-20260720-132137",
+      "category": "config",
+      "added_at": "2026-07-20T08:08:55.721514+00:00"
+    },
+    {
+      "skill": "[high] \"Parsing ... failed: File or directory to execute does not exist.\": The specified Robot Framework file path is incorrect or inaccessible by the execution environment.",
+      "source_run": "run-20260720-132137",
+      "category": "infra",
+      "added_at": "2026-07-20T08:10:31.546115+00:00"
+    },
+    {
+      "skill": "[high] chromedriver segmentation fault / libsystem_pthread crash: Likely a version mismatch between the Chrome browser and chromedriver or missing OS-level libraries.",
+      "source_run": "run-20260720-132137",
+      "category": "infra",
+      "added_at": "2026-07-20T08:14:49.991970+00:00"
+    },
+    {
+      "skill": "[high] AttributeError: 'NoneType' object has no attribute 'host': The VM configuration or host address environment variable is missing or not correctly loaded in the configuration file.",
+      "source_run": "run-20260720-132137",
+      "category": "config",
+      "added_at": "2026-07-20T08:16:02.382253+00:00"
+    },
+    {
+      "skill": "[high] Notebook editor iframe not found after checking 0 iframes: The automation script failed to locate the notebook editor iframe, likely due to a timing issue during page load or an incorrect CSS/XPath selector.",
+      "source_run": "run-20260720-132137",
+      "category": "ui",
+      "added_at": "2026-07-20T08:17:29.510895+00:00"
+    },
+    {
+      "skill": "[high] chromedriver crash or segmentation fault in the stack trace: The Selenium WebDriver (chromedriver) encountered a fatal error, likely due to an incompatible version between the browser and driver, resource exhaustion, or an unstable local environment during CRUD operations.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T08:41:48.307597+00:00"
+    },
+    {
+      "skill": "[high] Variable '${space_name}' not found: Missing environment variable or configuration value for 'space_name' in Robot Framework.",
+      "source_run": "run-20260720-135021",
+      "category": "config",
+      "added_at": "2026-07-20T08:52:36.298374+00:00"
+    },
+    {
+      "skill": "[critical] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps.*.example.com/icp4d-api/v1/authorize: Network timeout or firewall blocking the connection to the internal ICP4D API endpoint.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T08:56:34.059796+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_git_integration_multi_user_scenario: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b5bf230>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T08:56:34.061283+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds...: Networking timeout or lack of proxy configuration when reaching internal IBM servers.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:00:24.689714+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_job_retention_in_local_project: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bd216a0>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:00:24.691484+00:00"
+    },
+    {
+      "skill": "[critical] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.*: Network timeout when reaching the internal/external API endpoint.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:03:52.563561+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_job_retention_in_git_project: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b75d550>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:03:52.568027+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps.*: Network connectivity issues or firewall blocking access to the internal IBM environment.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:09:54.120450+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_catalog_integration: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bf782f0>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:09:54.121862+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443) ... /icp4d-api/v1/authorize: Network connectivity issue or DNS resolution failure to internal IBM endpoints.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:12:44.757093+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_git_integration_merge_conflict: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10badf230>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:12:44.758359+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Network connection timed out, likely due to missing VPN or incorrect proxy configuration for the internal IBM domain.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:16:58.644653+00:00"
+    },
+    {
+      "skill": "[auto] wsl_wml_robotframework_testcases_notebook_env_job_testcase: TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109979fd0>, 'Connec",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:16:58.646025+00:00"
+    },
+    {
+      "skill": "[high] Could not open requirements file: [Errno 2] No such file or directory: '...requirements.txt': The execution environment configuration still points to a non-existent path for the requirements file.",
+      "source_run": "run-20260720-135021",
+      "category": "config",
+      "added_at": "2026-07-20T09:22:32.974697+00:00"
+    },
+    {
+      "skill": "[high] AttributeError: 'NoneType' object has no attribute 'host': The infrastructure configuration (hostname) was not successfully loaded into the environment during the config_validation strategy.",
+      "source_run": "run-20260720-135021",
+      "category": "config",
+      "added_at": "2026-07-20T09:27:29.057298+00:00"
+    },
+    {
+      "skill": "[medium] Multiple keywords with name 'Open Browser' found.: The `auto_fix_missing_module` strategy only addresses missing packages, not namespace conflicts or keyword collisions in Robot Framework.",
+      "source_run": "run-20260720-135021",
+      "category": "config",
+      "added_at": "2026-07-20T09:32:19.172263+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): The module was successfully installed, but the network connection to the endpoint timed out or was blocked by a firewall.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:45:26.832943+00:00"
+    },
+    {
+      "skill": "[high] ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded: Connecting to the server failed at the network/handshake level; increasing timeouts only helps with data retrieval delays, not connection establishment failures.",
+      "source_run": "run-20260720-135021",
+      "category": "infra",
+      "added_at": "2026-07-20T09:52:06.665955+00:00"
+    }
+  ],
+  "failure_patterns": {
+    "unknown flag: --project": {
+      "root_cause": "The cll tool `cpdctl` does not support the `--project` flag for the specified command.",
+      "fix": "Remove the `--project` flag from the script or use an alternative method to specify context if necessary.",
+      "suite": "",
+      "last_seen": "2026-07-16T11:56:39.399889+00:00"
+    },
+    "\"unknown flag: --project\"": {
+      "root_cause": "The command included a `--project` argument which is not supported by the specific `cpdctl job` subcommand.",
+      "fix": "Remove the `--project` flag from the command or update it to use valid flags permitted by the tool.",
+      "suite": "",
+      "last_seen": "2026-07-16T12:05:45.975575+00:00"
+    },
+    "bash: line 1: cd: /root/DS_Hermes_Framework/...: No such file or directory": {
+      "root_cause": "The execution environment is looking for a path in the root directory (likely a container or remote machine) that does not exist.",
+      "fix": "Verify absolute paths and ensure required directories are mounted and created before the test suite begins.",
+      "suite": "",
+      "last_seen": "2026-07-16T12:16:41.953389+00:00"
+    },
+    "\"bash: line 1: cd: /root/...: No such file or directory\"": {
+      "root_cause": "The script is trying to access a directory that does not exist on the execution host, likely due to an incorrect hardcoded path in the remote environment.",
+      "fix": "Verify and update the base paths for WSL-WML components in the configuration files before initiating the suite.",
+      "suite": "",
+      "last_seen": "2026-07-16T12:21:22.586014+00:00"
+    },
+    "\"bash: line 1: pip3: command not found\"": {
+      "root_cause": "The environment lacks a 'pip3' executable, likely due to an incomplete Python installation or missing path configuration in the execution environment.",
+      "fix": "Ensure python3 and pip are installed and that it is updated to use 'python3 -m pip' if direct 'pip3' calls fail, or update the system paths.",
+      "suite": "",
+      "last_seen": "2026-07-17T05:31:00.043730+00:00"
+    },
+    "Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'": {
+      "root_cause": "The script expected a requirements.txt file in the execution path, but it was missing or incorrectly paths to.",
+      "fix": "Ensure requirements.txt is present in the project root or update configuration with correct absolute path.",
+      "suite": "",
+      "last_seen": "2026-07-20T06:37:22.987853+00:00"
+    },
+    "bash: line 1: pip3: command not found (exit code 127)": {
+      "root_cause": "The environment lacks the 'pip3' binary; retry_blind cannot resolve missing package/binary dependencies.",
+      "fix": "Check and install required python packages in the runner image before execution.",
+      "suite": "",
+      "last_seen": "2026-07-17T06:15:15.227534+00:00"
+    },
+    "ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'": {
+      "root_cause": "The script's configuration refers to a file that does not exist in the local workspace.",
+      "fix": "Verify existence of 'requirements.txt' and ensure case-sensitivity matches the environment.",
+      "suite": "",
+      "last_seen": "2026-07-17T06:19:47.124787+00:00"
+    },
+    "\"ERROR: Could not open requirements file: [Errno 2] No such file or directory\"": {
+      "root_cause": "Execution directory doesn't contain the specified 'requirements.txt' file path during a pip install step.",
+      "fix": "Verify and correct the absolute/relative path to the requirements file in the test runner configuration.",
+      "suite": "",
+      "last_seen": "2026-07-17T07:51:53.159444+00:00"
+    },
+    "Connection to https timed out.*example.com": {
+      "root_cause": "Network connectivity issue or firewall blocking access to the internal IBM endpoint.",
+      "fix": "Check VPN connection and network routing to reach the corporate domain.",
+      "suite": "",
+      "last_seen": "2026-07-20T07:29:03.347908+00:00"
+    },
+    "ModuleNotFoundError: No module named 'Selenium2Library'": {
+      "root_cause": "The Selenium2Library is not installed in the Python environment used by Robot Framework.",
+      "fix": "Install the required library using `pip install robotframework-seleniumlibrary`.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:07:14.063641+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109e82f90>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "last_seen": "2026-07-20T07:29:03.350785+00:00"
+    },
+    "ERROR: Could not open requirements file: [Errno 2] No such file or directory: '.../requirements.txt'": {
+      "root_cause": "The absolute path provided for the requirements file is incorrect for the current environment.",
+      "fix": "Update the configuration to use a valid relative path or correct the absolute path in the .rtf/.yaml config file.",
+      "suite": "",
+      "last_seen": "2026-07-20T07:48:00.421546+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds": {
+      "root_cause": "Network connectivity issues or firewall blocking access to the internal IBM environment.",
+      "fix": "Check network proxy settings and ensure that `*.example.com` is allowlisted in the network security group/firewall.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:09:54.120015+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109dcc2f0>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_catalog_integration",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_catalog_integration",
+      "last_seen": "2026-07-20T08:05:58.252435+00:00"
+    },
+    "\"failed: File or directory to execute does not exist\"": {
+      "root_cause": "The script could not locate a required file or path, likely due to missing environment variables or incorrect paths for project directories (e.g., autoai_project_name).",
+      "fix": "Verify all local paths and ensure the configuration files/directories specified in the test suite are correctly mapped in the execution environment.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:08:55.721088+00:00"
+    },
+    "\"Parsing ... failed: File or directory to execute does not exist.\"": {
+      "root_cause": "The specified Robot Framework file path is incorrect or inaccessible by the execution environment.",
+      "fix": "Verify the absolute path and ensure the .robot file exists at the specified location before invocation.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:10:31.545716+00:00"
+    },
+    "chromedriver segmentation fault / libsystem_pthread crash": {
+      "root_cause": "Likely a version mismatch between the Chrome browser and chromedriver or missing OS-level libraries.",
+      "fix": "Synchronize ChromeDriver version with Chrome browser version; ensure all system dependencies for Selenium/Chromedriver are installed.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:14:49.991271+00:00"
+    },
+    "AttributeError: 'NoneType' object has no attribute 'host'": {
+      "root_cause": "The infrastructure configuration (hostname) was not successfully loaded into the environment during the config_validation strategy.",
+      "fix": "Manually verify and populate the '.env' or local config file with mandatory infrastructure parameters before execution.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:27:29.056793+00:00"
+    },
+    "Notebook editor iframe not found after checking 0 iframes": {
+      "root_cause": "The automation script failed to locate the notebook editor iframe, likely due to a timing issue during page load or an incorrect CSS/XPath selector.",
+      "fix": "Increase wait time for the iframe to appear before attempting selection and verify the stable selector for 'notebook editor' iframes in the WML application.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:17:29.510534+00:00"
+    },
+    "chromedriver crash or segmentation fault in the stack trace": {
+      "root_cause": "The Selenium WebDriver (chromedriver) encountered a fatal error, likely due to an incompatible version between the browser and driver, resource exhaustion, or an unstable local environment during CRUD operations.",
+      "fix": "Verify that the ChromeDriver version matches the installed Chrome browser; increase resources if processing large datasets; use a more stable headful/headless configuration.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:41:48.306155+00:00"
+    },
+    "Variable '${space_name}' not found": {
+      "root_cause": "Missing environment variable or configuration value for 'space_name' in Robot Framework.",
+      "fix": "Ensure 'space_name' is defined in the project's variables file (e.g., resources, vars, or an .env file) or passed via --variable command line argument.",
+      "suite": "",
+      "last_seen": "2026-07-20T08:52:36.297780+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b5bf230>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+      "last_seen": "2026-07-20T08:56:34.061069+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bd216a0>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_job_retention_in_local_project",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_job_retention_in_local_project",
+      "last_seen": "2026-07-20T09:00:24.691220+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10b75d550>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_job_retention_in_git_project",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_job_retention_in_git_project",
+      "last_seen": "2026-07-20T09:03:52.567706+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10bf782f0>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_catalog_integration",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_catalog_integration",
+      "last_seen": "2026-07-20T09:09:54.121673+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443) ... /icp4d-api/v1/authorize": {
+      "root_cause": "Network connectivity issue or DNS resolution failure to internal IBM endpoints.",
+      "fix": "Verify proxy settings and network route to the .example.com domain; check firewall permissions for the test runner.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:12:44.756661+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x10badf230>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "last_seen": "2026-07-20T09:12:44.758077+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443)": {
+      "root_cause": "The module was successfully installed, but the network connection to the endpoint timed out or was blocked by a firewall.",
+      "fix": "Check network connectivity/VPN status and possibly increase timeout values in the Robot Framework configuration or transport layer.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:45:26.832432+00:00"
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109979fd0>, 'Connection to https timed": {
+      "root_cause": "Detected in suite wsl_wml_robotframework_testcases_notebook_env_job_testcase",
+      "fix": "",
+      "suite": "wsl_wml_robotframework_testcases_notebook_env_job_testcase",
+      "last_seen": "2026-07-20T09:16:58.645726+00:00"
+    },
+    "Could not open requirements file: [Errno 2] No such file or directory: '...requirements.txt'": {
+      "root_cause": "The execution environment configuration still points to a non-existent path for the requirements file.",
+      "fix": "Use config_validation strategy to verify and update the absolute path of the requirements.txt file in the project configuration.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:22:32.974066+00:00"
+    },
+    "Multiple keywords with name 'Open Browser' found.": {
+      "root_cause": "The `auto_fix_missing_module` strategy only addresses missing packages, not namespace conflicts or keyword collisions in Robot Framework.",
+      "fix": "Use a more specific retry strategy or manual cleanup when ambiguity is detected to prefix the required library (e.g., SeleniumLibrary.Open Browser).",
+      "suite": "",
+      "last_seen": "2026-07-20T09:32:19.171709+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded": {
+      "root_cause": "Connecting to the server failed at the network/handshake level; increasing timeouts only helps with data retrieval delays, not connection establishment failures.",
+      "fix": "Investigate proxy settings and firewall rules for the specific host; do not use timeout-based retries for ConnectTimeout errors.",
+      "suite": "",
+      "last_seen": "2026-07-20T09:52:06.665414+00:00"
+    }
+  },
+  "fix_recipes": {
+    "unknown flag: --project": {
+      "steps": [
+        "Remove the `--project` flag from the script or use an alternative method to specify context if necessary."
+      ],
+      "added_at": "2026-07-16T11:56:39.400496+00:00"
+    },
+    "\"unknown flag: --project\"": {
+      "steps": [
+        "Remove the `--project` flag from the command or update it to use valid flags permitted by the tool."
+      ],
+      "added_at": "2026-07-16T12:05:45.976210+00:00"
+    },
+    "bash: line 1: cd: /root/DS_Hermes_Framework/...: No such file or directory": {
+      "steps": [
+        "Verify absolute paths and ensure required directories are mounted and created before the test suite begins."
+      ],
+      "added_at": "2026-07-16T12:16:41.954939+00:00"
+    },
+    "\"bash: line 1: cd: /root/...: No such file or directory\"": {
+      "steps": [
+        "Verify and update the base paths for WSL-WML components in the configuration files before initiating the suite."
+      ],
+      "added_at": "2026-07-16T12:21:22.586599+00:00"
+    },
+    "\"bash: line 1: pip3: command not found\"": {
+      "steps": [
+        "Ensure python3 and pip are installed and that it is updated to use 'python3 -m pip' if direct 'pip3' calls fail, or update the system paths."
+      ],
+      "added_at": "2026-07-17T05:31:00.044807+00:00"
+    },
+    "Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'": {
+      "steps": [
+        "Ensure requirements.txt is present in the project root or update configuration with correct absolute path."
+      ],
+      "added_at": "2026-07-20T06:37:22.990010+00:00"
+    },
+    "bash: line 1: pip3: command not found (exit code 127)": {
+      "steps": [
+        "Check and install required python packages in the runner image before execution."
+      ],
+      "added_at": "2026-07-17T06:15:15.228129+00:00"
+    },
+    "ERROR: Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'": {
+      "steps": [
+        "Verify existence of 'requirements.txt' and ensure case-sensitivity matches the environment."
+      ],
+      "added_at": "2026-07-17T06:19:47.125413+00:00"
+    },
+    "\"ERROR: Could not open requirements file: [Errno 2] No such file or directory\"": {
+      "steps": [
+        "Verify and correct the absolute/relative path to the requirements file in the test runner configuration."
+      ],
+      "added_at": "2026-07-17T07:51:53.160400+00:00"
+    },
+    "Connection to https timed out.*example.com": {
+      "steps": [
+        "Check VPN connection and network routing to reach the corporate domain."
+      ],
+      "added_at": "2026-07-20T07:29:03.349317+00:00"
+    },
+    "ModuleNotFoundError: No module named 'Selenium2Library'": {
+      "steps": [
+        "Install the required library using `pip install robotframework-seleniumlibrary`."
+      ],
+      "added_at": "2026-07-20T08:07:14.064546+00:00"
+    },
+    "ERROR: Could not open requirements file: [Errno 2] No such file or directory: '.../requirements.txt'": {
+      "steps": [
+        "Update the configuration to use a valid relative path or correct the absolute path in the .rtf/.yaml config file."
+      ],
+      "added_at": "2026-07-20T07:48:00.423186+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps...": {
+      "steps": [
+        "Verify network connectivity, proxy settings, and whitelist the target URL in the environment's firewall rules."
+      ],
+      "added_at": "2026-07-20T08:05:58.251479+00:00"
+    },
+    "\"failed: File or directory to execute does not exist\"": {
+      "steps": [
+        "Verify all local paths and ensure the configuration files/directories specified in the test suite are correctly mapped in the execution environment."
+      ],
+      "added_at": "2026-07-20T08:08:55.722002+00:00"
+    },
+    "\"Parsing ... failed: File or directory to execute does not exist.\"": {
+      "steps": [
+        "Verify the absolute path and ensure the .robot file exists at the specified location before invocation."
+      ],
+      "added_at": "2026-07-20T08:10:31.546644+00:00"
+    },
+    "chromedriver segmentation fault / libsystem_pthread crash": {
+      "steps": [
+        "Synchronize ChromeDriver version with Chrome browser version; ensure all system dependencies for Selenium/Chromedriver are installed."
+      ],
+      "added_at": "2026-07-20T08:14:49.992157+00:00"
+    },
+    "AttributeError: 'NoneType' object has no attribute 'host'": {
+      "steps": [
+        "Manually verify and populate the '.env' or local config file with mandatory infrastructure parameters before execution."
+      ],
+      "added_at": "2026-07-20T09:27:29.057784+00:00"
+    },
+    "Notebook editor iframe not found after checking 0 iframes": {
+      "steps": [
+        "Increase wait time for the iframe to appear before attempting selection and verify the stable selector for 'notebook editor' iframes in the WML application."
+      ],
+      "added_at": "2026-07-20T08:17:29.511066+00:00"
+    },
+    "chromedriver crash or segmentation fault in the stack trace": {
+      "steps": [
+        "Verify that the ChromeDriver version matches the installed Chrome browser; increase resources if processing large datasets; use a more stable headful/headless configuration."
+      ],
+      "added_at": "2026-07-20T08:41:48.307807+00:00"
+    },
+    "Variable '${space_name}' not found": {
+      "steps": [
+        "Ensure 'space_name' is defined in the project's variables file (e.g., resources, vars, or an .env file) or passed via --variable command line argument."
+      ],
+      "added_at": "2026-07-20T08:52:36.298572+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps.*.example.com/icp4d-api/v1/authorize": {
+      "steps": [
+        "Verify VPN connectivity, check proxy settings, and ensure network path to example.com is open."
+      ],
+      "added_at": "2026-07-20T08:56:34.060021+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds...": {
+      "steps": [
+        "Check VPN connection, corporate proxy settings, and ensure the target host is reachable via the current network path."
+      ],
+      "added_at": "2026-07-20T09:00:24.690214+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.*": {
+      "steps": [
+        "Check VPN connection, proxy settings, and network connectivity to the specific host."
+      ],
+      "added_at": "2026-07-20T09:03:52.564880+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded with url: //cpd-ds.apps.*": {
+      "steps": [
+        "Check network proxy settings and ensure that `*.example.com` is allowlisted in the network security group/firewall."
+      ],
+      "added_at": "2026-07-20T09:09:54.120871+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443) ... /icp4d-api/v1/authorize": {
+      "steps": [
+        "Verify proxy settings and network route to the .example.com domain; check firewall permissions for the test runner."
+      ],
+      "added_at": "2026-07-20T09:12:44.757307+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443)": {
+      "steps": [
+        "Check network connectivity/VPN status and possibly increase timeout values in the Robot Framework configuration or transport layer."
+      ],
+      "added_at": "2026-07-20T09:45:26.833193+00:00"
+    },
+    "Could not open requirements file: [Errno 2] No such file or directory: '...requirements.txt'": {
+      "steps": [
+        "Use config_validation strategy to verify and update the absolute path of the requirements.txt file in the project configuration."
+      ],
+      "added_at": "2026-07-20T09:22:32.975217+00:00"
+    },
+    "Multiple keywords with name 'Open Browser' found.": {
+      "steps": [
+        "Use a more specific retry strategy or manual cleanup when ambiguity is detected to prefix the required library (e.g., SeleniumLibrary.Open Browser)."
+      ],
+      "added_at": "2026-07-20T09:32:19.172767+00:00"
+    },
+    "ConnectTimeout: HTTPSConnectionPool(host='https', port=443): Max retries exceeded": {
+      "steps": [
+        "Investigate proxy settings and firewall rules for the specific host; do not use timeout-based retries for ConnectTimeout errors."
+      ],
+      "added_at": "2026-07-20T09:52:06.666529+00:00"
+    }
+  },
+  "remediation_ledger": {
+    "wsl_wml_utility": {
+      "first_seen": "2026-07-16T12:19:47.327338+00:00",
+      "last_seen": "2026-07-16T12:19:47.327338+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-17T06:14:09.194628+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 5.1,
+          "history": [
+            {
+              "run_id": "run-20260716-174013",
+              "suite": "wsl_wml_utility",
+              "outcome": "failure",
+              "duration_sec": 5.35,
+              "timestamp": "2026-07-16T12:19:47.327332+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260717-104946",
+              "suite": "wsl_wml_utility",
+              "outcome": "failure",
+              "duration_sec": 4.98,
+              "timestamp": "2026-07-17T06:14:09.194628+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "wsl_wml_utility"
+      ]
+    },
+    "Could not open requirements file: [Errno 2] No such file or directory: 'requirements.txt'": {
+      "first_seen": "2026-07-17T06:15:15.229019+00:00",
+      "last_seen": "2026-07-20T09:16:58.647676+00:00",
+      "occurrences": 3,
+      "strategies": {
+        "config_validation": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-17T06:18:17.112420+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 1.9,
+          "history": [
+            {
+              "run_id": "run-20260717-104946",
+              "suite": "wsl_wml_robotframework_testcases",
+              "outcome": "failure",
+              "duration_sec": 1.87,
+              "timestamp": "2026-07-17T06:18:17.112420+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-20T09:20:04.172985+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 5.5,
+          "history": [
+            {
+              "run_id": "run-20260720-135021",
+              "suite": "wsl_wml_robotframework_testcases_pythonclient_test",
+              "outcome": "failure",
+              "duration_sec": 5.52,
+              "timestamp": "2026-07-20T09:20:04.172985+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "config_validation",
+      "confidence": "low",
+      "suites_affected": [
+        "wsl_wml_robotframework_testcases",
+        "wsl_wml_robotframework_testcases_pythonclient_test"
+      ]
+    },
+    "AttributeError: 'NoneType' object has no attribute 'host'": {
+      "first_seen": "2026-07-20T09:22:32.977052+00:00",
+      "last_seen": "2026-07-20T09:22:32.977052+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "config_validation": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-20T09:25:35.601611+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 2.6,
+          "history": [
+            {
+              "run_id": "run-20260720-135021",
+              "suite": "wsl_wml_robotframework_testcases_jwt",
+              "outcome": "failure",
+              "duration_sec": 2.62,
+              "timestamp": "2026-07-20T09:25:35.601611+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "config_validation",
+      "confidence": "low",
+      "suites_affected": [
+        "wsl_wml_robotframework_testcases_jwt"
+      ]
+    },
+    "ModuleNotFoundError: No module named 'Selenium2Library'": {
+      "first_seen": "2026-07-20T09:27:29.059005+00:00",
+      "last_seen": "2026-07-20T09:27:29.059005+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "auto_fix_missing_module": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-20T09:30:31.421436+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 2.4,
+          "history": [
+            {
+              "run_id": "run-20260720-135021",
+              "suite": "wsl_wml_robotframework_testcases_dmc_new_instance_crud_operations",
+              "outcome": "failure",
+              "duration_sec": 2.35,
+              "timestamp": "2026-07-20T09:30:31.421436+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "auto_fix_missing_module",
+      "confidence": "low",
+      "suites_affected": [
+        "wsl_wml_robotframework_testcases_dmc_new_instance_crud_operations"
+      ]
+    },
+    "TimeoutError(<urllib3.connection.HTTPSConnection object at 0x109e82f90>, 'Connection to https timed": {
+      "first_seen": "2026-07-20T09:32:19.175096+00:00",
+      "last_seen": "2026-07-20T09:52:06.667951+00:00",
+      "occurrences": 3,
+      "strategies": {
+        "auto_fix_missing_module": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-20T09:43:31.963903+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 492.8,
+          "history": [
+            {
+              "run_id": "run-20260720-135021",
+              "suite": "wsl_wml_robotframework_testcases_exportimport",
+              "outcome": "failure",
+              "duration_sec": 492.78,
+              "timestamp": "2026-07-20T09:43:31.963903+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-07-20T09:49:44.523768+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 77.6,
+          "history": [
+            {
+              "run_id": "run-20260720-135021",
+              "suite": "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+              "outcome": "failure",
+              "duration_sec": 77.64,
+              "timestamp": "2026-07-20T09:49:44.523768+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "auto_fix_missing_module",
+      "confidence": "low",
+      "suites_affected": [
+        "wsl_wml_robotframework_testcases_exportimport",
+        "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+        "wsl_wml_robotframework_testcases_job_retention_in_local_project"
+      ]
+    }
+  }
+}

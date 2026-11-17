@@ -1,0 +1,733 @@
+{
+  "test_type": "robot",
+  "suites": [
+    {
+      "name": "datastage_utility_perf_scenario5",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet requests urllib3 && python3 main.1000000000000000000.py'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "run_local": true,
+      "cpd_project": "perf-scenario5",
+      "description": "CP4D DataStage ETL vs TETL Performance Analysis - Scenario 5 (SQL Pushdown)",
+      "pip_packages": [
+        "requests",
+        "urllib3"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_sql_pushdown_automation",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && _zip=$(find \"$HERMES_EXTRA_DIR\" -maxdepth 2 -name \"sqlpushdowntest.zip\" | head -1) && python3 sql_pushdown_automation.py ${_zip:+\"$_zip\"}'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm"
+      ],
+      "cpd_project": "canvas_test"
+    },
+    {
+      "name": "datastage_utility_patch_zip",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && _zip=$(find \"$HERMES_EXTRA_DIR\" -maxdepth 2 -name \"-patched.zip\" | head -1) && python3 patch_zip.py ${_zip:+\"$_zip\"}'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ]
+    },
+    {
+      "name": "datastage_utility_perf_scenario3",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && python3 -m pip install --quiet requests plotly && python3 main.py --cpd-url \"$CPD_URL\" --username \"$CPD_USERNAME\" --password \"$CPD_PASSWORD\" --zip \"${_zip:-T2_Sizing_Project_2.zip}\"'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "cpd_project": "perf_scenario3",
+      "description": "DataStage Scale Configuration Performance Test",
+      "pip_packages": [
+        "requests",
+        "plotly"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": true,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_cpd_perf",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && _zip=$(find \"$HERMES_EXTRA_DIR\" -maxdepth 2 -name \"Scenario-4.zip\" | head -1) && python3 cpd_perf.py ${_zip:+\"$_zip\"}'",
+      "timeout_sec": 14400,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "cpd_project": "perf-scenario"
+    },
+    {
+      "name": "datastage_utility_jobzero",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && bash jobzero.sh'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Create and update a flow in Datastage using cpdctl",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "datastage_utility_run",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility\" && bash run.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Datastage performance validation script",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_git_integration_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_GIT_INTEGRATION_TEST\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_GIT_INTEGRATION_TEST/requirements.txt\" && python3 ds_git_integration_test.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Datastage Git integration test suite",
+      "pip_packages": [
+        "selenium",
+        "webdriver_manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_1_1",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.1\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case1.py'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "cpd_project": "Performance Scenario 1",
+      "description": "DataStage Performance Test Automation - Complete Workflow",
+      "pip_packages": [
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_1_2",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.2\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case2.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "DataStage UI Performance Testing Script",
+      "pip_packages": [
+        "selenium",
+        "webdriver_manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_performance_tests_ds_scenario_6_scripts",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_6/scripts\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Performance_Tests/DS_Scenario_6/requirements.txt\" && python3 cpd_metrics_tracker.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "CPD DataStage Metrics Tracker - Automates login and tracks CPU/Memory metrics",
+      "pip_packages": [
+        "selenium",
+        "pandas"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_read_write_tests",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS/requirements.txt\" && python3 run_automation.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Datastage Utility Read/Write Tests",
+      "pip_packages": [
+        "selenium",
+        "webdriver_manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_scenario_2_scripts",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Scenario_2/scripts\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Scenario_2/requirements.txt\" && python3 cpd_project_setup_cpdctl.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "description": "CPD Project Setup using cpdctl - Scenario 2",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_reason_vm": "false",
+        "needs_chrome": false
+      }
+    },
+    {
+      "name": "datastage_utility_ds_canvas_manual_test_run_full_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_canvas_Manual_Test\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_canvas_Manual_Test/requirements.txt\" && bash run_full_test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Full automation flow including web UI and user access verification",
+      "pip_packages": [
+        "selenium",
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_performance_sceanrio1",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/performance-sceanrio1\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 case1.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm",
+        "perf"
+      ],
+      "cpd_project": "Performance Scenario 1",
+      "description": "Datastage performance scenario 1 - automation of DataStage flow import, compilation, and execution",
+      "pip_packages": [
+        "selenium",
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_vault_testing_vault_testing",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/vault_testing/vault_testing\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/requirements.txt\" && python3 login.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Login module and vault testing suite",
+      "pip_packages": [
+        "selenium",
+        "webdriver_manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_uninstall",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash uninstall.sh'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Automate the uninstallation of CCS, WSL, WML, OpenScale, SparkAE using cpd-cli",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_shutdown_restart",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash shutdown-restart.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Automate shutdown and restart of cpd-platform components using cpd-cli",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": true,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_zenapi_service_instance_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash zenapi_service_instance_test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE validation script for managing users and service instances via Zen API",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_out_of_box_monitor",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash out_of_box_monitor.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE utility script for out_of_box monitoring",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_node_pinning",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash Node-Pinning.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Node-Pinning validation script",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_hpa_test_hpa_automation",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /hpa_test\" && bash hpa_automation.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "HPA automation script for SRE testing",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_proxy_enable",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash proxy_enable.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE Utility script for enabling proxy settings",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_source_env",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash source_env.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Source environment variables and configure proxy settings",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_proxy_setup_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash proxy-setup-test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE utility script for proxy setup and authentication",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_catalog_integration",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && HEADLESS=1 python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD catalog_integration.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "pip_packages": [
+        "robotframework"
+      ]
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v github_token:$GIT_TOKEN -v github_url:$GIT_URL -v branch:$GIT_BRANCH -v domain:$GIT_DOMAIN -v repo_username:$GIT_REPO_USERNAME -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD git_integration_merge_conflict.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test merge conflict scenario in git integration",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "fabric",
+        "paramiko"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_exportimport",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v branch:$GIT_BRANCH -v domain:$GIT_DOMAIN -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD ExportImport.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Verify Export and Import functionality in a project.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "paramiko",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v github_token:$GIT_TOKEN -v gitlab_token:$GIT_TOKEN -v bitbucket_token:$GIT_TOKEN -v azure_git_token:$GIT_TOKEN -v github_url:$GIT_URL -v gitlab_url:$GIT_URL -v bitbucket_url:$GIT_URL -v azure_git_url:$GIT_URL -v branch:$GIT_BRANCH -v domain:$GIT_DOMAIN -v repo_username:$GIT_REPO_USERNAME -v DB2_HOST:$DB2_HOST -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD git_integration_multi-user_scenario.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "Multi-user git integration scenario with Selenium and local execution.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "fabric",
+        "paramiko",
+        "cryptography",
+        "h11",
+        "sniffio",
+        "trio",
+        "wsproto",
+        "vars",
+        "werkzeug"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_dmc_new_instance_crud_operations",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD DMC_new_instance_crud_operations.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "DMC new instance CRUD operations",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "yaml",
+        "dateutil"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_jwt",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v DB2_HOST:$DB2_HOST -v DB2_USERNAME:$DB2_USERNAME -v DB2_PASSWORD:$DB2_PASSWORD -v CPD_USERNAME:$CPD_USERNAME -v CPD_PASSWORD:$CPD_PASSWORD -v CPD_HOST:$CPD_URL_HOST JWT.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "run_local": true,
+      "description": "Verify native DB2 JWT authentication with CP4D.",
+      "pip_packages": [
+        "robotframework",
+        "fabric",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "paramiko"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "l_1": "cpdctl",
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_pythonclient_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && HEADLESS=1 python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD pythonclient_test.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "pip_packages": [
+        "robotframework"
+      ]
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_local_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && HEADLESS=1 python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v BRANCH:$GIT_BRANCH -v repo_username:$GIT_REPO_USERNAME Job_Retention_in_Local_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "pip_packages": [
+        "robotframework"
+      ]
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_git_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v branch:$GIT_BRANCH -v domain:$GIT_DOMAIN -v repo_username:$GIT_REPO_USERNAME -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD Job_Retention_in_Git_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Job retention in Git project",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "paramiko",
+        "fabric",
+        "dateutil",
+        "difflib"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_notebook_env_job_testcase",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot  notebook_env_job_testcase.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test suite verifying environment, notebook, and job configurations in a CPD platform.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "pytz",
+        "fabric",
+        "paramiko",
+        "cryptography",
+        "dateutil"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "datastage_utility_jenkins_datastage-fastpath-cpd-zos",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Datastage/Utility/jenkins_jobs.json",
+      "jenkins_job_name": "datastage-fastpath-cpd-zos",
+      "timeout_sec": 54000,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "jenkins",
+        "fastpath"
+      ],
+      "description": "DataStage Fastpath full run on CP4D (zLinux/s390x) via Jenkins DataStage-Fastpath-CPD-ZOS",
+      "ai_source": "manual"
+    }
+  ]
+}

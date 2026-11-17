@@ -1,0 +1,468 @@
+{
+  "version": 3,
+  "entries": [
+    {
+      "skill": "Execution Timing: The suite completed within 0 seconds (logged duration), suggesting an extremely efficient check or successful pre-validation of conditions.",
+      "source_run": "run-20260923-111132",
+      "category": "general",
+      "added_at": "2026-09-23T05:49:54.331068+00:00"
+    },
+    {
+      "skill": "Exit Code Reliability: The system correctly identified a success state (exit_code=0) for the orchestration component.",
+      "source_run": "run-20260923-111132",
+      "category": "general",
+      "added_at": "2026-09-23T05:49:54.331603+00:00"
+    },
+    {
+      "skill": "Consistency: The logs confirm that even at minimal durations, the result reporting mechanism captures standard pass states accurately.",
+      "source_run": "run-20260923-111132",
+      "category": "general",
+      "added_at": "2026-09-23T05:49:54.331710+00:00"
+    },
+    {
+      "skill": "Stability Pattern: The 'openscale_jenkins_openscale-ivt-orchestrator' suite demonstrates a stable integration path where dependencies are resolved correctly leading to immediate success.",
+      "source_run": "run-20260923-122055",
+      "category": "general",
+      "added_at": "2026-09-23T06:59:54.222786+00:00"
+    },
+    {
+      "skill": "Infrastructure Health: No timeouts or connection errors were detected in the logs, suggesting that the environment is currently stable for this specific task.",
+      "source_run": "run-20260923-122055",
+      "category": "general",
+      "added_at": "2026-09-23T06:59:54.223361+00:00"
+    },
+    {
+      "skill": "Execution Consistency: The absence of warnings/retries indicates a healthy state for current configuration scripts.",
+      "source_run": "run-20260923-122055",
+      "category": "general",
+      "added_at": "2026-09-23T06:59:54.223476+00:00"
+    },
+    {
+      "skill": "[critical] ERROR: Trigger returned HTTP 401: The orchestrator was rejected due to missing or invalid authentication credentials when attempting to trigger the remote resource.",
+      "source_run": "run-20260923-132544",
+      "category": "auth",
+      "added_at": "2026-09-23T07:59:13.281114+00:00"
+    },
+    {
+      "skill": "[critical] Aborted by (.*) \\n Terminated: Manual intervention or termination signal received during execution of a remote build wait.",
+      "source_run": "run-20260923-133154",
+      "category": "infra",
+      "added_at": "2026-09-23T08:07:14.181004+00:00"
+    },
+    {
+      "skill": "[critical] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The test executions within the suite failed (likely functional test failures or intermittent environment issues), causing the Allure report state to be unstable and returning a non-zero exit code.",
+      "source_run": "run-20260923-173439",
+      "category": "infra",
+      "added_at": "2026-09-23T12:18:49.581247+00:00"
+    },
+    {
+      "skill": "[high] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The 'auto_fix_chromedriver' strategy only addresses driver-specific issues, but the failures are likely due to test logic or environment-related timeouts in the ICP-E2E-Sanity-Test-Suite.",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T09:35:54.000600+00:00"
+    },
+    {
+      "skill": "[medium] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The retry strategy 'retry_after_wait' is insufficient for non-transient test logic issues or environment timeouts.",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T09:49:00.789593+00:00"
+    },
+    {
+      "skill": "[critical] No new build created after trigger \u2014 job was not actually triggered. Check Jenkins auth credentials.: Hard failure due to invalid or expired Jenkins authentication credentials (non-transient).",
+      "source_run": "run-20260924-112249",
+      "category": "auth",
+      "added_at": "2026-09-24T09:53:48.270344+00:00"
+    },
+    {
+      "skill": "[medium] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The retry strategy 'retry_after_wait' is insufficient for functional test failures or timeout issues within the test suite.",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T10:07:50.977167+00:00"
+    },
+    {
+      "skill": "[high] <urlopen error [Errno 49] Can't assign requested address>: Network port exhaustion or bind failure; configuration validation doesn't resolve OS-level networking limits.",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T10:35:21.691643+00:00"
+    },
+    {
+      "skill": "[high] No new build created after trigger \u2014 job was not actually triggered. Check Jenkins auth credentials.: The failure is due to authentication/authorization errors, not network timeouts; increasing timeout does not resolve credential-related issues.",
+      "source_run": "run-20260924-112249",
+      "category": "auth",
+      "added_at": "2026-09-24T10:40:32.703911+00:00"
+    },
+    {
+      "skill": "[medium] \"Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1\": The 'retry_after_wait' strategy failed because the issue was likely a functional test logic failure, not a transient environment/networking blip.",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T10:57:49.214048+00:00"
+    },
+    {
+      "skill": "[auto] openscale_dashboardsetup_jenkins_openscale-dashboard-setup: requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "source_run": "run-20260924-112249",
+      "category": "infra",
+      "added_at": "2026-09-24T11:07:49.250862+00:00"
+    },
+    {
+      "skill": "[auto] openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator: 401 Unauthorized</title>",
+      "source_run": "run-20260924-112249",
+      "category": "auth",
+      "added_at": "2026-09-24T11:07:49.272521+00:00"
+    },
+    {
+      "skill": "[high] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The failure is not related to chromedriver configuration but likely due to underlying test logic errors or environment timeouts.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-28T11:50:23.657924+00:00"
+    },
+    {
+      "skill": "[high] exit_code=124, duration > 86400 (or significantly high): The process reached a hard timeout limit set by Jenkins or the environment.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-28T16:27:13.991970+00:00"
+    },
+    {
+      "skill": "[high] <urlopen error [Errno 60] Operation timed out>: Network connectivity/timeout to remote host; retry_after_wait does not address underlying networking issues.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-29T04:27:25.582357+00:00"
+    },
+    {
+      "skill": "[high] <urlopen error timed out> during 'Failed to trigger': The retry_after_wait strategy failed because the issue is a networking/timeout problem at the request level, not a transient availability blip.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-29T04:34:01.023474+00:00"
+    },
+    {
+      "skill": "[medium] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The retry strategy 'retry_after_wait' does not address issues arising from non-driver related test failures or environment timeouts.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-29T04:50:04.216998+00:00"
+    },
+    {
+      "skill": "[high] Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1: The retry_after_wait strategy fails because the issue is a non-transient test failure or environment state, not a transient connection/wait timeout.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-29T05:02:28.278401+00:00"
+    },
+    {
+      "skill": "[high] Exit code 124 (timeout) despite retry_with_timeout_increase strategy: The process took over 7300 seconds, exceeding even the increased timeout limit.",
+      "source_run": "run-20260928-132323",
+      "category": "infra",
+      "added_at": "2026-09-29T07:10:39.035171+00:00"
+    },
+    {
+      "skill": "[critical] \"Trigger failed [401]: <html ...> <h1>HTTP ERROR 401 Unauthorized</h1>\": The retry strategy 'retry_blind' was ineffective because the root cause is an authentication failure (401), which requires credential renewal or configuration updates rather than a simple re-execution.",
+      "source_run": "run-20260928-132323",
+      "category": "auth",
+      "added_at": "2026-09-29T07:46:05.890796+00:00"
+    },
+    {
+      "skill": "[auto] openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator: 401 Unauthorized errors, and the Drift component reported 'SOME FAILED'.",
+      "source_run": "run-20260928-132323",
+      "category": "auth",
+      "added_at": "2026-09-29T07:56:05.979805+00:00"
+    }
+  ],
+  "failure_patterns": {
+    "ERROR: Trigger returned HTTP 401": {
+      "root_cause": "The orchestrator was rejected due to missing or invalid authentication credentials when attempting to trigger the remote resource.",
+      "fix": "Update and verify the service account tokens/keys in the configuration or secret manager for the open-scale integration.",
+      "suite": "",
+      "last_seen": "2026-09-23T07:59:13.280219+00:00"
+    },
+    "Aborted by (.*) \\n Terminated": {
+      "root_cause": "Manual intervention or termination signal received during execution of a remote build wait.",
+      "fix": "Ensure that external dependencies are stable and notifications are set up to alert the operator instead of requiring manual monitoring.",
+      "suite": "",
+      "last_seen": "2026-09-23T08:07:14.180565+00:00"
+    },
+    "Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1": {
+      "root_cause": "The retry_after_wait strategy fails because the issue is a non-transient test failure or environment state, not a transient connection/wait timeout.",
+      "fix": "Replace retry_after_wait with manual review of allure-results for this specific pattern; do not attempt automatic recovery for result instabilities.",
+      "suite": "",
+      "last_seen": "2026-09-29T05:02:28.275649+00:00"
+    },
+    "No new build created after trigger \u2014 job was not actually triggered. Check Jenkins auth credentials.": {
+      "root_cause": "The failure is due to authentication/authorization errors, not network timeouts; increasing timeout does not resolve credential-related issues.",
+      "fix": "Verify and update Jenkins API tokens or credentials in the configuration before attempting retries.",
+      "suite": "",
+      "last_seen": "2026-09-24T10:40:32.702875+00:00"
+    },
+    "<urlopen error [Errno 49] Can't assign requested address>": {
+      "root_cause": "Network port exhaustion or bind failure; configuration validation doesn't resolve OS-level networking limits.",
+      "fix": "Check for leaked ports or insufficient ephemeral range/high load on the host during large test sweeps.",
+      "suite": "",
+      "last_seen": "2026-09-24T11:07:49.223646+00:00"
+    },
+    "\"Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1\"": {
+      "root_cause": "The 'retry_after_wait' strategy failed because the issue was likely a functional test logic failure, not a transient environment/networking blip.",
+      "fix": "Use detailed log analysis of allure-results to identify specific failures instead of simple retries.",
+      "suite": "",
+      "last_seen": "2026-09-24T10:57:49.213659+00:00"
+    },
+    "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)": {
+      "root_cause": "Detected in suite openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+      "fix": "",
+      "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+      "last_seen": "2026-09-24T11:07:49.250642+00:00"
+    },
+    "401 Unauthorized</title>": {
+      "root_cause": "Detected in suite openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+      "fix": "",
+      "suite": "openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+      "last_seen": "2026-09-24T11:07:49.272346+00:00"
+    },
+    "exit_code=124, duration > 86400 (or significantly high)": {
+      "root_cause": "The process reached a hard timeout limit set by Jenkins or the environment.",
+      "fix": "Increase the Jenkins job timeout or optimize test execution scripts; do not use config_validation for inherent timeouts.",
+      "suite": "",
+      "last_seen": "2026-09-28T16:27:13.986111+00:00"
+    },
+    "<urlopen error [Errno 60] Operation timed out>": {
+      "root_cause": "Network connectivity/timeout to remote host; retry_after_wait does not address underlying networking issues.",
+      "fix": "Verify target endpoint availability and adjust timeout settings at the client/network level, rather than retrying.",
+      "suite": "",
+      "last_seen": "2026-09-29T04:27:25.580265+00:00"
+    },
+    "<urlopen error timed out> during 'Failed to trigger'": {
+      "root_cause": "The retry_after_wait strategy failed because the issue is a networking/timeout problem at the request level, not a transient availability blip.",
+      "fix": "Increase the `request_timeout` or check network connectivity; avoid using simple wait/retry for persistent timeouts.",
+      "suite": "",
+      "last_seen": "2026-09-29T04:34:01.020389+00:00"
+    },
+    "Exit code 124 (timeout) despite retry_with_timeout_increase strategy": {
+      "root_cause": "The process took over 7300 seconds, exceeding even the increased timeout limit.",
+      "fix": "Increase the base timeout significantly or investigate why the script execution hangs for >2 hours (potential loop or network hang).",
+      "suite": "",
+      "last_seen": "2026-09-29T07:10:39.032891+00:00"
+    },
+    "\"Trigger failed [401]: <html ...> <h1>HTTP ERROR 401 Unauthorized</h1>\"": {
+      "root_cause": "The retry strategy 'retry_blind' was ineffective because the root cause is an authentication failure (401), which requires credential renewal or configuration updates rather than a simple re-execution.",
+      "fix": "Re-verify Jenkins API tokens/credentials and ensure they are correctly scoped for the specific jobs being triggered.",
+      "suite": "",
+      "last_seen": "2026-09-29T07:46:05.888777+00:00"
+    },
+    "401 Unauthorized errors, and the Drift component reported 'SOME FAILED'.": {
+      "root_cause": "Detected in suite openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+      "fix": "",
+      "suite": "openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+      "last_seen": "2026-09-29T07:56:05.979140+00:00"
+    }
+  },
+  "fix_recipes": {
+    "ERROR: Trigger returned HTTP 401": {
+      "steps": [
+        "Update and verify the service account tokens/keys in the configuration or secret manager for the open-scale integration."
+      ],
+      "added_at": "2026-09-23T07:59:13.281272+00:00"
+    },
+    "Aborted by (.*) \\n Terminated": {
+      "steps": [
+        "Ensure that external dependencies are stable and notifications are set up to alert the operator instead of requiring manual monitoring."
+      ],
+      "added_at": "2026-09-23T08:07:14.181129+00:00"
+    },
+    "Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1": {
+      "steps": [
+        "Replace retry_after_wait with manual review of allure-results for this specific pattern; do not attempt automatic recovery for result instabilities."
+      ],
+      "added_at": "2026-09-29T05:02:28.278686+00:00"
+    },
+    "No new build created after trigger \u2014 job was not actually triggered. Check Jenkins auth credentials.": {
+      "steps": [
+        "Verify and update Jenkins API tokens or credentials in the configuration before attempting retries."
+      ],
+      "added_at": "2026-09-24T10:40:32.704067+00:00"
+    },
+    "<urlopen error [Errno 49] Can't assign requested address>": {
+      "steps": [
+        "Check for leaked ports or insufficient ephemeral range/high load on the host during large test sweeps."
+      ],
+      "added_at": "2026-09-24T11:07:49.223827+00:00"
+    },
+    "\"Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1\"": {
+      "steps": [
+        "Use detailed log analysis of allure-results to identify specific failures instead of simple retries."
+      ],
+      "added_at": "2026-09-24T10:57:49.214213+00:00"
+    },
+    "exit_code=124, duration > 86400 (or significantly high)": {
+      "steps": [
+        "Increase the Jenkins job timeout or optimize test execution scripts; do not use config_validation for inherent timeouts."
+      ],
+      "added_at": "2026-09-28T16:27:13.992709+00:00"
+    },
+    "<urlopen error [Errno 60] Operation timed out>": {
+      "steps": [
+        "Verify target endpoint availability and adjust timeout settings at the client/network level, rather than retrying."
+      ],
+      "added_at": "2026-09-29T04:27:25.582534+00:00"
+    },
+    "<urlopen error timed out> during 'Failed to trigger'": {
+      "steps": [
+        "Increase the `request_timeout` or check network connectivity; avoid using simple wait/retry for persistent timeouts."
+      ],
+      "added_at": "2026-09-29T04:34:01.023853+00:00"
+    },
+    "Exit code 124 (timeout) despite retry_with_timeout_increase strategy": {
+      "steps": [
+        "Increase the base timeout significantly or investigate why the script execution hangs for >2 hours (potential loop or network hang)."
+      ],
+      "added_at": "2026-09-29T07:10:39.035488+00:00"
+    },
+    "\"Trigger failed [401]: <html ...> <h1>HTTP ERROR 401 Unauthorized</h1>\"": {
+      "steps": [
+        "Re-verify Jenkins API tokens/credentials and ensure they are correctly scoped for the specific jobs being triggered."
+      ],
+      "added_at": "2026-09-29T07:46:05.891031+00:00"
+    }
+  },
+  "remediation_ledger": {
+    "Build step 'Allure Report' changed build result to UNSTABLE / Exit code: 1": {
+      "first_seen": "2026-09-24T09:25:38.531485+00:00",
+      "last_seen": "2026-09-29T04:50:04.218962+00:00",
+      "occurrences": 12,
+      "strategies": {
+        "auto_fix_chromedriver": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-09-28T11:48:15.945288+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 393.2,
+          "history": [
+            {
+              "run_id": "run-20260924-112249",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+              "outcome": "failure",
+              "duration_sec": 333.36,
+              "timestamp": "2026-09-24T09:34:11.922514+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260928-132323",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+              "outcome": "failure",
+              "duration_sec": 453.05,
+              "timestamp": "2026-09-28T11:48:15.945288+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "config_validation": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-09-28T14:23:51.061141+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 4513.8,
+          "history": [
+            {
+              "run_id": "run-20260924-112249",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-4-add-after-upgrade",
+              "outcome": "failure",
+              "duration_sec": 0.21,
+              "timestamp": "2026-09-24T10:10:51.200001+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260928-132323",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity",
+              "outcome": "failure",
+              "duration_sec": 9027.38,
+              "timestamp": "2026-09-28T14:23:51.061141+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_after_wait",
+      "confidence": "low",
+      "suites_affected": [
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-1-before-upgrade",
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-2-verify-existing",
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-3-reconfig-existing",
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-4-add-after-upgrade",
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity"
+      ]
+    },
+    "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-parallel": {
+      "first_seen": "2026-09-24T10:38:57.163636+00:00",
+      "last_seen": "2026-09-24T10:38:57.163636+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 2,
+          "successes": 0,
+          "failures": 2,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-09-29T07:08:19.347626+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 3703.3,
+          "history": [
+            {
+              "run_id": "run-20260924-112249",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-parallel",
+              "outcome": "failure",
+              "duration_sec": 35.46,
+              "timestamp": "2026-09-24T10:38:57.163616+00:00",
+              "context": {}
+            },
+            {
+              "run_id": "run-20260928-132323",
+              "suite": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-parallel",
+              "outcome": "failure",
+              "duration_sec": 7371.05,
+              "timestamp": "2026-09-29T07:08:19.347626+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_with_timeout_increase",
+      "confidence": "low",
+      "suites_affected": [
+        "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-parallel"
+      ]
+    },
+    "401 Unauthorized</title>": {
+      "first_seen": "2026-09-29T07:10:39.037886+00:00",
+      "last_seen": "2026-09-29T07:10:39.037886+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 0,
+          "failures": 1,
+          "partials": 0,
+          "success_rate": 0.0,
+          "last_used": "2026-09-29T07:44:10.346340+00:00",
+          "last_outcome": "failure",
+          "avg_duration_sec": 1831.3,
+          "history": [
+            {
+              "run_id": "run-20260928-132323",
+              "suite": "openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+              "outcome": "failure",
+              "duration_sec": 1831.28,
+              "timestamp": "2026-09-29T07:44:10.346340+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator"
+      ]
+    }
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "test_type": "none",
+  "suites": [
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-setup",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-setup",
+      "timeout_sec": 1200,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "dashboard",
+        "setup",
+        "cp4d",
+        "zlinux",
+        "db2",
+        "iam",
+        "openscale",
+        "wos",
+        "configuration"
+      ],
+      "description": "Configures the OpenScale/Watson OpenScale (WOS) dashboard for CP4D on zLinux, including DB2 and IAM integration setup."
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity",
+      "timeout_sec": 1800,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "dashboard",
+        "sanity",
+        "e2e",
+        "cp4d",
+        "openscale",
+        "zlinux",
+        "ui"
+      ],
+      "description": "Runs end-to-end sanity tests for the OpenScale (Watson OpenScale/AI Fairness 360) Dashboard UI on a CP4D zLinux cluster."
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-1-before-upgrade",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity-1-before-upgrade",
+      "timeout_sec": 1800,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "dashboard",
+        "sanity",
+        "cp4d",
+        "zlinux",
+        "pre-upgrade",
+        "openscale",
+        "ui"
+      ],
+      "description": "Validates the OpenScale Dashboard UI and functionality on CP4D zLinux before an upgrade operation."
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-2-verify-existing",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity-2-verify-existing",
+      "timeout_sec": 900,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "openscale",
+        "dashboard",
+        "sanity",
+        "e2e",
+        "ui",
+        "zlinux"
+      ],
+      "description": "Verifies existing deployments, configurations, and monitoring state in the OpenScale UI dashboard as part of the zLinux E2E sanity test suite."
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-3-reconfig-existing",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity-3-reconfig-existing",
+      "timeout_sec": 900,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "sanity",
+        "e2e",
+        "dashboard",
+        "openscale",
+        "ui",
+        "zlinux"
+      ],
+      "description": "End-to-end sanity test validating Watson OpenScale dashboard reconfiguration workflows on CP4D zLinux clusters."
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-4-add-after-upgrade",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity-4-add-after-upgrade",
+      "timeout_sec": 1200,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "dashboard",
+        "sanity",
+        "upgrade",
+        "cp4d",
+        "zlinux",
+        "openscale",
+        "e2e"
+      ],
+      "description": "Runs OpenScale Dashboard sanity checks for step 4 (add after upgrade) on CP4D zLinux environment"
+    },
+    {
+      "name": "openscale_dashboardsetup_jenkins_openscale-dashboard-sanity-parallel",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/DashboardSetup/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-dashboard-sanity-parallel",
+      "timeout_sec": 1800,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "dashboard",
+        "sanity",
+        "parallel",
+        "openscale",
+        "cp4d",
+        "zlinux",
+        "ui"
+      ],
+      "description": "Runs OpenScale Dashboard sanity tests in parallel against a CP4D cluster on zLinux."
+    },
+    {
+      "name": "openscale_ivtorchestrator_jenkins_openscale-ivt-orchestrator",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/Openscale/IVTOrchestrator/jenkins_jobs.json",
+      "jenkins_job_name": "openscale-ivt-orchestrator",
+      "timeout_sec": 7200,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "openscale",
+        "ivt",
+        "e2e",
+        "mrm",
+        "fairness",
+        "quality",
+        "explainability",
+        "drift",
+        "cp4d",
+        "zlinux",
+        "orchestrator"
+      ],
+      "description": "Orchestrates end-to-end IVT scenarios (MRM, Fairness, Quality, Explainability, Drift) for OpenScale/Watson OpenScale against a CP4D cluster on zLinux."
+    }
+  ]
+}

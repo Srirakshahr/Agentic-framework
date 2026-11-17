@@ -1,0 +1,176 @@
+{
+  "version": 3,
+  "entries": [],
+  "failure_patterns": {},
+  "fix_recipes": {},
+  "remediation_ledger": {
+    "autoai_jenkins_ml-deployments-autoai-cp4d4": {
+      "first_seen": "2026-09-17T08:03:56.770861+00:00",
+      "last_seen": "2026-09-17T08:03:56.770861+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T08:03:56.770856+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-132646",
+              "suite": "autoai_jenkins_ml-deployments-autoai-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.02,
+              "timestamp": "2026-09-17T08:03:56.770856+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_after_wait": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T08:48:20.469151+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-133816",
+              "suite": "autoai_jenkins_ml-deployments-autoai-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.03,
+              "timestamp": "2026-09-17T08:48:20.469151+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "autoai_jenkins_ml-deployments-autoai-cp4d4"
+      ]
+    },
+    "autoai_jenkins_ml-trainings-autoai-cp4d4": {
+      "first_seen": "2026-09-17T08:08:10.857834+00:00",
+      "last_seen": "2026-09-17T08:08:10.857834+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T08:08:10.857822+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-132646",
+              "suite": "autoai_jenkins_ml-trainings-autoai-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.02,
+              "timestamp": "2026-09-17T08:08:10.857822+00:00",
+              "context": {}
+            }
+          ]
+        },
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T08:52:33.046732+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-133816",
+              "suite": "autoai_jenkins_ml-trainings-autoai-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.02,
+              "timestamp": "2026-09-17T08:52:33.046732+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "autoai_jenkins_ml-trainings-autoai-cp4d4"
+      ]
+    },
+    "autoai_jenkins_ml-trainings-autoai-ts-cp4d4": {
+      "first_seen": "2026-09-17T08:56:50.842874+00:00",
+      "last_seen": "2026-09-17T08:56:50.842874+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_with_timeout_increase": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T08:56:50.842861+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-133816",
+              "suite": "autoai_jenkins_ml-trainings-autoai-ts-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.02,
+              "timestamp": "2026-09-17T08:56:50.842861+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_with_timeout_increase",
+      "confidence": "low",
+      "suites_affected": [
+        "autoai_jenkins_ml-trainings-autoai-ts-cp4d4"
+      ]
+    },
+    "autoai_jenkins_ml-deployments-autoai-ts-cp4d4": {
+      "first_seen": "2026-09-17T09:00:54.097704+00:00",
+      "last_seen": "2026-09-17T09:00:54.097704+00:00",
+      "occurrences": 1,
+      "strategies": {
+        "retry_blind": {
+          "attempts": 1,
+          "successes": 1,
+          "failures": 0,
+          "partials": 0,
+          "success_rate": 1.0,
+          "last_used": "2026-09-17T09:00:54.097689+00:00",
+          "last_outcome": "success",
+          "avg_duration_sec": 0.0,
+          "history": [
+            {
+              "run_id": "run-20260917-133816",
+              "suite": "autoai_jenkins_ml-deployments-autoai-ts-cp4d4",
+              "outcome": "success",
+              "duration_sec": 0.03,
+              "timestamp": "2026-09-17T09:00:54.097689+00:00",
+              "context": {}
+            }
+          ]
+        }
+      },
+      "best_strategy": "retry_blind",
+      "confidence": "low",
+      "suites_affected": [
+        "autoai_jenkins_ml-deployments-autoai-ts-cp4d4"
+      ]
+    }
+  }
+}

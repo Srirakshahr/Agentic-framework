@@ -1,0 +1,87 @@
+{
+  "calls": 19,
+  "success": 19,
+  "errors": 0,
+  "timeouts": 0,
+  "total_time_sec": 211.19,
+  "setup_time_sec": 30.08,
+  "jobs_analyzed": [
+    {
+      "job": "Datastage/Utility/perf_scenario5",
+      "time_sec": 7.48
+    },
+    {
+      "job": "Datastage/Utility/sql_pushdown_automation",
+      "time_sec": 12.77
+    },
+    {
+      "job": "Datastage/Utility/patch_zip",
+      "time_sec": 9.28
+    },
+    {
+      "job": "Datastage/Utility/perf_scenario3",
+      "time_sec": 7.65
+    },
+    {
+      "job": "Datastage/Utility/run_fastpath",
+      "time_sec": 9.23
+    },
+    {
+      "job": "Datastage/Utility/jenkins_fastpath_trigger",
+      "time_sec": 6.49
+    },
+    {
+      "job": "Datastage/Utility/cpd_perf",
+      "time_sec": 11.41
+    },
+    {
+      "job": "Datastage/Utility/jobzero",
+      "time_sec": 10.13
+    },
+    {
+      "job": "Datastage/Utility/run",
+      "time_sec": 10.72
+    },
+    {
+      "job": "Datastage/Utility/DS_GIT_INTEGRATION_TEST",
+      "time_sec": 9.62
+    },
+    {
+      "job": "Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.1",
+      "time_sec": 10.94
+    },
+    {
+      "job": "Datastage/Utility/DS_Performance_Tests/DS_Scenario_1.2",
+      "time_sec": 11.13
+    },
+    {
+      "job": "Datastage/Utility/DS_Performance_Tests/DS_Scenario_6/scripts",
+      "time_sec": 10.11
+    },
+    {
+      "job": "Datastage/Utility/DS_READ_WRITE_TESTS",
+      "time_sec": 11.69
+    },
+    {
+      "job": "Datastage/Utility/DS_Scenario_2/scripts",
+      "time_sec": 31.09
+    },
+    {
+      "job": "Datastage/Utility/DS_canvas_Manual_Test/run_full_test",
+      "time_sec": 7.69
+    },
+    {
+      "job": "Datastage/Utility/performance-sceanrio1",
+      "time_sec": 7.27
+    },
+    {
+      "job": "Datastage/Utility/vault_testing/vault_testing",
+      "time_sec": 16.51
+    },
+    {
+      "job": "assembler_ordering",
+      "time_sec": 9.98
+    }
+  ],
+  "error_details": []
+}

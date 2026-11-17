@@ -1,0 +1,22 @@
+{
+  "test_type": "python",
+  "suites": [
+    {
+      "name": "datastage_utility_ds_scenario_2",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_Scenario_2/scripts\" && python3 -m pip install -q selenium webdriver-manager openpyxl python-dateutil && export HERMES_REMOTE_HOST=$HERMES_REMOTE_HOST HERMES_SSH_PASSWORD=$HERMES_SSH_PASSWORD CPD_USERNAME=$CPD_USERNAME CPD_PASSWORD=$CPD_PASSWORD && python3 run_complete_automation.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "cpdctl",
+        "vm"
+      ],
+      "description": "DataStage Performance Scenario 2",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    }
+  ]
+}

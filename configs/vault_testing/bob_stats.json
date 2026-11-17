@@ -1,0 +1,15 @@
+{
+  "calls": 1,
+  "success": 1,
+  "errors": 0,
+  "timeouts": 0,
+  "total_time_sec": 5.49,
+  "setup_time_sec": 0.85,
+  "jobs_analyzed": [
+    {
+      "job": "assembler_ordering",
+      "time_sec": 5.49
+    }
+  ],
+  "error_details": []
+}

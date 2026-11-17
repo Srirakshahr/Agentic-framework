@@ -1,0 +1,77 @@
+{
+  "test_type": "none",
+  "suites": [
+    {
+      "name": "autoai_jenkins_ml-deployments-autoai-cp4d4",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/AutoAI/jenkins_jobs.json",
+      "jenkins_job_name": "ml-deployments-autoai-cp4d4",
+      "timeout_sec": 1800,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "autoai",
+        "ml",
+        "deployment",
+        "cp4d",
+        "svt",
+        "pipelines"
+      ],
+      "description": "Validates AutoAI machine learning model deployment pipelines on Cloud Pak for Data (CP4D)"
+    },
+    {
+      "name": "autoai_jenkins_ml-trainings-autoai-cp4d4",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/AutoAI/jenkins_jobs.json",
+      "jenkins_job_name": "ml-trainings-autoai-cp4d4",
+      "timeout_sec": 2700,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "autoai",
+        "ml-training",
+        "cp4d",
+        "svt",
+        "experiment"
+      ],
+      "description": "Validates AutoAI training experiments on Cloud Pak for Data (CP4D) as part of SVT suite."
+    },
+    {
+      "name": "autoai_jenkins_ml-trainings-autoai-ts-cp4d4",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/AutoAI/jenkins_jobs.json",
+      "jenkins_job_name": "ml-trainings-autoai-ts-cp4d4",
+      "timeout_sec": 2700,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "autoai",
+        "time-series",
+        "model",
+        "training",
+        "ml",
+        "svt",
+        "cp4d"
+      ],
+      "description": "Validates AutoAI time series machine learning model training experiments on Cloud Pak for Data (CP4D)."
+    },
+    {
+      "name": "autoai_jenkins_ml-deployments-autoai-ts-cp4d4",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/AutoAI/jenkins_jobs.json",
+      "jenkins_job_name": "ml-deployments-autoai-ts-cp4d4",
+      "timeout_sec": 2700,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "autoai",
+        "time-series",
+        "deployment",
+        "cp4d",
+        "ml",
+        "svt"
+      ],
+      "description": "Validates AutoAI time series deployment pipelines on Cloud Pak for Data (CP4D)"
+    }
+  ]
+}

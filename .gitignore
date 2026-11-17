@@ -1,0 +1,15 @@
+# Credentials
+.env
+.env.enc
+.env.bak*
+*.key
+*.pem
+
+# Run output
+out/
+scripts/out/
+logs/
+
+__pycache__/
+*.pyc
+.DS_Store

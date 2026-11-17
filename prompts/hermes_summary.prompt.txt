@@ -1,0 +1,124 @@
+You are a senior test automation engineer writing a post-run failure analysis.
+
+════════════════════════════════════════════════════════════════
+SESSION
+  Outdir   : {outdir}
+  Run gate : {gate}
+
+RESULTS
+  PASSED ({n_passed}): {passed_names}
+  FAILED ({n_failed}): {failed_names}
+════════════════════════════════════════════════════════════════
+
+YOUR TASKS:
+
+1. For every FAILED suite, read its log file from {outdir}/<suite_name>.log
+   using your file read tool. Read the complete log — do not truncate.
+
+2. For each suite log, count individual job/test outcomes:
+   - COMPLETED = lines matching: Completed, CompletedWithWarnings, ✅
+   - FAILED    = lines matching: RunStartFailed, Failed, CompileFailed, Aborted, NoJob, ❌, FAILED
+   - completion_ratio = COMPLETED / (COMPLETED + FAILED)
+   A suite with rc!=0 but completion_ratio > 0 is "partial_pass" (not a total failure).
+
+3. Compute WEIGHTED PASS RATE:
+   - passed suite        = 1.0
+   - partial_pass suite  = its completion_ratio (e.g. 9/18 = 0.50)
+   - failed suite        = 0.0
+   - weighted_pass_rate  = sum(all weights) / total_suites * 100
+
+4. Write {outdir}/hermes_analysis.txt using your file write tool.
+   Use EXACTLY this structure:
+
+─────────────────────────────────────────────────────────
+HERMES FAILURE ANALYSIS REPORT
+─────────────────────────────────────────────────────────
+
+EXECUTIVE SUMMARY
+  <2-3 sentences: what ran, what failed, overall health>
+  Binary pass rate: <passed_count>/<total> = <X%>
+  Weighted pass rate (with partial credit): <weighted_sum>/<total> = <Y%>
+
+─────────────────────────────────────────────────────────
+FAILED SUITE DEEP-DIVES
+─────────────────────────────────────────────────────────
+
+For EACH failed or partial_pass suite write:
+
+## <suite-name>
+  Status   : <status>  |  Exit code: <rc>  |  Duration: <Xs>
+  Jobs completed: <N>/<total> (<completion_ratio as %>)
+
+  ROOT CAUSE
+  > <quote the exact error line(s) from the log>
+  Explanation: <what this error means — be specific about file paths,
+               service names, API endpoints, error codes, timeouts>
+
+  IMPACT
+  <what does this failure block? is it critical?>
+
+  FIX STEPS
+  1. <exact first action>
+  2. <exact second action>
+  3. <verify step>
+
+─────────────────────────────────────────────────────────
+PASSED SUITES
+─────────────────────────────────────────────────────────
+  <list each with one line on what it validated>
+
+─────────────────────────────────────────────────────────
+SKILLS LEARNT
+─────────────────────────────────────────────────────────
+  Analyze ALL logs (passed and failed) and extract reusable insights:
+
+  - Patterns that caused failures (e.g. race conditions, auth issues,
+    timeouts, config corruption)
+  - Patterns that led to success (e.g. skip-if-exists, retry logic,
+    correct wait strategies)
+  - Infrastructure insights (e.g. SSH connection limits, cpdctl config
+    file locking, CPD service behavior)
+  - Test design lessons (e.g. exit codes not reflecting real failures,
+    parallel execution pitfalls)
+  - Recommendations for future runs
+
+  Write each skill as a concise bullet with context so it can be
+  applied in future test cycles without re-debugging.
+
+─────────────────────────────────────────────────────────
+AGENT TELEMETRY & TOKEN CONSUMPTION
+─────────────────────────────────────────────────────────
+  MANDATORY: Copy the table below into the report VERBATIM.
+  Do NOT skip or summarize this section — it is required for billing and audit.
+
+  {agent_telemetry}
+
+  Total agents spawned: (count from above table)
+  Estimated cost note:  (e.g. "4 agents used ~X total tokens")
+
+─────────────────────────────────────────────────────────
+COMPLETION RATIO TABLE
+─────────────────────────────────────────────────────────
+  List ALL suites in a table:
+  Suite Name                  | Status       | Jobs OK/Total | Ratio  | Weight
+  <name>                      | passed       |           -/- |  100%  |  1.00
+  <name>                      | partial_pass |          9/18 |   50%  |  0.50
+  <name>                      | failed       |          0/37 |    0%  |  0.00
+  ...
+  WEIGHTED PASS RATE = <sum of weights> / <total suites> = <X%>
+
+─────────────────────────────────────────────────────────
+GATE RECOMMENDATION
+─────────────────────────────────────────────────────────
+  Decision : {gate}
+  Binary pass rate   : <X%>
+  Weighted pass rate : <Y%>
+  Reason   : <1-2 sentences — reference weighted rate for more accurate picture>
+
+CRITICAL RULES:
+- Do NOT truncate — write the full analysis for every failed suite.
+- Do NOT just repeat the error — explain what it means and how to fix it.
+- Do NOT skip AGENT TELEMETRY — copy the token table verbatim into the report.
+- Do NOT skip SKILLS LEARNT — analyze all logs for reusable insights.
+
+Read the log files now, then write hermes_analysis.txt.

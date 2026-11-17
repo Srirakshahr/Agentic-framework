@@ -1,0 +1,298 @@
+{
+  "test_type": "robot",
+  "suites": [
+    {
+      "name": "wsl_wml_robotframework_testcases_catalog_integration",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD catalog_integration.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Catalog Integration Tests - includes several utility libraries supporting various operations like request handling, project management, and user management.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "fabric",
+        "paramiko"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_jwt",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v DB2_HOST:$DB2_HOST -v DB2_USERNAME:$DB2_USERNAME -v DB2_PASSWORD:$DB2_PASSWORD -v CPD_HOST:$CPD_URL_HOST -v CPD_USERNAME:$CPD_USERNAME -v CPD_PASSWORD:$CPD_PASSWORD JWT.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "run_local": true,
+      "description": "Verify native DB2 JWT authentication with CP4D.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests"
+      ],
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_chrome": "true"
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_exportimport",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v branch:$GIT_BRANCH -v password:$CPD_PASSWORD -v url:$CPD_URL_HOST -v username:$CPD_USERNAME ExportImport.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test cases verify export/import functionality in a project.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "fabric",
+        "paramiko",
+        "cryptography",
+        "hvac",
+        "pandas"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": "true"
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD -v github_token:$GIT_TOKEN -v gitlab_token:$GIT_TOKEN -v bitbucket_token:$GIT_TOKEN -v azure_git_token:$GIT_TOKEN -v github_url:$GIT_URL -v gitlab_url:$GIT_URL -v bitbucket_url:$GIT_URL -v azure_git_url:$GIT_URL git_integration_multi-user_scenario.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "Multi-user git scenario with various repository types.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "urllib3",
+        "pyyaml"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_dmc_new_instance_crud_operations",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD DMC_new_instance_crud_operations.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "DMC new instance CRUD operations on a web interface.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "fabric",
+        "paramiko"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_pythonclient_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v URL:$CPD_URL_HOST -v USERNAME:$CPD_USERNAME -v PASSWORD:$CPD_PASSWORD -v BRANCH_NAME:$GIT_BRANCH -v CLUSTER_NAME:$CLUSTER_NAME -v CLUSTER_PASS:$CLUSTER_PASS -v GIT_REPO:$GIT_URL -v GIT_TOKEN:$GIT_TOKEN pythonclient_test.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Python Client Suite - Step by step verification with various model deployments.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "paramiko",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && HEADLESS=1 python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD -v github_token:$GIT_TOKEN -v github_url:$GIT_URL git_integration_merge_conflict.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test merge conflict scenario in a git repository.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "urllib3",
+        "yaml",
+        "fabric",
+        "paramiko",
+        "cryptography",
+        "hvac",
+        "pythonlibcore",
+        "sshlibrary"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_local_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v repo_username:$GIT_REPO_USERNAME -v BRANCH:$GIT_BRANCH Job_Retention_in_Local_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Job retention in local project, including several utility libraries.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "pyyaml",
+        "urllib3",
+        "datetime",
+        "paramiko",
+        "fabric",
+        "pytest",
+        "hvac"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_git_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v repo_username:$GIT_REPO_USERNAME Job_Retention_in_Git_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Job retention in a git project, including notebook execution.",
+      "pip_packages": [
+        "robotframework"
+      ]
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_notebook_env_job_testcase",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/Requirements.txt\" && python3 -m robot -v url:$CPD_URL_HOST -v username:$CPD_USERNAME -v password:$CPD_PASSWORD notebook_env_job_testcase.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test cases verify Environment, Notebook, Job components in a notebook execution flow.",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "urllib3",
+        "pyyaml",
+        "pandas",
+        "plotly",
+        "fabric",
+        "paramiko",
+        "h11",
+        "sniffio",
+        "outcome",
+        "wsproto",
+        "trio",
+        "datetime",
+        "dateutil",
+        "six"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_jenkins_pythonclient_test",
+      "type": "jenkins",
+      "jenkins_config": "/home/user/Desktop/cpd-perf-automation/WSL-WML/Robotframework_testcases/jenkins_jobs.json",
+      "jenkins_job_name": "pythonclient_test",
+      "timeout_sec": 1200,
+      "run_local": true,
+      "critical": false,
+      "tags": [
+        "python-client",
+        "model",
+        "deployment",
+        "pipeline",
+        "cpd",
+        "upgrade-validation"
+      ],
+      "description": "Triggers the Python Client pipeline to verify model deployment on a CPD cluster, covering post-upgrade and normal validation scenarios."
+    }
+  ]
+}

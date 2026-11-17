@@ -1,0 +1,262 @@
+{
+  "test_type": "robot",
+  "suites": [
+    {
+      "name": "wsl_wml_robotframework_testcases_jwt",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium requests pyyaml pyyaml fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD JWT.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test cases to verify JWT Token using DB2 connection",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "pyyaml",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_dmc_new_instance_crud_operations",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD DMC_new_instance_crud_operations.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "DMC instance creation and CRUD operations",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_exportimport",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium requests pyyaml python-dateutil fabric && python3 -m robot -v git_token:$GIT_TOKEN -v git_url:$GIT_URL -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD ExportImport.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test cases to verify Export Import functionality",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "python-dateutil",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_multi_user_scenario",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-selenium2library selenium requests pyyaml urllib3 fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD git_integration_multi-user_scenario.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui",
+        "perf"
+      ],
+      "run_local": true,
+      "description": "git_integration_multi_user_scenario.robot",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-selenium2library",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "urllib3",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_local_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium requests pyyaml urllib3 hvac fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD Job_Retention_in_Local_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Job retention analysis and reporting",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "urllib3",
+        "hvac",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_job_retention_in_git_project",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary requests pyyaml python-dateutil pytest fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD Job_Retention_in_Git_Project.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Job retention in Git project",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "requests",
+        "pyyaml",
+        "python-dateutil",
+        "pytest",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_pythonclient_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --quiet robotframework && python3 pythonclient_test.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "pip_packages": [
+        "robotframework"
+      ]
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_catalog_integration",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium requests pyyaml urllib3 fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD catalog_integration.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "catalog_integration.robot test suite",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "urllib3",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_git_integration_merge_conflict",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium requests pyyaml fabric && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD git_integration_merge_conflict.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "git integration merge conflict scenario",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium",
+        "requests",
+        "pyyaml",
+        "fabric"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "wsl_wml_robotframework_testcases_notebook_env_job_testcase",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/WSL-WML/Robotframework_testcases\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/WSL-WML/requirements.txt\" && python3 -m pip install --break-system-packages --quiet robotframework robotframework-seleniumlibrary selenium && python3 -m robot -v url:$CPD_URL -v username:$CPD_USERNAME -v password:$CPD_PASSWORD notebook_env_job_testcase.robot'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Test cases to verify Environment, Notebook, Job",
+      "pip_packages": [
+        "robotframework",
+        "robotframework-seleniumlibrary",
+        "selenium"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_chrome": true,
+        "needs_cpdctl": false,
+        "needs_ssh_vm": false
+      }
+    }
+  ]
+}

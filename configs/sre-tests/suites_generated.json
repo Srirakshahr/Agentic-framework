@@ -1,0 +1,148 @@
+{
+  "test_type": "none",
+  "suites": [
+    {
+      "name": "sre_tests_utility_uninstall",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash uninstall.sh'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Automate the uninstallation of CCS, WSL, WML, OpenScale, SparkAE using cpd-cli.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_shutdown_restart",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash shutdown-restart.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE script for automated shutdown and restart cycles during deployment updates.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": true,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_zenapi_service_instance_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash zenapi_service_instance_test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE validation script using Zen API via shell commands and jq.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_out_of_box_monitor",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash out_of_box_monitor.sh'",
+      "timeout_sec": 36000,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE Utility script for managing and validating out-of-box monitoring tools.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_node_pinning",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility \" && bash Node-Pinning.sh'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "Node pinning validation script.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_hpa_test_hpa_automation",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /hpa_test\" && bash hpa_automation.sh'",
+      "timeout_sec": 7200,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE script validating Horizontal Pod Autoscaler (HPA) and pod scaling logic.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": true,
+        "needs_ssh_vm": true
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_proxy_enable",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash proxy_enable.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE Utility script for enabling proxy settings.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_source_env",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash source_env.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE Utility script for proxy and environment setup.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": true,
+        "needs_chrome": false,
+        "needs_ssh_vm": false
+      }
+    },
+    {
+      "name": "sre_tests_utility_http_proxy_proxy_setup_test",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/SRE-TESTS/Utility /http_proxy\" && bash proxy-setup-test.sh'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "core"
+      ],
+      "description": "SRE utility script for proxy setup and authentication.",
+      "capabilities": {
+        "needs_selenium": false,
+        "needs_cpdctl": false,
+        "needs_chrome": false,
+        "needs_ssh_vm": true
+      }
+    }
+  ]
+}

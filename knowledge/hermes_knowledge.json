@@ -1,0 +1,302 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "skill": "Local traffic is unstable on ports 60072/60388",
+      "source_run": "test-run",
+      "category": "Port Resilience:",
+      "added_at": "2026-06-15T05:14:05.549301+00:00"
+    },
+    {
+      "skill": "SSH credentials must be loaded into ssh-agent",
+      "source_run": "test-run",
+      "category": "Auth Management:",
+      "added_at": "2026-06-15T05:14:05.549859+00:00"
+    },
+    {
+      "skill": "UI tests need hard wait after page transitions",
+      "source_run": "test-run",
+      "category": "UX Wait Strategy:",
+      "added_at": "2026-06-15T05:14:05.549980+00:00"
+    },
+    {
+      "skill": "Local traffic is unstable on ports 60072/60388; implement retry logic or pre-flight checks for local proxies.",
+      "source_run": "manual-ingest",
+      "category": "Port Resilience:",
+      "added_at": "2026-06-15T05:14:11.376353+00:00"
+    },
+    {
+      "skill": "SSH credentials must be explicitly loaded into `ssh-agent` before the execution of multi-node test cycles.",
+      "source_run": "manual-ingest",
+      "category": "Auth Management:",
+      "added_at": "2026-06-15T05:14:11.376808+00:00"
+    },
+    {
+      "skill": "UI tests requiring navigation to internal frames (like \"All projects\") need a hard wait or JS click confirmation after page transitions.",
+      "source_run": "manual-ingest",
+      "category": "UX Wait Strategy:",
+      "added_at": "2026-06-15T05:14:11.376910+00:00"
+    },
+    {
+      "skill": "The 400 Bad Request errors indicate that dynamic naming in the pipeline construction currently exceeds API limits or constraints.",
+      "source_run": "manual-ingest",
+      "category": "DataStage Schema Integrity:",
+      "added_at": "2026-06-15T05:14:11.376997+00:00"
+    },
+    {
+      "skill": "Distinguishing between 'RunStartFailed' (infrastructure) and 'CompileFailed' (configuration) is essential for triaging complex performance suites.",
+      "source_run": "manual-ingest",
+      "category": "Diagnostic Clarity:",
+      "added_at": "2026-06-15T05:14:11.377076+00:00"
+    },
+    {
+      "skill": "[critical] ds-profile not found after token expiry: cpdctl profile check returns rc=0 but token is expired, causing watson_studio activation failure",
+      "source_run": "test-run",
+      "category": "auth",
+      "added_at": "2026-06-15T07:44:01.107671+00:00"
+    },
+    {
+      "skill": "[high] SSH connection timeout to test cluster: VPN or network instability causes intermittent SSH drops to example.com hosts",
+      "source_run": "test-run",
+      "category": "infra",
+      "added_at": "2026-06-15T07:44:01.108015+00:00"
+    },
+    {
+      "skill": "Consistent SSH failures in 'Scenario 5' and 'Scenario 1_1' indicate that `ssh-agent` configuration is the most likely point of failure for non-local runners; recommend moving to pre-emptive key injection.",
+      "source_run": "run-20260618-161731",
+      "category": "Infrastructure",
+      "added_at": "2026-06-18T16:07:50.400511+00:00"
+    },
+    {
+      "skill": "The failure of `ds_read_write_test` at a specific dropdown suggests a need for explicit wait durations for \"hidden\" or dynamically loaded components after Page Transitions.",
+      "source_run": "run-20260618-161731",
+      "category": "UI Stability",
+      "added_at": "2026-06-18T16:07:50.401426+00:00"
+    },
+    {
+      "skill": "'Bad Request' errors in `performance_cpd_perf` show that the DataStage API has stricter schema/naming validations than expected; require pre-flight validation for all auto-generated job names.",
+      "source_run": "run-20260618-161731",
+      "category": "Backend Validation",
+      "added_at": "2026-06-18T16:07:50.401701+00:00"
+    },
+    {
+      "skill": "Successes in Scenario 3 and 1_2 suggest that consistent wait strategies outperform early return patterns on high-latency pipelines.",
+      "source_run": "run-20260618-161731",
+      "category": "Retry Logic",
+      "added_at": "2026-06-18T16:07:50.402244+00:00"
+    },
+    {
+      "skill": "Distinguishing between 'RunStartFailed' (Network/Infra) and 'CompileFailed' (Config/Schema) allows for faster triage of local vs. remote issues.",
+      "source_run": "run-20260618-161731",
+      "category": "Distinct Error Handling",
+      "added_at": "2026-06-18T16:07:50.402508+00:00"
+    }
+  ],
+  "failure_patterns": {
+    "Login error: HTTPConnectionPool(host='localhost', port=60072): Read timed out": {
+      "root_cause": "The proxy service on port 60072 was not responding within 300 seconds.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:05.550370+00:00"
+    },
+    "2026-06-12 15:26:12,759 - ERROR - \u274c Login error: HTTPConnectionPool(host='localhost', port=60072): R": {
+      "root_cause": "The test failed because it could not establish a stable connection to the local proxy or listener on port 60072 within the 300-second window, likely due to a hung middleware process or network overload.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.377284+00:00"
+    },
+    "selenium.common.exceptions.TimeoutException: Message:": {
+      "root_cause": "The automation failed to locate the 'All projects' link. While login succeeded, the specific UI element was either not present or obstructed by a secondary layer during the transition period.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.377371+00:00"
+    },
+    "-root@api.mycluster.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with": {
+      "root_cause": "The system failed to authenticate via SSH to the target API host because the private key was not available in the current `ssh-agent` or was rejected by the server's authorized_keys.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.377589+00:00"
+    },
+    "2026-06-12 15:33:49,737 - ERROR - Alternative login failed: Message:": {
+      "root_cause": "The test reached the OpenShift console but either timed out or encountered an empty selenium response because the page was still loading during the multi-step authentication handoff.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.377766+00:00"
+    },
+    "2026-06-12 15:35:37,560 - ERROR - \u274c Login error: HTTPConnectionPool(host='localhost', port=60388): R": {
+      "root_cause": "Similar to git_integration_test, this suite encountered a local connection timeout on port 60388 during the login phase.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.378015+00:00"
+    },
+    "[RUN] RowGen-PostgreTableS1: no job found, creating ... \\n Bad Request\n  > [RUN] postgresql-copy-pee": {
+      "root_cause": "Several jobs failed to be created (400 Bad Request) due to malformed configuration data or missing parameters. Others failed during execution (500 Internal Server Error), indicating a backend connectivity issue between DataStage and the Postgres database.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-15T05:14:11.378186+00:00"
+    },
+    "ds-profile not found after token expiry": {
+      "root_cause": "cpdctl profile check returns rc=0 but token is expired, causing watson_studio activation failure",
+      "fix": "Verify token with `cpdctl project list` before proceeding, re-authenticate if stale",
+      "suite": "",
+      "last_seen": "2026-06-15T07:44:01.107009+00:00"
+    },
+    "SSH connection timeout to test cluster": {
+      "root_cause": "VPN or network instability causes intermittent SSH drops to example.com hosts",
+      "fix": "Add ConnectTimeout=30 and ServerAliveInterval=60 to SSH config",
+      "suite": "",
+      "last_seen": "2026-06-15T07:44:01.107872+00:00"
+    },
+    "\u274c Could not find dropdown menu button / \u274c Failed to click dropdown menu": {
+      "root_cause": "This appears to be a duplicate run entry or an identical instance of the same failure point. The automation failed during the interactive selection of items in the project management UI.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-18T16:07:50.403467+00:00"
+    },
+    "[RUN] Job create failed: FAILED / Bad Request AND [RUN] ... Compile failed: FAILED / Unprocessable E": {
+      "root_cause": "The system encountered \"Bad Request\" and \"Unprocessable Entity\" errors during the automated creation of RunGen objects. This suggests that several job names or configurations were rejected by the DataStage backend API, likely due to naming conflicts or validation failures.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-18T16:07:50.403725+00:00"
+    },
+    "ssh: connect to host api.mycluster.example.com port 22: Undefined error: 0": {
+      "root_cause": "Instant failure due to SSH connection timeout or key rejection. The test failed before the first job attempt could be initiated.",
+      "fix": "",
+      "suite": "",
+      "last_seen": "2026-06-18T16:07:50.404250+00:00"
+    },
+    "ModuleNotFoundError: No module named": {
+      "root_cause": "Required Python package not installed in the Python environment running the test script",
+      "fix": "pip3 install <missing_module> on the target machine (local or remote via SSH)",
+      "suite": "",
+      "last_seen": "2026-07-09T04:00:00.000000+00:00"
+    },
+    "chromedriver not found in PATH and webdriver-manager not installed": {
+      "root_cause": "Selenium tests require chromedriver binary and webdriver-manager package",
+      "fix": "pip3 install webdriver-manager && dnf install -y chromium chromedriver",
+      "suite": "",
+      "last_seen": "2026-07-09T04:00:00.000000+00:00"
+    }
+  },
+  "fix_recipes": {
+    "Login error: HTTPConnectionPool(host='localhost', port=60072): Read timed out": {
+      "steps": [
+        "Verify that local proxy services are running",
+        "Check for zombie processes on the port",
+        "Add a pre-run connectivity check"
+      ],
+      "added_at": "2026-06-15T05:14:05.550618+00:00"
+    },
+    "2026-06-12 15:26:12,759 - ERROR - \u274c Login error: HTTPConnectionPool(host='localhost', port=60072): R": {
+      "steps": [
+        "Verify that local proxy services are running and bound to port 60072.",
+        "Identify and clear zombie processes occupying the port.",
+        "Add a pre-run connectivity check using `nc` or `telnet`."
+      ],
+      "added_at": "2026-06-15T05:14:11.378482+00:00"
+    },
+    "selenium.common.exceptions.TimeoutException: Message:": {
+      "steps": [
+        "Update the Page Object selector for \"All projects\" to be more resilient.",
+        "Check for and handle common overlays (like WalkMe) that might block interactions.",
+        "Implement a longer wait explicitly for the side-menu transition after login."
+      ],
+      "added_at": "2026-06-15T05:14:11.378628+00:00"
+    },
+    "-root@api.mycluster.example.com: Permission denied (publickey,gssapi-keyex,gssapi-with": {
+      "steps": [
+        "Ensure `ssh-add` is called before starting tests to populate the agent.",
+        "Verify that the public key matches the identity on the remote target.",
+        "Confirm permissions on the local `.ssh/identity_files`."
+      ],
+      "added_at": "2026-06-15T05:14:11.378919+00:00"
+    },
+    "2026-06-12 15:33:49,737 - ERROR - Alternative login failed: Message:": {
+      "steps": [
+        "Add a \"wait for page load\" check after navigating to the OpenShift URL.",
+        "Log specific wait conditions (e.g., visibility of login button).",
+        "Implement an exponential backoff retry on the secondary login step."
+      ],
+      "added_at": "2026-06-15T05:14:11.379197+00:00"
+    },
+    "2026-06-12 15:35:37,560 - ERROR - \u274c Login error: HTTPConnectionPool(host='localhost', port=60388): R": {
+      "steps": [
+        "Verify if port 60388 is correctly provisioned for this suite.",
+        "Check local firewall/proxy settings to ensure it isn't throttling the request.",
+        "Verify that the proxy service on 60388 can handle concurrent requests or has been restarted."
+      ],
+      "added_at": "2026-06-15T05:14:11.379504+00:00"
+    },
+    "[RUN] RowGen-PostgreTableS1: no job found, creating ... \\n Bad Request\n  > [RUN] postgresql-copy-pee": {
+      "steps": [
+        "Cross-reference \"Bad Request\" jobs with the target API's schema requirements.",
+        "Re-verify the names and namespaces for all RowGen jobs in the import bundle.",
+        "Audit the connectivity of the \"copy_peek\" service to determine why it returns 500 errors."
+      ],
+      "added_at": "2026-06-15T05:14:11.379637+00:00"
+    },
+    "\u274c Could not find dropdown menu button / \u274c Failed to click dropdown menu": {
+      "steps": [
+        "Implement an explicit wait or a retry loop before attempting to click the dropdown button.",
+        "Update the selector logic to be more resilient against dynamic ID issues.",
+        "verify page load visibility using `presence_of_all_elements_located`."
+      ],
+      "added_at": "2026-06-18T16:07:50.405059+00:00"
+    },
+    "[RUN] Job create failed: FAILED / Bad Request AND [RUN] ... Compile failed: FAILED / Unprocessable E": {
+      "steps": [
+        "Audit the \"No Job Found\" items (Reported in lines 78, 83, etc.) against the target API's naming restrictions.",
+        "Implement a pre-flight check to verify unique names before calling create commands.",
+        "Validate connection stability between the DataStage service and the internal Postgres database."
+      ],
+      "added_at": "2026-06-18T16:07:50.405339+00:00"
+    },
+    "ssh: connect to host api.mycluster.example.com port 22: Undefined error: 0": {
+      "steps": [
+        "Verify `ssh-agent` persistence during long execution cycles.",
+        "Check for local firewall rules blocking outbound connections to common hostnames.",
+        "Refresh jump-host credentials if applicable."
+      ],
+      "added_at": "2026-06-18T16:07:50.409239+00:00"
+    },
+    "ModuleNotFoundError: No module named": {
+      "steps": [
+        "Extract module name from error: ModuleNotFoundError: No module named '<name>'",
+        "Run: pip3 install <name> on the machine where the test executes",
+        "For remote VM tests: ssh root@<host> pip3 install <name>",
+        "Verify: python3 -c 'import <name>; print(\"OK\")'"
+      ],
+      "added_at": "2026-07-09T04:00:00.000000+00:00"
+    },
+    "chromedriver not found in PATH and webdriver-manager not installed": {
+      "steps": [
+        "Run: pip3 install webdriver-manager selenium",
+        "Install browser: dnf install -y chromium chromedriver (RHEL) or apt-get install -y chromium-chromedriver (Debian)",
+        "Verify: python3 -c 'from webdriver_manager.chrome import ChromeDriverManager; ChromeDriverManager().install()'"
+      ],
+      "added_at": "2026-07-09T04:00:00.000000+00:00"
+    }
+  },
+  "infra_insights": [],
+  "auto_fix_patterns": {
+    "ModuleNotFoundError": {
+      "pattern": "ModuleNotFoundError: No module named '([^']+)'",
+      "action": "pip3 install {module}",
+      "scope": "auto",
+      "description": "Auto-install missing Python module before retry"
+    },
+    "chromedriver_not_found": {
+      "pattern": "chromedriver not found in PATH|webdriver-manager not installed",
+      "action": "pip3 install webdriver-manager && python3 -c \"from webdriver_manager.chrome import ChromeDriverManager; ChromeDriverManager().install()\"",
+      "scope": "auto",
+      "description": "Install chromedriver via webdriver-manager"
+    },
+    "ImportError": {
+      "pattern": "ImportError: cannot import name '([^']+)'",
+      "action": "pip3 install --upgrade {module}",
+      "scope": "auto",
+      "description": "Upgrade package that has missing imports"
+    }
+  },
+  "remediation_ledger": {}
+}

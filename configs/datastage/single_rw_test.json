@@ -1,0 +1,28 @@
+{
+  "test_type": "python",
+  "suites": [
+    {
+      "name": "datastage_utility_ds_read_write_tests",
+      "cmd": "bash -c 'cd \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS\" && python3 -m pip install --break-system-packages -q -r \"$HERMES_EXTRA_DIR/Datastage/Utility/DS_READ_WRITE_TESTS/requirements.txt\" && python3 -m pip install --break-system-packages --quiet selenium webdriver_manager && python3 run_automation.py'",
+      "timeout_sec": 3600,
+      "critical": false,
+      "tags": [
+        "selenium",
+        "mac",
+        "ui"
+      ],
+      "run_local": true,
+      "description": "Datastage Utility Read/Write Tests",
+      "pip_packages": [
+        "selenium",
+        "webdriver_manager"
+      ],
+      "capabilities": {
+        "needs_selenium": true,
+        "needs_cpdctl": false,
+        "needs_chrome": true,
+        "needs_ssh_vm": false
+      }
+    }
+  ]
+}
